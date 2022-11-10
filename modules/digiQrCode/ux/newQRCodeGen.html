@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<span id="targetMessage"><br></span>
+<div class="w3-center w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+	<label><b>Associated Business Entity</b></label>
+	<span class="existingList"></span>
+	<br>
+	<label>Type Range [1-40]</label>
+	<input id=type class="w3-input w3-hover-grey" type="number" min="1" max="40" step="1" />
+
+	<br>
+	<div class="ui form">
+		<div class="grouped fields">
+			<div class="ui selection dropdown correctionLevel">
+				<input type="hidden" >
+				<i class="dropdown icon"></i>
+				<div class="default text">Error Correction Level</div>
+				<div class="menu">
+					<div class="item" data-value="H">High</div>
+					<div class="item" data-value="M">Medium</div>
+					<div class="item" data-value="Q">Q</div>
+					<div class="item" data-value="L">Low</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<fieldset>
+		<legend><b>Associations</b></legend>
+		<div class="ui form">
+			<div class="grouped fields">
+				<div  class="ui toggle checkbox">
+					<input class='mgtQROptions' type="checkbox" name="public" id="asset"><label>Asset</label>
+				</div>
+				<div  class="ui toggle checkbox">
+					<input class='mgtQROptions' type="checkbox" name="public" id="events"><label>Events</label>
+				</div>
+				<div  class="ui toggle checkbox">
+					<input class='mgtQROptions' type="checkbox" name="public" id="activities"><label>Activities</label>
+				</div>
+				<div  class="ui toggle checkbox">
+					<input class='mgtQROptions' type="checkbox" name="public" id="bookings"><label>Bookings</label>
+				</div>
+				<div  class="ui toggle checkbox">
+					<input class='mgtQROptions' type="checkbox" name="public" id="notesQR"><label>Notes</label>
+				</div>
+				<div  class="ui toggle checkbox">
+					<input class='mgtQROptions' type="checkbox" name="public" checked id="legal"><label>Legal</label>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<!--<canvas id="placeHolder"></canvas>-->
+		<span id="placeHolder"><br></span>
+		<br>
+		<hr>
+		<br>
+		<button id="btnQRGen" class="w3-btn w3-round-xxlarge w3-padding-large w3-light-grey w3-right">Generate</button>
+		<br>
+	</fieldset>
+
+</div>
+<br>
+
+<br>
+<button id="save" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Add</button>
+<br>
+
+
+
+
+

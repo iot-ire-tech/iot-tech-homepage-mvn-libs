@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<div id="spinner">
+	<!--	<h2 class="ui header">
+			<img class="ui image" src="../../../../resources/media/icons/inbox-small.png">
+			<div class="content">
+				Learn More
+			</div>
+		</h2>-->
+
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+				Loading
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="w3-container w3-center w3-mobile w3-white">
+		<div class="w3-row-padding  " >
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+				</div>
+			</div>
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div class="w3-panel  w3-leftbar w3-light-grey">
+		<h1>Branding</h1>
+		<h3>Insight : your clients will be able to identify with you immediately. Take the opportunity, also to try different styles!</h3>
+	</div>
+	<br>
+	<br>
+
+
+
+	<div class="w3-bar w3-black">
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Welcome')">Welcome Media</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'General')">Generic</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TargetedGender')">Gender Based</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TargetedAge')">Age Based</button>
+		<!--<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'TypeFace')">TypeFace</button>-->
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ViewAll')">Online Browser</button>
+	</div>
+
+
+	<div id="Welcome" class="w3-container  city" style="height: 100%; display:block" >
+		<h2>Welcome Media</h2>
+		<p>Insight : Relating to your customer is the best way to do business</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Welcome Media <input id=welecomeNew class="w3-radio " type="radio" name="welecomeCat" value="new" >
+					Modify Existing <input id=welecomeMod class="w3-radio view"  type="radio" name="welecomeCat" value="mod">
+				</div>
+				<br> <hr> <br>
+				<span id="targetWelcomeMedia"></span>
+
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div id="General" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>General Media</h2>
+		<p>Insight : Relating to your customer is the best way to do business</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Generic Branding <input id=genericNew class="w3-radio " type="radio" name="genericCat" value="new" >
+					Modify Existing <input id=genericMod class="w3-radio view"  type="radio" name="genericCat" value="mod">
+				</div>
+				<br> <hr> <br>
+				<span id="targetGenericBranding"></span>
+
+			</fieldset>
+
+		</div>
+
+
+	</div>
+
+	<div id="TargetedGender" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>Targeted Gender Media</h2>
+		<p>Insight : Relating to your customer is the best way to do business</p>
+		<label><b>Really want to resonate with your clients, then use our new targeted branding feature</b></label><br>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Targeted Branding <input id=targetedGenderNew class="w3-radio " type="radio" name="targetedGenderCat" value="new" >
+					Modify Existing <input id=targetedGenderMod class="w3-radio view"  type="radio" name="targetedGenderCat" value="mod">
+				</div>
+				<br> <hr> <br>
+				<span id="targetTargetedGenderBranding"></span>
+
+			</fieldset>
+
+		</div>
+
+
+	</div>
+
+	<div id="TargetedAge" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>Targeted Age Media</h2>
+		<p>Insight : Relating to your customer is the best way to do business</p>
+		<label><b>Really want to resonate with your clients, then use our new targeted branding feature</b></label><br>
+
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Targeted Branding <input id=targetedAgeNew class="w3-radio " type="radio" name="targetedAgeCat" value="new" >
+					Modify Existing <input id=targetedAgeMod class="w3-radio view"  type="radio" name="targetedAgeCat" value="mod">
+				</div>
+				<br> <hr> <br>
+
+				<span id="targetTargetedAgeBranding"></span>
+
+			</fieldset>
+
+		</div>
+
+
+	</div>
+
+	<!--	<div id="TypeFace" class="w3-container  city" style="height: 100%; display:none" >
+			<h2>TypeFace</h2>
+			<p>Insight : Relating to your customer is the best way to do business</p>
+
+
+			<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+
+				<fieldset class="w3-padding-32 w3-center">
+					<legend><b>Typeface </b></legend>
+					<div class="w3-row" >
+						<div class="w3-half" >
+							<label><b>Header Text</b></label>
+							<input id=textPicker class="w3-input w3-hover-grey " type="text" value="" title="This will appear under your banner image if set"/> <br>
+						</div>
+						<div class="w3-half" >
+							<span class="ref "></span>
+						</div>
+					</div>
+
+					<div class="w3-row" >
+						<div class="w3-half" >
+							<label><b>Header Font Family</b></label>
+							<span id="fontPickerUx"></span>
+						</div>
+						<div class="w3-half" >
+							<div class="w3-container">
+								<span class="ref "></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="w3-row" >
+						<div class="w3-half" >
+							<label><b>Header Color</b></label>
+							<span id="colorPickerUx"></span>
+						</div>
+
+						<div class="w3-half" >
+							<span class="ref "></span>
+						</div>
+					</div>
+				</fieldset>
+			</div>
+
+
+		</div>-->
+
+	<div id="ViewAll" class="w3-container w3-border city" style="height: 200%;  display:none">
+		<h2 class="ui icon header">
+			<i class="settings icon"></i>
+			<div class="content"> Online Browser <div class="sub header">Insight - Preview your patrons before releasing to public.</div> </div>
+		</h2>
+		<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<div class="w3-container w3-center">
+				Welcome Media <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="welcome" >
+				Generic Branding <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="generic" >
+				Gender Based Branding <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="gender" >
+				Age Specific Branding<input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="age" >
+
+			</div>
+			<br> <br>
+			<span id="targetManagementBrowser"></span>
+		</div>
+	</div>
+</div>
+
+<script>
+	function openCity(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("city");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " w3-gray";
+	}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

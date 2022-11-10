@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<div class="w3-container w3-center w3-mobile w3-white">
+
+	<div class="w3-row-padding  " >
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+			</div>
+		</div>
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+	<h1>Business Communication</h1>
+	<h3>Insight : How many clients do you have , want to talk to your public, you can now!</h3>
+</div>
+<br>
+<div class="w3-bar w3-black">
+	<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Assets')">Assets</button>
+	<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Events')">Events</button>
+	<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Activities')">Activities</button>
+</div>
+
+
+<div id="Community" class="w3-container w3-border city">
+	<h2>Community</h2>
+	<p>Your community is split between the all members in the system, down to just a single member!!!</p>
+
+	<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+
+	</div>
+</div>
+
+
+
+<div class="w3-container w3-center">
+	<h4>Media Listings</h4>
+	<span id="summarTarget"></span>
+	<span id="list"></span>
+	<button class="w3-btn w3-round-xxlarge w3-padding-large w3-gray list">View All</button>
+</div>
+<br> <br>
+
+<fieldset class="w3-padding-32">
+	<br>
+	<fieldset id=groupEntities class="w3-padding-32 ">
+		<legend><b>Select Business Infrastructure Category</b></legend>
+		<div class="w3-container w3-center">
+			Non Specific <input class="w3-radio " type="radio" name="groupEntities" value="s" checked="">
+			Asset <input class="w3-radio " type="radio" name="groupEntities" value="resource" >
+			Event <input class="w3-radio "  type="radio" name="groupEntities" value="event">
+			Activity <input class="w3-radio "  type="radio" name="groupEntities" value="subEvent">
+		</div>
+	</fieldset>
+	<br> <br>
+
+	<div id=heading class="w3-container w3-center">
+		<div class="ui pointing below label"> Select line of business to brand</div>
+		<br>
+		<span id="entityList" >Entity List</span>
+		<br>
+	</div>
+	<br> <br>
+
+	<div id=main class="w3-container w3-center">
+		<div class="ui pointing below label">Apply rich content, and social media to this item</div>
+		<br>
+
+
+
+
+		<fieldset class="w3-padding-32 w3-center">
+			<legend><b>Multimedia Support</b></legend>
+			<label><b><span class="fa fa-facebook">Tag Line</span></b></label><br>
+			<input id=tag class="w3-input w3-hover-grey" type="text" value="" placeholder="Eg: Irish Seascape" required>
+			<br> <br>
+			<br> <br>
+			<div class="w3-row" >
+				<div class="w3-third" >
+					<label><b>Icon</b></label><br>
+					<form id="frmIcon">
+						<input name="iconName" type="file" accept="image/*" required/><br>
+					</form>
+				</div>
+				<div class="w3-third" >
+					<label><b>Visible</b></label><br>
+					<input name="iconVisible" type="checkbox" value="true" checked/><br>
+				</div>
+				<div class="w3-third" >
+					<img id=iconImg  alt="Icon displayed once uploaded..."><br>
+				</div>
+			</div>
+			<hr>
+			<br>
+
+			<div class="w3-row" >
+				<div class="w3-third" >
+					<label><b>Photo</b></label><br>
+					<form id="frmPic">
+						<input name="picName" type="file" accept="image/*" required/><br>
+					</form>
+				</div>
+				<div class="w3-third" >
+					<label><b>Visible</b></label><br>
+					<input name="picVisible" type="checkbox" value="true" checked/><br>
+				</div>
+				<div class="w3-third" >
+					<img id=picImg  alt="photo displayed once uploaded..."><br>
+				</div>
+			</div>
+			<hr>
+			<br>
+
+
+			<div class="w3-row" >
+				<div class="w3-third" >
+					<label><b>Video</b></label><br>
+					<form id="frmVid">
+						<input name="vidName" type="file" accept="video/mp4,video/x-m4v,video/*" required/><br>
+					</form>
+				</div>
+				<div class="w3-third" >
+					<label><b>Visible</b></label><br>
+					<input name="vidVisible" type="checkbox" value="true" checked/><br>
+				</div>
+				<div class="w3-third " >
+					<video id="vid" style="margin-left: 10%; width: 80%; margin-right: 10%" controls>
+					</video><br>
+				</div>
+			</div>
+			<hr>
+			<br>
+
+			<div class="w3-row" >
+				<div class="w3-third" >
+					<label><b><span class="fa fa-youtube">Youtube </span></b></label><br>
+					<input id=utube class="w3-input w3-hover-grey" type="text"  value="Eg: https://www.youtube.com/embed/I_2D8Eo15wE?start=1" required>
+				</div>
+				<div class="w3-third" >
+					<label><b>Visible</b></label><br>
+					<input name="utubeVisible" type="checkbox" value="true"/><br>
+				</div>
+				<div class="w3-third" >
+					<iframe id=utubeTarget   style="margin-left: 10%; width: 80%; margin-right: 10%"  allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+				</div>
+			</div>
+			<hr>
+			<br>
+
+			<div class="w3-row" >
+				<div class="w3-third" >
+					<label><b><span class="fa fa-facebook">Facebook</span></b></label><br>
+					<input id=facebook class="w3-input w3-hover-grey" type="text" value="Eg: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSPORTSCORingsend%2Fvideos%2F1502194963150954%2F&show_text=1&width=560" required>
+				</div>
+				<div class="w3-third" >
+					<label><b>Visible</b></label><br>
+					<input name="facebookVisible" type="checkbox" value="true"/><br>
+				</div>
+				<div class="w3-third" >
+					<iframe id=facebookTarget  style="margin-left: 10%; width: 80%; margin-right: 10%" frameborder="0"
+						src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSpinning%2Fvideos%2F10154573864611129%2F&show_text=0&width=560">
+					</iframe>
+				</div>
+			</div>
+
+		</fieldset>
+
+
+
+		<br>
+		<button class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right save"  >Save</button>
+
+	</div>
+	<br>
+	<hr>
+	<br>
+
+	<div id=newCustomer class="w3-container w3-center">
+		<fieldset class="w3-padding-32 ">
+			<legend><b>Existing Media Profiles</b></legend>
+			<span id="existingList"  ></span>
+			<br>
+			<button class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right mod"  >Modify</button>
+			<button class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-left delete"  >Delete</button>
+
+
+		</fieldset>
+	</div>
+
+
+</fieldset>
+<br>
+
+</div>
+

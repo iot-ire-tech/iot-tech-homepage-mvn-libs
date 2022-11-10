@@ -1,0 +1,431 @@
+<h3>Insight: Whoa you just transformed an asset into an online webinar commodity!!!!</h3>
+<div id="businessprofile">
+    <fieldset>
+        <legend><b>Business Assets</b></legend>
+        <label>Catalogue Existing Webinar Items</label>
+        <span id="webinarItemHook"></span>
+        <br>
+        <label>Upstream assets available!</label>
+        <span id="webinarResourceHook"></span>
+        <br>
+    </fieldset>
+</div>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Webinar Item Profile</b></legend>
+    <label>Title</label>
+    <input class="w3-input w3-hover-grey name" type="text" value="" required title=""/> <br>
+    <br>
+    <label>Description</label>
+    <textarea class=description rows="2" cols="10" title="This will be seen be all end users"> </textarea> <br>
+    <br>
+
+    <br>
+    <label>Category</label>
+    <select class="w3-select w3-hover-grey category" title="Categories are used during a search." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="118" data-spec="select-option">Auto, Boat &amp; Air</option>
+        <option value="101" data-spec="select-option">Business &amp; Professional</option>
+        <option value="111" data-spec="select-option">Charity &amp; Causes</option>
+        <option value="113" data-spec="select-option">Community &amp; Culture</option>
+        <option value="115" data-spec="select-option">Family &amp; Education</option>
+        <option value="106" data-spec="select-option">Fashion &amp; Beauty</option>
+        <option value="104" data-spec="select-option">Film, Media &amp; Entertainment</option>
+        <option value="110" data-spec="select-option">Food &amp; Drink</option>
+        <option value="112" data-spec="select-option">Government &amp; Politics</option>
+        <option value="107" data-spec="select-option">Health &amp; Wellness</option>
+        <option value="119" data-spec="select-option">Hobbies &amp; Special Interest</option>
+        <option value="117" data-spec="select-option">Home &amp; Lifestyle</option>
+        <option value="103" data-spec="select-option">Music</option>
+        <option value="199" data-spec="select-option">Other</option>
+        <option value="105" data-spec="select-option">Performing &amp; Visual Arts</option>
+        <option value="114" data-spec="select-option">Religion &amp; Spirituality</option>
+        <option value="120" data-spec="select-option">School Activities</option>
+        <option value="102" data-spec="select-option">Science &amp; Technology</option>
+        <option value="116" data-spec="select-option">Seasonal &amp; Holiday</option>
+        <option value="108" data-spec="select-option">Sports &amp; Fitness</option>
+        <option value="109" data-spec="select-option">Travel &amp; Outdoor</option>
+    </select>
+    <br>
+    <br>
+    <label>Type</label>
+    <select class="w3-select w3-hover-grey type" title="Types are used during a search." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="19" data-spec="select-option">Appearance or Signing</option>
+        <option value="17" data-spec="select-option">Attraction</option>
+        <option value="18" data-spec="select-option">Camp, Trip, or Retreat</option>
+        <option value="9" data-spec="select-option">Class, Training, or Workshop</option>
+        <option value="6" data-spec="select-option">Concert or Performance</option>
+        <option value="6" data-spec="select-option">Squash</option>
+        <option value="6" data-spec="select-option">Racket Games</option>
+        <option value="1" data-spec="select-option">Conference</option>
+        <option value="4" data-spec="select-option">Convention</option>
+        <option value="8" data-spec="select-option">Dinner or Gala</option>
+        <option value="5" data-spec="select-option">Festival or Fair</option>
+        <option value="14" data-spec="select-option">Game or Competition</option>
+        <option value="10" data-spec="select-option">Meeting or Networking Event</option>
+        <option value="100" data-spec="select-option">Other</option>
+        <option value="11" data-spec="select-option">Party or Social Gathering</option>
+        <option value="15" data-spec="select-option">Race or Endurance Event</option>
+        <option value="12" data-spec="select-option">Rally</option>
+        <option value="7" data-spec="select-option">Screening</option>
+        <option value="2" data-spec="select-option">Seminar or Talk</option>
+        <option value="16" data-spec="select-option">Tour</option>
+        <option value="13" data-spec="select-option">Tournament</option>
+        <option value="3" data-spec="select-option">Tradeshow, Consumer Show, or Expo</option>
+    </select>
+    <br>
+    <br>
+    <label>Tag</label>
+    <input  class="w3-input w3-hover-grey tag" type="text" value="" required
+           title="Improve discoverability of your event by adding tags relevant to the subject-matter"/> <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addMetaWeb">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<label>Members Listing</label>
+<span class=customerListHook></span><br>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Revenue Stream Management</b></legend>
+    <span class="w3-tag w3-yellow revenueMsg"></span>
+    <br>
+
+
+    <label>Apply a sale price!</label>
+    <input class="w3-input w3-hover-grey cost" type="number" min="0.00" step="0.01" placeholder="10.00" required
+           title="Value under which I will resell this item to my customers"/> <br>
+
+    <label>Select currency</label>
+    <select class='currency w3-select w3-hover-grey' required>
+        <option disabled selected>Please Select</option>
+        <option value=EUR>EUR</option>
+        <option value=BPD>UK Pound</option>
+        <option value=USD>US Dollar</option>
+        <option value="">Request More Contact Support</option>
+    </select>
+    <br>
+    <label>Apply customer discount</label>
+    <select class="w3-select w3-hover-grey discount" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=0>0%</option>
+        <option value=5>5%</option>
+        <option value=10>10%</option>
+        <option value=15>15%</option>
+        <option value=25>25%</option>
+    </select>
+    <label>Ready for sell now?</label>
+    <select class="w3-select w3-hover-grey sellable"
+            title="If you set this a 'No' it will not be displayed to customers ." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=true>Yes</option>
+        <option value=false>No</option>
+    </select>
+    <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addRevenueWeb">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Timings</b></legend>
+    <label>Start Date/Time</label>
+    <input  class="w3-input w3-hover-grey startTime" type="datetime-local" value="" required title=""/> <br>
+    <label>Duration [Hours]</label>
+    <input class="w3-input w3-hover-grey hour" type="number" min="0" max="24" required title=""/>
+    <br>
+    <label>Duration [Minutes]</label>
+    <input class="w3-input w3-hover-grey minutes" type="number" min="15" max="60" step="15" required
+           title="Are divided up into 15 minute intervals"/>
+    <label>TimeZone</label>
+    <select class="w3-select w3-hover-grey timezone" title="" required>
+        <option></option>
+        <option value="Etc/GMT+12">(GMT-12:00) International Date Line West</option>
+        <option value="Pacific/Midway">(GMT-11:00) Midway Island, Samoa</option>
+        <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+        <option value="US/Alaska">(GMT-09:00) Alaska</option>
+        <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+        <option value="America/Tijuana">(GMT-08:00) Tijuana, Baja California</option>
+        <option value="US/Arizona">(GMT-07:00) Arizona</option>
+        <option value="America/Chihuahua">(GMT-07:00) Chihuahua, La Paz, Mazatlan</option>
+        <option value="US/Mountain">(GMT-07:00) Mountain Time (US & Canada)</option>
+        <option value="America/Managua">(GMT-06:00) Central America</option>
+        <option value="US/Central">(GMT-06:00) Central Time (US & Canada)</option>
+        <option value="America/Mexico_City">(GMT-06:00) Guadalajara, Mexico City, Monterrey</option>
+        <option value="Canada/Saskatchewan">(GMT-06:00) Saskatchewan</option>
+        <option value="America/Bogota">(GMT-05:00) Bogota, Lima, Quito, Rio Branco</option>
+        <option value="US/Eastern">(GMT-05:00) Eastern Time (US & Canada)</option>
+        <option value="US/East-Indiana">(GMT-05:00) Indiana (East)</option>
+        <option value="Canada/Atlantic">(GMT-04:00) Atlantic Time (Canada)</option>
+        <option value="America/Caracas">(GMT-04:00) Caracas, La Paz</option>
+        <option value="America/Manaus">(GMT-04:00) Manaus</option>
+        <option value="America/Santiago">(GMT-04:00) Santiago</option>
+        <option value="Canada/Newfoundland">(GMT-03:30) Newfoundland</option>
+        <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+        <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires, Georgetown</option>
+        <option value="America/Godthab">(GMT-03:00) Greenland</option>
+        <option value="America/Montevideo">(GMT-03:00) Montevideo</option>
+        <option value="America/Noronha">(GMT-02:00) Mid-Atlantic</option>
+        <option value="Atlantic/Cape_Verde">(GMT-01:00) Cape Verde Is.</option>
+        <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+        <option value="Africa/Casablanca">(GMT+00:00) Casablanca, Monrovia, Reykjavik</option>
+        <option value="Etc/Greenwich">(GMT+00:00) Greenwich Mean Time : Dublin, Edinburgh, Lisbon, London</option>
+        <option value="Europe/Amsterdam">(GMT+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna</option>
+        <option value="Europe/Belgrade">(GMT+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague</option>
+        <option value="Europe/Brussels">(GMT+01:00) Brussels, Copenhagen, Madrid, Paris</option>
+        <option value="Europe/Sarajevo">(GMT+01:00) Sarajevo, Skopje, Warsaw, Zagreb</option>
+        <option value="Africa/Lagos">(GMT+01:00) West Central Africa</option>
+        <option value="Asia/Amman">(GMT+02:00) Amman</option>
+        <option value="Europe/Athens">(GMT+02:00) Athens, Bucharest, Istanbul</option>
+        <option value="Asia/Beirut">(GMT+02:00) Beirut</option>
+        <option value="Africa/Cairo">(GMT+02:00) Cairo</option>
+        <option value="Africa/Harare">(GMT+02:00) Harare, Pretoria</option>
+        <option value="Europe/Helsinki">(GMT+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius</option>
+        <option value="Asia/Jerusalem">(GMT+02:00) Jerusalem</option>
+        <option value="Europe/Minsk">(GMT+02:00) Minsk</option>
+        <option value="Africa/Windhoek">(GMT+02:00) Windhoek</option>
+        <option value="Asia/Kuwait">(GMT+03:00) Kuwait, Riyadh, Baghdad</option>
+        <option value="Europe/Moscow">(GMT+03:00) Moscow, St. Petersburg, Volgograd</option>
+        <option value="Africa/Nairobi">(GMT+03:00) Nairobi</option>
+        <option value="Asia/Tbilisi">(GMT+03:00) Tbilisi</option>
+        <option value="Asia/Tehran">(GMT+03:30) Tehran</option>
+        <option value="Asia/Muscat">(GMT+04:00) Abu Dhabi, Muscat</option>
+        <option value="Asia/Baku">(GMT+04:00) Baku</option>
+        <option value="Asia/Yerevan">(GMT+04:00) Yerevan</option>
+        <option value="Asia/Kabul">(GMT+04:30) Kabul</option>
+        <option value="Asia/Yekaterinburg">(GMT+05:00) Yekaterinburg</option>
+        <option value="Asia/Karachi">(GMT+05:00) Islamabad, Karachi, Tashkent</option>
+        <option value="Asia/Calcutta">(GMT+05:30) Chennai, Kolkata, Mumbai, New Delhi</option>
+        <option value="Asia/Calcutta">(GMT+05:30) Sri Jayawardenapura</option>
+        <option value="Asia/Katmandu">(GMT+05:45) Kathmandu</option>
+        <option value="Asia/Almaty">(GMT+06:00) Almaty, Novosibirsk</option>
+        <option value="Asia/Dhaka">(GMT+06:00) Astana, Dhaka</option>
+        <option value="Asia/Rangoon">(GMT+06:30) Yangon (Rangoon)</option>
+        <option value="Asia/Bangkok">(GMT+07:00) Bangkok, Hanoi, Jakarta</option>
+        <option value="Asia/Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+        <option value="Asia/Hong_Kong">(GMT+08:00) Beijing, Chongqing, Hong Kong, Urumqi</option>
+        <option value="Asia/Kuala_Lumpur">(GMT+08:00) Kuala Lumpur, Singapore</option>
+        <option value="Asia/Irkutsk">(GMT+08:00) Irkutsk, Ulaan Bataar</option>
+        <option value="Australia/Perth">(GMT+08:00) Perth</option>
+        <option value="Asia/Taipei">(GMT+08:00) Taipei</option>
+        <option value="Asia/Tokyo">(GMT+09:00) Osaka, Sapporo, Tokyo</option>
+        <option value="Asia/Seoul">(GMT+09:00) Seoul</option>
+        <option value="Asia/Yakutsk">(GMT+09:00) Yakutsk</option>
+        <option value="Australia/Adelaide">(GMT+09:30) Adelaide</option>
+        <option value="Australia/Darwin">(GMT+09:30) Darwin</option>
+        <option value="Australia/Brisbane">(GMT+10:00) Brisbane</option>
+        <option value="Australia/Canberra">(GMT+10:00) Canberra, Melbourne, Sydney</option>
+        <option value="Australia/Hobart">(GMT+10:00) Hobart</option>
+        <option value="Pacific/Guam">(GMT+10:00) Guam, Port Moresby</option>
+        <option value="Asia/Vladivostok">(GMT+10:00) Vladivostok</option>
+        <option value="Asia/Magadan">(GMT+11:00) Magadan, Solomon Is., New Caledonia</option>
+        <option value="Pacific/Auckland">(GMT+12:00) Auckland, Wellington</option>
+        <option value="Pacific/Fiji">(GMT+12:00) Fiji, Kamchatka, Marshall Is.</option>
+        <option value="Pacific/Tongatapu">(GMT+13:00) Nuku'alofa</option>
+    </select>
+    <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addScheduleWeb">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Account</b></legend>
+    <label>Webinar Username</label>
+    <input class="w3-input w3-hover-grey username" usertype=webinar type="text" value="" required title=""/> <br>
+    <br>
+    <label>Webinar Password</label>
+    <input class="w3-input w3-hover-grey password" type="text" value="" required title=""/> <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addUserAccountWeb">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Advanced Options</b></legend>
+    <label>host_video : Start video when host joins webinar.</label>
+    <input id=host_video class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Start video when host joins webinar."/> <br>
+
+    <label>hd_video: Default to HD video.</label>
+    <input id=hd_video class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Default to HD video."/> <br>
+
+    <label>panelists_video: Start video when panelists join webinar.</label>
+    <input id=panelists_video class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Start video when panelists join webinar."/> <br>
+
+    <label>practice_session: Enable practice session.</label>
+    <input id=practice_session class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Enable practice session."/> <br>
+    <label>approval_type</label>
+    <select id=approval_type class="w3-select w3-hover-grey" title="" required>
+        <option value="-1" disabled selected>Please Select</option>
+        <option value="0">Automatically approve</option>
+        <option value="1">Manually approve</option>
+        <option value="2">No registration required</option>
+    </select>
+
+    <label>registration_type: Only used for recurring webinars with a fixed time.</label>
+    <select id=registration_type class="w3-select w3-hover-grey" title="" required disabled>
+        <option value="-1" disabled selected>Please Select</option>
+        <option value="0">????? Not Required.</option>
+        <option value="1">Attendees register once and can attend any of the webinar sessions.</option>
+        <option value="2">Attendees need to register for each session in order to attend.</option>
+        <option value="3">Attendees register once and can choose one or more sessions to attend.</option>
+    </select>
+
+    <label>close_registration: Close registration after event date.</label>
+    <input id=close_registration class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Close registration after event date."/> <br>
+
+    <label>registrants_email_notification</label>
+    <input id=registrants_email_notification class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title=""/> <br>
+    <label>audio: Determine how participants can join the audio portion of the webinar.</label>
+    <select id=audio class="w3-select w3-hover-grey"
+            title="Determine how participants can join the audio portion of the webinar." required>
+        <option value="-1" disabled selected>Please Select</option>
+        <option value="both">Both</option>
+        <option value="telephony">Telephony</option>
+        <option value="voip">Voice Over IP</option>
+    </select>
+
+
+    <label>auto_recording: Automatic recording:</label>
+    <select id=auto_recording class="w3-select w3-hover-grey" title="Automatic recording" required>
+        <option value="-1" disabled selected>Please Select</option>
+        <option value="local">local</option>
+        <option value="cloud">cloud</option>
+        <option value="none">none</option>
+    </select>
+
+    <label>alternative_hosts: Alternative host emails or IDs. Multiple values separated by comma.</label>
+    <input id=alternative_hosts class="w3-input w3-hover-grey" type="text" value="" required
+           title="Alternative host emails or IDs. Multiple values separated by comma."/> <br>
+
+    <label>show_share_button: Show social share buttons on the registration page.</label>
+    <input id=show_share_button class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Show social share buttons on the registration page."/> <br>
+    <label>allow_multiple_devices : Allow attendees to join from multiple devices.</label>
+    <input id=allow_multiple_devices class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Allow attendees to join from multiple devices."/> <br>
+
+    <label>enforce_login : .</label>
+    <input id=enforce_login class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Allow attendees to join from multiple devices."/> <br>
+    <label>enforce_login_domains : .</label>
+    <input id=enforce_login_domains class="w3-input w3-hover-grey" type="checkbox" value="" required
+           title="Allow attendees to join from multiple devices."/> <br>
+
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addWebinarSettings">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Multimedia Content: Webinars</b></legend>
+    <span>High quality pictures and videos advised</span><br>
+    <span>The order in which the content is presented here, is the order in which they will be displayed to your customers</span><br>
+    <span>Content should be mindful of community guidelines</span><br>
+    <span>Min. Image size: 200px By 200px</span>
+    <br>
+    <span class="w3-tag w3-yellow">Be sure to click on the 'Add' button before switching to a different media item tab, else your item will be overwritten!</span><br>
+    <br>
+    <div id="tabsMediaWebinar">
+        <ul>
+            <li><a href="#tabsMediaWebinar-1"> <span title="Presentation image which is customer facing"
+                                                     class="w3-padding ">Profile Picture</span> </a></li>
+            <li><a href="#tabsMediaWebinar-2"> <span class="w3-padding ">Preview</span></a></li>
+        </ul>
+        <div id="tabsMediaWebinar-1">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+                        <form id="frmIcon1Webinar">
+                            Image#1: <input id="iconName1Webinar" name="iconNameWebinar" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <span id="frmIcon1WebinarSpinner"></span>
+                        <img src="" id=imgiconName1Webinar><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaWebinar-2">
+            <fieldset>
+                <span>Try to keep your preview content under 5 minutes</span><br>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+                        <form id="frmIcon2Webinar">
+                            Preview#1: <input id="iconName2Webinar" name="iconNameWebinar" type="file"
+                                              class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <span id="frmIcon2WebinarSpinner"></span>
+                        <video id="imgiconName2Webinar" width=400 controls autoplay>
+                            <source id=imgiconName2WebinarOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+
+    </div>
+</fieldset>
+<br>
+<br>
+<br>
+
+<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding saveWebinar">Save</button>
+

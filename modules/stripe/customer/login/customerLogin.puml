@@ -1,0 +1,57 @@
+@startuml
+autonumber 1 "<b>(<u>##</u>)"
+
+== Start Page Load Sequence ==
+Customer -> Customer: Opens URL
+note left
+Example : [[http://localhost:8084/services/modules/stripe/customer/login/release/users.jsp?accountId=acct_1HQBy6CZKWKKKlql&customerId=cus_I0CMTb5QxR10Fa Customer Login ]]
+end note
+
+MBP -> MBP: Loads Page
+Customer -> Customer: Selects Offering
+Customer -> Customer: Enters Username
+Customer -> Customer: Enters Password
+Customer -> Customer: Clicks Enter
+
+MBP -> MBP: Calls nsCustomer.Authentication
+alt accounts match?
+MBP -> MBP: Continues to PaymentSource Check
+else
+MBP -> MBP: updates customer account not found
+end
+
+MBP -> MBP: Calls nsAccount.Ready
+alt account is fulfilled requirements?
+MBP -> MBP: Continues to Navi
+else
+MBP -> MBP: Checks .
+end
+
+== PaymentSource ==
+
+
+MBP -> MBP: Calls nsCustomer.PaymentSource
+note left
+* Live Mode: This wil only work if 'requirements.disabled_reason` property on the account
+will provide information about why this account is currently disabled.
+If you are a customer trying to make a purchase, please contact the owner of this site.
+Your transaction has not been processed.; code: testmode_charges_only; request-id
+* Test Mode : This should work, hence live mode testing is need to check on this functionality.
+end note
+
+alt payment type found?
+MBP -> MBP: Continues to Navi
+else
+MBP -> MBP: Checks if customer has payment source attached to its account.
+note left
+Card Service URL : [[http://localhost:8084/services/modules/stripe/customer/cards/release/cards.jsp?accountId=acct_1HQBy6CZKWKKKlql&customerId=cus_I0CMTb5QxR10Fa&originId=customerLogin Add New Card]]
+end note
+end
+
+MBP -> MBP: Calls Navigation Service
+alt offering match
+MBP -> MBP: Redirect customer to offering
+else
+end
+
+@enduml

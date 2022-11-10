@@ -1,0 +1,761 @@
+{
+	"clients": [
+		{
+			"id": 1,
+			"ts": "2018-03-25T09:09:06.722Z",
+			"name": "IoT Tech",
+			"email": "tonygennis@gmail.com",
+			"staffCount": 1,
+			"businessSite": "http://www.360-iot.com.",
+			"businessLocation": "Ireland.",
+			"branding": true,
+			"offering": "pro"
+		},
+		{
+			"id": 392436,
+			"ts": "2018-05-13T15:44:56.887Z",
+			"name": "sportsco",
+			"email": "tonyennis@yahoo.com",
+			"businessSite": "http://www.sportsco.com",
+			"businessLocation": "Ireland",
+			"offering": "pro",
+			"staffCount": 30,
+			"branding": true
+		}
+	],
+	"events": [
+		{
+			"id": 147578,
+			"resourcePoolId": 67611,
+			"type": "Relaxation",
+			"visible": true,
+			"startTs": "August 1, 2018 3:00 AM",
+			"endTs": "August 15, 2018 1:00 PM",
+			"name": "Facials",
+			"owner": {
+				"name": "Lord Godfry",
+				"email": "tonyennis@yahoo.com",
+				"mobile": "09089999999"
+			},
+			"location": "2nd Floor",
+			"mediaLinkYouTube": "https://www.youtube.com/tgbNymZ7vqY",
+			"mediaLinkFaceBook": "https://www.facebook.com/SPORTSCORingsend/videos/1502194963150954/",
+			"pics": {
+				"pic1": "",
+				"pic2": "",
+				"pic3": ""
+			},
+			"clientId": 392436
+		},
+		{
+			"id": 743135,
+			"resourcePoolId": 68538,
+			"type": "Sporting",
+			"visible": true,
+			"startTs": "May 23, 2018 3:00 AM",
+			"endTs": "May 31, 2018 6:00 AM",
+			"name": "Squash Ireland",
+			"owner": {},
+			"location": "Squash Courts 1, 2, 3",
+			"mediaLinkYouTube": "https://www.youtube.com/tgbNymZ7vqY",
+			"mediaLinkFaceBook": "https://www.facebook.com/SPORTSCORingsend/videos/1502194963150954/",
+			"pics": {
+				"pic1": "",
+				"pic2": "",
+				"pic3": ""
+			},
+			"clientId": 392436
+		},
+		{
+			"id": 971371,
+			"resourcePoolId": 68538,
+			"type": "Sporting",
+			"visible": true,
+			"startTs": "May 23, 2018 3:00 AM",
+			"endTs": "May 4, 2018 7:00 AM",
+			"name": "Sportsco Squash",
+			"owner": {
+				"name": "Mark Kelly",
+				"email": "iot.ca.userb@gmail.com",
+				"mobile": "088978989"
+			},
+			"location": "Squash Courts 1, 2, 3",
+			"mediaLinkYouTube": "https://www.youtube.com/tgbNymZ7vqY",
+			"mediaLinkFaceBook": "https://www.facebook.com/SPORTSCORingsend/videos/1502194963150954/",
+			"pics": {
+				"pic1": "",
+				"pic2": "",
+				"pic3": ""
+			},
+			"clientId": 392436
+		},
+		{
+			"id": 438426,
+			"resourcePoolId": 691109,
+			"type": "Educational",
+			"visible": true,
+			"startTs": "May 1, 2018 1:00 PM",
+			"endTs": "May 1, 2018 10:00 AM",
+			"name": "Streaming",
+			"owner": {
+				"name": "Mark Kelly",
+				"email": "iot.ca.userb@gmail.com",
+				"mobile": "088978989"
+			},
+			"location": "Squash Courts 1, 2, 3",
+			"mediaLinkYouTube": "https://www.youtube.com/tgbNymZ7vqY",
+			"mediaLinkFaceBook": "https://www.facebook.com/SPORTSCORingsend/videos/1502194963150954/",
+			"pics": {
+				"pic1": "",
+				"pic2": "",
+				"pic3": ""
+			},
+			"clientId": 392436
+		}
+	],
+	"eventTypes": [
+		{
+			"id": 1,
+			"name": "Community"
+		},
+		{
+			"id": 2,
+			"name": "Sporting"
+		},
+		{
+			"id": 3,
+			"name": "Financial"
+		},
+		{
+			"id": 4,
+			"name": "Relaxation"
+		},
+		{
+			"id": 5,
+			"name": "Coorporative"
+		},
+		{
+			"id": 6,
+			"name": "Charity"
+		},
+		{
+			"id": 7,
+			"name": "Educational"
+		}
+	],
+	"subEvents": [
+		{
+			"location": "Squash Court 1,2,3",
+			"id": 186096,
+			"eventId": 147578,
+			"type": "Sporting",
+			"uxRankingOrder": null,
+			"visible": true,
+			"pics": {},
+			"name": "Box A",
+			"note": " Worth while points about this activity.",
+			"owner": {
+				"name": "Mark Kelly",
+				"email": "iot.ca.usera@gmail.com",
+				"mobile": "088978989"
+			},
+			"clientId": 392436
+		},
+		{
+			"location": "Squash Court 1,2,3",
+			"id": 451130,
+			"eventId": 147578,
+			"type": "Sporting",
+			"uxRankingOrder": null,
+			"visible": true,
+			"pics": {},
+			"name": "Box B",
+			"note": " Worth while points about this activity...",
+			"owner": {
+				"name": "Mark Kelly",
+				"email": "iot.ca.userb@gmail.com",
+				"mobile": "088978989"
+			},
+			"clientId": 392436
+		}
+	],
+	"subEventCosts": [
+		{
+			"id": 394933,
+			"subEventId": 186096,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 1,
+					"currency": "EUR"
+				},
+				{
+					"duration": 45,
+					"cost": 2,
+					"currency": "EUR"
+				}
+			]
+		},
+		{
+			"id": 396033,
+			"subEventId": 451130,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 3,
+					"currency": "EUR"
+				}
+			]
+		},
+		{
+			"id": 26611,
+			"subEventId": 20651,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 4,
+					"currency": "EUR"
+				}
+			]
+		},
+		{
+			"id": 285910,
+			"subEventId": 569423,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 5,
+					"currency": "EUR"
+				}
+			]
+		},
+		{
+			"id": 333961,
+			"subEventId": 193848,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 6,
+					"currency": "EUR"
+				}
+			]
+		},
+		{
+			"id": 426818,
+			"subEventId": 770739,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 5,
+					"currency": "EUR"
+				}
+			]
+		},
+		{
+			"id": 426899,
+			"subEventId": 945891,
+			"costdurations": [
+				{
+					"duration": 30,
+					"cost": 4,
+					"currency": "EUR"
+				}
+			]
+		}
+	],
+	"subEventMembers": [
+		{
+			"id": 227178,
+			"subEventId": 186096,
+			"members": [
+				{
+					"name": "Anthony Ennis",
+					"email": "iot.ca.usera@gmail.com",
+					"mobile": "877461070",
+					"patronId": 279021
+				},
+				{
+					"name": "Rosemary Ennis",
+					"email": "iot.ca.userb@gmail.com",
+					"mobile": "09889778989",
+					"patronId": 254287
+				},
+				{
+					"name": "Mark Kelly",
+					"email": "iot.ca.userc@gmail.com",
+					"mobile": "088978989",
+					"patronId": 231215
+				}
+			]
+		},
+		{
+			"id": 737332,
+			"subEventId": 451130,
+			"members": [
+				{
+					"name": "Anto",
+					"email": "iot.ca.userc@gmail.com",
+					"patronId": 366572
+				},
+				{
+					"name": "Paul",
+					"email": "tonyennis@yahoo.com",
+					"patronId": 627169
+				},
+				{
+					"name": "Alan",
+					"email": "tonyennis@yahoo.com",
+					"patronId": 257746
+				},
+				{
+					"name": "Antoo",
+					"email": "fionnennis@yahoo.com",
+					"patronId": 310133
+				},
+				{
+					"name": "Snop Dog",
+					"email": "tonygennis@gmail.com",
+					"patronId": 493700
+				}
+			]
+		},
+		{
+			"id": 544764,
+			"subEventId": 945891,
+			"members": [
+				{
+					"name": "Lord Godfry",
+					"email": "tonyennis@yahoo.com",
+					"mobile": "09089999999",
+					"patronId": 697366
+				},
+				{
+					"name": "Antoo",
+					"email": "tonyennis@yahoo.com",
+					"mobile": "009809880",
+					"patronId": 310133
+				},
+				{
+					"name": "Alan",
+					"email": "tonyennis@yahoo.com",
+					"mobile": "009888888",
+					"patronId": 257746
+				},
+				{
+					"name": "Paul",
+					"email": "tonyennis@yahoo.com",
+					"mobile": "00999990000",
+					"patronId": 627169
+				},
+				{
+					"name": "Anto",
+					"email": "iot.ca.userc@gmail.com",
+					"mobile": "009323432",
+					"patronId": 366572
+				}
+			]
+		},
+		{
+			"id": 229584,
+			"subEventId": 20651,
+			"members": [
+				{
+					"name": "Snop Dog",
+					"email": "tonygennis@gmail.com",
+					"mobile": "098998089090",
+					"patronId": 493700
+				}
+			]
+		},
+		{
+			"id": 709669,
+			"subEventId": 569423,
+			"members": [
+				{
+					"name": "Mark Kelly",
+					"email": "iot.ca.userb@gmail.com",
+					"mobile": "088978989",
+					"patronId": 231215
+				}
+			]
+		},
+		{
+			"id": 237173,
+			"subEventId": 193848,
+			"members": [
+				{
+					"name": "Anthony Ennis",
+					"email": "tonyennis@yahoo.com",
+					"mobile": "877461070",
+					"patronId": 279021
+				}
+			]
+		},
+		{
+			"id": 992280,
+			"subEventId": 770739,
+			"members": [
+				{
+					"name": "Alan",
+					"email": "tonyennis@yahoo.com",
+					"mobile": "009888888",
+					"patronId": 257746
+				}
+			]
+		}
+	],
+	"resourcePool": [
+		{
+			"id": 68538,
+			"clientId": 392436,
+			"name": "Squash Courts",
+			"cname": "Squash Courts",
+			"alias": "SquashCourts",
+			"location": "Ground Floor",
+			"pics": {
+				"pic1": "sportsco_SquashCourts_squash-court",
+				"pic2": "sportsco_SquashCourts_",
+				"pic3": "sportsco_SquashCourts_",
+				"vid1": "sportsco_SquashCourts_"
+			},
+			"quanity": 3,
+			"owner": {
+				"name": "Rosemary Ennis",
+				"email": "tonyennis@yahoo.com",
+				"mobile": "09889778989"
+			},
+			"grammer": {
+				"ppt": "Place",
+				"patronId": 0
+			},
+			"categoryId": 2,
+			"accessibility": "Public",
+			"uxRankingOrder": 1,
+			"visible": true,
+			"note": "All squash rackets to be picked up at the main desk"
+		},
+		{
+			"id": 691109,
+			"clientId": 392436,
+			"name": "CoachPhilips",
+			"cname": "Coach Philips",
+			"alias": "Coach Philips",
+			"location": "Ground Floor",
+			"pics": {
+				"pic1": "sportsco_CoachPhilips_composity-testrun",
+				"pic2": "sportsco_CoachPhilips_",
+				"pic3": "sportsco_CoachPhilips_",
+				"vid1": "sportsco_CoachPhilips_"
+			},
+			"quanity": 1,
+			"owner": {
+				"name": "Mark Kelly",
+				"email": "iot.ca.userb@gmail.com",
+				"mobile": "088978989"
+			},
+			"grammer": {
+				"ppt": "Person",
+				"patronId": 231215
+			},
+			"categoryId": 2,
+			"accessibility": "Public",
+			"uxRankingOrder": 2,
+			"visible": true,
+			"note": "Please be early"
+		},
+		{
+			"id": 67611,
+			"clientId": 392436,
+			"name": "UrbanHealthSpa",
+			"cname": "Urban Health Spa",
+			"alias": "Urban Health Spa",
+			"location": "2nd Floor",
+			"pics": {
+				"pic1": "sportsco_UrbanHealthSpa_urban_health_spa",
+				"pic2": "sportsco_UrbanHealthSpa_",
+				"pic3": "sportsco_UrbanHealthSpa_",
+				"vid1": "sportsco_UrbanHealthSpa_"
+			},
+			"quanity": 3,
+			"owner": {
+				"name": "Rosemary Ennis",
+				"email": "iot.ca.usera@gmail.com",
+				"mobile": "09889778989"
+			},
+			"grammer": {
+				"ppt": "Place",
+				"patronId": 0
+			},
+			"categoryId": 4,
+			"accessibility": "Public",
+			"uxRankingOrder": 1,
+			"visible": true,
+			"note": "Magnificant"
+		}
+	],
+	"resourceShares": [
+		{
+			"id": 1,
+			"shareName": "Courts Are Us",
+			"reason": "Education",
+			"whitelist": 392436,
+			"blacklist": 1,
+			"duration": {
+				"start": "11/03/2018",
+				"end": "10/04/2018"
+			},
+			"costing": "+1%",
+			"handshake": false,
+			"resourcePoolId": 68538
+		}
+		,
+		{
+			"id": 2,
+			"shareName": "Pools Are Us",
+			"reason": "Health",
+			"whitelist": 1,
+			"blacklist": 392436,
+			"duration": {
+				"start": "11/01/2018",
+				"end": "10/01/2018"
+			},
+			"costing": "0%",
+			"handshake": false,
+			"resourcePoolId": 691109
+		}
+		,
+		{
+			"id": 3,
+			"shareName": "Rooms Are Us",
+			"reason": "Health",
+			"whitelist": 392436,
+			"blacklist": 1,
+			"duration": {
+				"start": "10/01/2018",
+				"end": "10/02/2018"
+			},
+			"costing": "-1%",
+			"handshake": false,
+			"resourcePoolId": 67611
+		}
+	],
+	"eventShares": [
+		{
+			"id": 1,
+			"shareName": "Courts Are Us",
+			"reason": "Education",
+			"whitelist": 392436,
+			"blacklist": 1,
+			"duration": {
+				"start": "11/03/2018",
+				"end": "10/04/2018"
+			},
+			"costing": "+1%",
+			"handshake": false,
+			"eventId": 147578
+		}
+		,
+		{
+			"id": 2,
+			"shareName": "Pools Are Us",
+			"reason": "Health",
+			"whitelist": 1,
+			"blacklist": 392436,
+			"duration": {
+				"start": "11/01/2018",
+				"end": "10/01/2018"
+			},
+			"costing": "0%",
+			"handshake": false,
+			"eventId": 743135
+		}
+		,
+		{
+			"id": 3,
+			"shareName": "Rooms Are Us",
+			"reason": "Health",
+			"whitelist": 392436,
+			"blacklist": 1,
+			"duration": {
+				"start": "10/01/2018",
+				"end": "10/02/2018"
+			},
+			"costing": "-1%",
+			"handshake": false,
+			"eventId": 971371
+		}
+		,
+		{
+			"id": 3,
+			"shareName": "Rooms Are Us",
+			"reason": "Health",
+			"whitelist": 392436,
+			"blacklist": 1,
+			"duration": {
+				"start": "10/01/2018",
+				"end": "10/02/2018"
+			},
+			"costing": "-1%",
+			"handshake": false,
+			"eventId": 438426
+		}
+	],
+	"businessRequests": [
+		{
+			"info": "**** This is a share instance a ticket, a business request , business platform ****",
+			"id": 100,
+
+			"routing": "**** Community / Destination *****",
+			"type": "subEvent",
+			"subEventId": 186096,
+			"senderId": 1,
+			"recipitients": [
+				{
+					"email": "tonyennis@yahoo.com",
+					"clientId": 1
+				}
+				,
+				{
+					"email": "tonygennis@gmail.com",
+					"clientId": 1
+				}
+			],
+
+			"payload": "***** The Meta Deal ******",
+			"shareName": "Pools Are Us",
+			"reshare": true,
+			"blacklist": [392436],
+			"category": "Health",
+			"reason": "Promotion",
+			"subject": "Activity Share Request",
+			"offeringPreview": "https://www.yahoo.com",
+
+			"openingOffer": "***** Post The Deal ******",
+			"trade": {
+				"ts": "now",
+				"status": "sold",
+				"businessRequestId": 100,
+				"comment": "I am glad to share this business asset with you, gratis!!, feel to reshare",
+				"cost": "+1%",
+				"reshare": "yes",
+				"releasedate": "1st Sept",
+				"duration": {
+					"start": "11/01/2018",
+					"end": "10/01/2018"
+				}
+			}
+		}
+		,
+		{
+			"info": "**** This is a share instance a ticket, a business request , business platform ****",
+			"id": 101,
+
+			"routing": "**** Community / Destination *****",
+			"type": "subEvent",
+			"subEventId": 451130,
+			"senderId": 1,
+			"recipitients": [
+				{
+					"email": "tonyennis@yahoo.com",
+					"clientId": 1
+				}
+				,
+				{
+					"email": "tonygennis@gmail.com",
+					"clientId": 1
+				}
+			],
+
+			"payload": "***** The Meta Deal ******",
+			"shareName": "Pools Are Us",
+			"reshare": true,
+			"blacklist": [392436],
+			"category": "Health",
+			"reason": "Promotion",
+			"subject": "Activity Share Request",
+			"offeringPreview": "https://www.yahoo.com",
+
+			"openingOffer": "***** Post The Deal ******",
+			"trade": {
+				"ts": "now",
+				"status": "sold",
+				"businessRequestId": 100,
+				"comment": "I am glad to share this business asset with you, gratis!!, feel to reshare",
+				"cost": "+1%",
+				"reshare": "yes",
+				"releasedate": "1st Sept",
+				"duration": {
+					"start": "11/01/2018",
+					"end": "10/01/2018"
+				}
+			}
+		}
+	]
+	,
+	"businessRequestsLog": [
+		{
+			"id": 1,
+			"reciptientId": 1234,
+			"businessRequestId": 100,
+			"ts": "lastest",
+			"comment": "Like the deal, but release date issue",
+			"cost": "accept",
+			"reshare": "accept",
+			"releasedate": "reject",
+			"duration": {
+				"start": "accept",
+				"end": "accept"
+			}
+		}
+		,
+		{
+			"id": 2,
+			"reciptientId": 186096,
+			"businessRequestId": 100,
+			"ts": "lastest",
+			"comment": "Like the deal,please consider me",
+			"cost": "accept",
+			"reshare": "accept",
+			"releasedate": "accept",
+			"duration": {
+				"start": "accept",
+				"end": "accept"
+			}
+		}
+
+	]
+	,
+	"resourceCostings": [
+		"-5%",
+		"-4%",
+		"-3%",
+		"-2%",
+		"-1%",
+		"0%",
+		"+1%",
+		"+2%",
+		"+3%",
+		"+4%",
+		"+5%"
+	]
+	,
+	"shareReasons": [
+		"Community Engagement",
+		"Free Programme",
+		"Business Growth",
+		"Promotion"
+	]
+	,
+	"shareTypes": [
+		"Health",
+		"Social",
+		"Education",
+		"Legal"
+	]
+	,
+	"constraints": [
+		{
+			"businessRequests": 5
+		}
+	]
+}

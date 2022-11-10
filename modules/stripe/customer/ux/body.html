@@ -1,0 +1,169 @@
+<img id="hdr" src=""/>
+<!--<span id="tagLine"></span>-->
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+    <h1>Sign Up</h1>
+    <h3>You will be able to enjoy all the services on offer very soon</h3>
+</div>
+
+<div class="w3-container w3-center" style="min-width: 80%">
+    <span id="menuBarXHook" class=""></span>
+</div>
+<br>
+<div class="w3-container" style="margin-left: 25%; min-width: 10%; margin-right: 25%;">
+
+    <div class="w3-center">
+        <!--<h3>Upon completing this sign-up form, check your email</h3>-->
+        <!--<h4>Only then will you be able to login.</h4>-->
+    </div>
+    <hr>
+
+
+    <label><b>First name</b></label>
+    <input id=firstname class="w3-input w3-hover-grey" type="text" value="" required title=""/> <br>
+    <label><b>Family name</b></label>
+    <input id=lastname class="w3-input w3-hover-grey" type="text" value="" required title=""/> <br>
+    <label><b>Gender</b></label>
+    <select id=gender class="w3-select w3-hover-grey" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=male>Male</option>
+        <option value=female>Female</option>
+    </select>
+    <br> <br>
+    <label><b>Email</b></label>
+    <input id=email class="w3-input w3-hover-grey" type="email" value="" required
+           pattern="[\w]+@[\w]+\.[\w]{2,}$"
+           title="A verification email will be sent to this address."/> <br>
+    <span id="emailMsg" class="w3-tag w3-yellow"></span><br>
+    <span>* This email, will be your username!</span><br>
+    <label><b>Mobile</b></label>
+    <input id=phone class="w3-input w3-hover-grey" type="text" value="" placeholder="Eg: 0877461000" required
+           pattern="0[\d]+$"
+           title="internation format [+CC +MOBILE], drop the zero between country code, and number"/> <br>
+    <span id="phoneMsg" class="w3-tag w3-yellow"></span><br>
+    <span>* This mobile number, will be your password!</span><br>
+
+    <label><b>Date Of Birth [YYYY MM DD] </b></label><br>
+    <input id="dob" class="w3-input w3-hover-grey" type="text" data-date="" data-date-format="YYYY MM DD"
+           pattern="[\d]{4}-[\d]{2}-[\d]{2}$"
+           placeholder="1972-30-01" title="">
+    <br>
+    <span id="dobMsg" class="w3-tag w3-yellow"></span><br>
+
+    <br>
+    <br>
+
+</div>
+
+<div class="w3-center " id="pac-card" style="margin-left: 0%; min-width: 100%; margin-right: 0%;">
+    <!--<div class="pac-card" id="pac-card">-->
+    <br>
+    <label><b>Enter complete street address here...</b></label><br>
+    <input id="pac-input" type="text" placeholder="Enter a location"
+           title="If you cannot see dropdown list, scroll to the bottom of your screen">
+    <br>
+</div>
+<br>
+<br>
+<div class="w3-container" style="margin-left: 25%; min-width: 10%; margin-right: 25%;">
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-2">Postal Address</a></li>
+            <li><a href="#tabs-3">Billing Address</a></li>
+            <li><a href="#tabs-4">Visual Geo Confirmation</a></li>
+            <li><a href="#tabs-1">Card Details</a></li>
+        </ul>
+
+        <div id="tabs-1">
+
+            <span id="addCardHook"></span>
+        </div>
+
+        <div id="tabs-2">
+            <!--			<div id="pac-container">
+                            <input id="pac-input" placeholder="Enter your address" onFocus="geolocate()" type="text"/><br>
+                        </div>-->
+
+
+            <div id="map"></div>
+            <div id="infowindow-content">
+                <img src="" width="16" height="16" id="place-icon">
+                <span id="place-name" class="title"></span><br>
+                <span id="place-address"></span>
+            </div>
+
+
+            <label><b>Address Line#1</b></label>
+            <input id=address1 class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+            <label><b>Address Line#2</b></label>
+            <input id=address2 class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+            <label><b>Town</b></label>
+            <input id=town class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+            <label><b>City</b></label>
+            <input id=city class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+            <label><b>Zip Code</b></label>
+            <input id=zip class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+            <label><b>Country</b></label>
+            <input id=country class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+        </div>
+        <div id="tabs-3">
+
+            <label><b>Is billing address same as postal address?</b></label>
+            <input id=billingAddress class="w3-input w3-hover-grey" type="checkbox" required/> <br>
+
+            <label><b>Address Line#1</b></label>
+            <input id=address1Billing class="w3-input w3-hover-grey ba" type="text" value="" required/> <br>
+            <label><b>Address Line#2</b></label>
+            <input id=address2Billing class="w3-input w3-hover-grey ba" type="text" value="" required/> <br>
+            <label><b>Town</b></label>
+            <input id=townBilling class="w3-input w3-hover-grey ba" type="text" value="" required/> <br>
+            <label><b>City</b></label>
+            <input id=cityBilling class="w3-input w3-hover-grey ba" type="text" value="" required/> <br>
+            <label><b>Zip Code</b></label>
+            <input id=zipBilling class="w3-input w3-hover-grey sa" type="text" value="" required/> <br>
+            <label><b>Country</b></label>
+            <input id=countryBilling class="w3-input w3-hover-grey ba" type="text" value="" required/> <br>
+        </div>
+
+        <div id="tabs-4" class="w3-container " style="display: none">
+            <label><b>Is this location same as postal address?</b></label>
+            <input id=locationAddress class="w3-input w3-hover-grey" type="checkbox" required/> <br>
+
+            <br>
+            <!--https://www.maps.ie/create-google-map/-->
+            <div class="w3-container w3-center" style="width: 100%">
+                <iframe style="width:100%; height:600px" frameborder="0" scrolling="no" marginheight="0"
+                        marginwidth="0"></iframe>
+            </div>
+            <span id=lng></span>
+            <span id=lat></span>
+            <span id=hgt></span>
+        </div>
+    </div>
+
+    <div class="w3-center">
+        <br>
+        <br>
+        <hr>
+        <span id="msgConfirmation"></span>
+        <hr>
+        <br>
+        <br>
+    </div>
+
+    <br>
+
+    <button id=saveCustomer class="w3-button w3-block w3-light-grey w3-section w3-padding">Save</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFw5MrTjf1C880bHyZbq3upB6gEyCTiig&libraries=places&callback=initAutocomplete"
+        async defer></script>

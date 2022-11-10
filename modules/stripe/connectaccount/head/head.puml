@@ -1,0 +1,89 @@
+@startuml
+autonumber 1 "<b>(<u>##</u>)"
+
+== Start Page Load Sequence ==
+Client -> Client: Opens URL
+MBP-->MBP: Presents Account Creation Form
+alt HostId Present
+MBP-->MBP: Inits AccountId with HostId
+MBP --> AccountService: Gets HostId Account Details
+note left
+Host Account Information
+is presented to the invitee
+for review
+end note
+end
+
+== Start Controller Sequence ==
+Client --> MBP: client saves form.
+note left
+Tester should ensure console logs preserve checkbox is enabled,
+as page is redirected to home page.
+end note
+
+== Start Controller Sequence ==
+MBP --> GoogleDns: Create DNS Record
+MBP --> AccountService: Create Connect Account
+note left
+1. dns name is validated
+2. email is validated pattern="[\w]+@[\w]+\.[\w]{2,}$"
+3. email is not checked for uniqueness at this stage, only at account creation.
+4. phone is validated. pattern="0[\w]{4,}"
+!!!Validation means the save button is disabled!!!
+end note
+MBP --> CustomerService: Create Connect Customer
+
+MBP --> Db: Create Customer DB Record (Type=Connect)
+MBP --> CustomerService: Create Platform Customer
+MBP --> Db: Update Customer DB Record (Type=Platform)
+
+alt HostId Present
+MBP --> AccountService: Get Existing Account MetaData
+MBP --> AccountService: add new Invitee Account To AccountAddMeta List
+else doNothing
+end
+
+== Options Model ==
+
+
+== Comms ==
+MBP --> MailService: POSTs out new Account Payload (client)
+note left
+Sample Invitee mail snip.
+Signup Date: 24/09/2020, 09:46:50
+First Name: anto
+Surname: ennis
+Email: user1@mybusinesspal.com
+Contact Number: 0877461070
+Business URL: [[https://indi1remote.mybusinesspal.com/ aka DNS Record]]
+Account Key: acct_1HUq6ADDvFOdgyyy
+Admin Username: user1@mybusinesspal.com
+Password: 0877461070
+[[https://www.mybusinesspal.com/services/modules/business/dashboard/release/home.jsp?accountId=acct_1GRdJxF6KR5nnzB2&originId=acct_1GRdJxF6KR5nnzB2 Dashboard Link]]
+note end.
+MBP --> MailService: POSTs out new Account Payload (accounts@mybusinesspal.com)
+
+note left
+This is an API entry point
+end note
+MailService --> Client: Send Confirmation Mail To Account Holder(CFO)
+note left
+The following urls are presented to client
+1. [[https://www.mybusinesspal.com/services/modules/business/dashboard/release/home.jsp?accountId=acct_1GRdJxF6KR5nnzB2&originId=acct_1GRdJxF6KR5nnzB2 Dashboard Link]]
+end note
+
+MBP -> Client: Presents client with confirmation of new account creation
+note left
+At this point you can log into Stripe and review account details
+[[http://plantuml.com/sequence Platform ]]
+[[http://plantuml.com/sequence New Conencted Account ]]
+end note
+
+Client->Client: Create Admin User [[https://www.mybusinesspal.com/services/modules/stripe/customer/release/customer.jsp?accountId=acct_1GRdJxF6KR5nnzB2&accountIdP=acct_1GRdJxF6KR5nnzB2&accountIdC=acct_1GRdJxF6KR5nnzB2&originId=dashboard Example]]
+
+Client->Client: Signup to Subscription Plan
+Client->Client: Onboard To Payments/Billing
+Client->Client: Provision Platform
+Client->Client: Announce to community new services, activity, shop items...
+Client->Client: Allow customers to explore service.
+@enduml

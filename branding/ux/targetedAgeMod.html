@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<br>
+<br>
+<div class="w3-container w3-center">
+	<h4>Existing Content</h4>
+	<label>Select to modify</label>
+	<span class="existingList"  ></span>
+</div>
+<br>
+<hr>
+<br>
+
+
+
+<fieldset id=groupAge  class="w3-padding-32 w3-center">
+	<legend><b>Branding Target - Age </b></legend>
+	VIPs <input class="w3-radio age"  type="radio" name="groupAge" value="vip">
+	60s <input class="w3-radio age"  type="radio" name="groupAge" value="60s">
+	50s <input class="w3-radio age"  type="radio" name="groupAge" value="50s">
+	40s <input class="w3-radio age"  type="radio" name="groupAge" value="40s">
+	30s <input class="w3-radio age"  type="radio" name="groupAge" value="30s" >
+	20s <input class="w3-radio age"   type="radio" name="groupAge" value="20s">
+	Teens <input class="w3-radio age"  type="radio" name="groupAge" value="teens">
+	Kids <input class="w3-radio age"   type="radio" name="groupAge" value="kids">
+</fieldset>
+<br>
+
+
+
+
+
+
+
+<br>
+<label><b>Tag Line</b></label><br>
+<input class="tagLine w3-input w3-hover-grey" type="text" value="" placeholder="Eg: IBM Rocks" required>
+<br>
+<label><b>Publish Date</b></label>
+<input  class="publishDate w3-input w3-hover-grey" type="date" value="" required title=""/> <br>
+<br> <hr> <br>
+
+<fieldset class="w3-padding-32 w3-center">
+	<legend><b>Site Branding </b></legend>
+	<label>Page Title</label>
+	<input class="title w3-input w3-hover-grey" type="text" value="" required title=""/>
+	<br>
+	<br>
+
+	<div class="w3-row" >
+		<div class="w3-half" >
+			<label>Fav Icon</label><br>
+			<form id="frmBrandingFavIcon">
+				<input name=brandingFavIcon class="w3-input w3-hover-grey" type="file" accept="image/*" required/><br>
+			</form>
+		</div>
+		<div class="w3-half" >
+			<img id=brandingFavIcon  src="" ><br>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="w3-row" >
+		<div class="w3-half" >
+			<label>Banner Image</label><br>
+			<form id="frmBrandingHdrImg">
+				<input name="brandingHdrImg" class="w3-input w3-hover-grey" type="file" accept="image/*" required/><br>
+			</form>
+		</div>
+		<div class="w3-half" >
+			<img id=brandingHdrImg  style="margin-left: 10%; width: 80%; margin-right: 10%"  border="1"   src=""/><br>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="w3-row" >
+		<div class="w3-half" >
+			<label>Footer Image</label><br>
+			<form id="frmUploadImgTdr">
+				<input name="brandingTdrImg" class="w3-input w3-hover-grey" type="file" accept="image/*" required/><br>
+			</form>
+		</div>
+		<div class="w3-half" >
+			<img id=brandingTdrImg style="margin-left: 10%; width: 80%; margin-right: 10%"   border="1"  src=""/><br>
+		</div>
+	</div>
+</fieldset>
+<br>
+<br>
+
+
+
+
+
+
+
+<br><br>
+<button id=delete class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-delete"  >Delete</button>
+<button id=update class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right"  >Update</button>
+<br><br>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<div class="w3-container w3-center w3-mobile w3-white">
+
+    <div class="w3-row-padding  ">
+        <div class="w3-half">
+            <div class="w3-container">
+                <p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-container">
+                <p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+    <h1>Payment Options</h1>
+    <h3>Select a plan that best suit your customer base!</h3>
+</div>
+
+
+<div class="w3-center">
+    <span id="menuBarHook" class="">menubar</span>
+</div>
+<br>
+
+
+<div class="w3-container" style="margin-left: 35%; min-width: 30%; margin-right: 35%;">
+    <div class="w3-center">
+        <br>
+        <span id="msg"></span>
+        <br>
+        <br>
+    </div>
+
+    <label><b>Payment Plan</b></label>
+    <fieldset class="w3-center w3-padding-16">
+        <legend> Options</legend>
+        <input id=entry name="sp" type="radio" value="150"> Entry Level
+        <input id=pro name="sp" type="radio" value="450"> Professional
+        <input id=pre name="sp" type="radio" value="600"> Premium
+        <br>
+        <br>
+        <span>You can always update later via the support channels</span>
+    </fieldset>
+    <br>
+    <label><b>Click here if you want to start on trail basis?</b></label>
+    <br>
+    <input id=trial type="checkbox" required title=""/> <span>30 Day Free Trial Plan </span>
+
+    <br>
+    <br>
+
+    <label><b>Selected plan costs</b></label>
+    <br>
+    <div class="w3-center">
+        <span id=cost class="fa fa-euro" style="font-size:48px;color:green"> 0 </span> <br>
+    </div>
+    <br>
+    <!--	<br>
+        <button id=save  disabled class="w3-button w3-block w3-light-grey w3-section w3-padding" >Share Now</button>-->
+
+    <!--Non Trial Based Plan-->
+    <label><b>Select Billing Cycle</b></label>
+    <select id=count multiple="" size="6" disabled class="w3-select w3-hover-grey" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=1>Monthly</option>
+        <option value=3>Billed Every 3 Months</option>
+        <option value=6>Billed Every 6 Months</option>
+        <option value=12>Billed For 1 Year</option>
+    </select>
+    <br>
+    <br>
+
+    <label><b>Should this plan be tagged as recurring?</b></label>
+    <br>
+    <input id=recurring checked type="checkbox" required title=""/>
+    <span>For convenience, recurring  billing is enabled by default.</span>
+    <br>
+    <br>
+
+    <label><b>Enter coupon code to redeem your discount</b></label>
+    <input id=coupon class="w3-input w3-hover-grey" type="text" required title=""/> <br>
+
+    <!--// AddDestinationCharge - charge the account not admin!!!-->
+    <!--	<span id="cardMsg">You have no card associated with the account, please add </span>
+        <button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding" >Add Card Details</button>-->
+
+    <br>
+    <button id=saveOnboardingSub class="w3-button w3-block w3-light-grey w3-section w3-padding">Subscribe Now</button>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 11556993;
+    (function () {
+        var lc = document.createElement('script');
+        lc.type = 'text/javascript';
+        lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(lc, s);
+    })();
+</script>

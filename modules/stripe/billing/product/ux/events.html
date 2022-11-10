@@ -1,0 +1,278 @@
+<h3>Insight: Your revenue potential starts here!</h3>
+<fieldset>
+    <legend><b>Business Assets</b></legend>
+    <label>Catalogue Existing Event Items</label>
+    <span id="eventItemHook"></span>
+    <br>
+
+    <label>Upstream assets available!</label>
+    <span id="eventResourceHook"></span>
+    <br>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Event Item Profile</b></legend>
+    <label>Alias</label>
+    <input class="w3-input w3-hover-grey name" type="text" value="" required title=""/> <br>
+
+    <label>Description</label>
+    <textarea class=description style="width: 100%; height: 50px" required
+              title="As will be read by customers"> </textarea>
+
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addMetaEvent">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<span class=customerListHook></span><br>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Time Management</b></legend>
+    <!--	<label>Insurance Management</label>
+        <span id="uxAssetCapacityWidget"></span>
+        <br>-->
+
+    <!--		<label>Time Management</label>
+            <span id="uxAssetBusinessHoursWidget"></span>
+            <br>-->
+    <label>Time Management Management</label>
+    <div class="w3-center">
+        <button id=mgtFixtures class="w3-button w3-round-large w3-blue w3-padding">Event Fixture Dates
+        </button>
+    </div>
+    <br>
+
+<!--    <div id="divLeasingOptions">-->
+<!--        <fieldset>-->
+<!--            <legend><b>Leasing Options</b></legend>-->
+<!--            <span>Select payment option that is right for you. Q. Are you more of a subscription guy, or a time-based billing guy!</span>-->
+<!--            <span id="uxAssetTbbWidget"></span>-->
+<!--            &lt;!&ndash;		<span id="uxAssetSbbWidget"></span>-->
+<!--                    <span id="uxAssetSbbWidgetMsg"></span>&ndash;&gt;-->
+<!--        </fieldset>-->
+<!--    </div>-->
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Revenue Stream Management</b></legend>
+    <span class="w3-tag w3-yellow revenueMsg"></span>
+    <br>
+
+    <p>Seating plans, and costs are determined here!</p>
+    <div class="w3-center">
+        <button id=mgtSeatingGrades class="w3-button w3-round-large w3-blue w3-padding">Revenue Stream
+        </button>
+    </div>
+
+    <br>
+    <label>Apply customer discount</label>
+    <select class="w3-select w3-hover-grey discount" required
+            title="Here is where you get to charge your customers, you can opt to give them a discount at the same too">
+        <option value="" disabled selected>Please Select</option>
+        <option value=0>N/A</option>
+        <option value=5>5%</option>
+        <option value=10>10%</option>
+        <option value=15>15%</option>
+        <option value=25>25%</option>
+    </select>
+    <label>Ready for sell now?</label>
+    <select class="w3-select w3-hover-grey sellable"
+            title="If you set this a 'No' it will not be displayed to customers to buy." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=true>Yes</option>
+        <option value=false>No</option>
+    </select>
+    <br>
+    <br>
+
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addRevenueEvent">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Multimedia Content: Events</b></legend>
+    <span>High quality pictures and videos advised</span><br>
+    <span>The order in which the content is presented here, is the order in which they will be displayed to your customers</span><br>
+    <span>Content should be mindful of community guidelines</span><br>
+    <span>Min. Image size: 200px By 200px</span>
+
+    <br>
+    <span class="w3-tag w3-yellow">Be sure to click on the 'Add' button before switching to a different media item tab, else your item will be overwritten!</span><br>
+    <br>
+
+    <div id="tabsMediaEvents">
+        <ul>
+            <li><a href="#tabsMediaEvents-1"> <span title="Presentation Image which is customer facing"
+                                                    class="w3-padding ">Image#1</span> </a></li>
+            <li><a href="#tabsMediaEvents-2"> <span class="w3-padding ">Image#2</span></a></li>
+            <li><a href="#tabsMediaEvents-3"> <span class="w3-padding ">Image#3</span></a></li>
+            <li><a href="#tabsMediaEvents-4"> <span class="w3-padding ">Promo Video</span></a></li>
+            <li><a href="#tabsMediaEvents-5"> <span class="w3-padding ">Facebook</span></a></li>
+        </ul>
+        <div id="tabsMediaEvents-1">
+            <fieldset>
+                <br>
+                <div class="w3-half">
+                    <label>Header</label>
+                    <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                    <label>Description</label>
+                    <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                    <label><b>Headline Image</b></label>
+                    <form id="frmIcon1Event">
+                        Image#1: <input id="iconName1Event" name="iconNameEvent" type="file"
+                                        class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                    </form>
+
+                    <br>
+                    <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+                </div>
+                <div class="w3-half w3-center">
+                    <img src="" id=imgiconName1Event><br>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaEvents-2">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label><b>Headline Image</b></label>
+                        <form id="frmIcon2Event">
+                            Image#2: <input id="iconName2Event" name="iconNameEvent" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+
+                        <br>
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <img src="" id=imgiconName2Event><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="tabsMediaEvents-3">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label><b>Headline Image</b></label>
+                        <form id="frmIcon3Event">
+                            Image#3: <input id="iconName3Event" name="iconNameEvent" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <img src="" id=imgiconName3Event><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaEvents-4">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <label><b>Video</b></label>
+                        <form id="frmDocFrontEvent">
+                            <input id="eventVideoUpload" name="frontx_1" type="file" class="w3-input " accept="video/*"
+                                   title=""/><br>
+                        </form>
+                        <br>
+
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id=eventVideo width=400 controls autoplay>
+                            <source id=eventVideoUploadOutput type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaEvents-5">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label><b>Facebook Link....click <a id="facebookHowTo" href=facebook-howto.png target="_top">here</a>
+                            to find out how to insert facebook video into site </b></label>
+                        <input id="eventFacebookUpload" type="text" class="w3-input"
+                               placeholder="Eg: https://www.facebook.com/facebook/videos/10153231379946729/"
+                               title=""/><br>
+
+                        <br>
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <iframe
+                                id="eventFacebookUploadOutput"
+                                src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F10153231379946729%2F&show_text=true&width=734&height=502&appId"
+                                width="400" height="200"
+                                style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                                allowTransparency="true" allow="encrypted-media" allowFullScreen="true">
+                        </iframe>
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+    </div>
+    <!--<button id=btnPurchaseBranding class="w3-btn w3-round-xxlarge w3-padding-large w3-green w3-right" >Buy</button>-->
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+
+<!--<button id=previewEvents class="w3-button w3-block w3-light-grey w3-section w3-padding">Preview</button>-->
+<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding saveEvents">Save</button>

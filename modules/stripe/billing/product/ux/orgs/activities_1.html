@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<div class="w3-container w3-center w3-mobile w3-white">
+
+	<div class="w3-row-padding  " >
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+			</div>
+		</div>
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+	<h1>Activity Management</h1>
+	<h3>Insight: Your revenue potential starts here!</h3>
+</div>
+
+
+<canvas id="canvas" width="5" height="5" hidden></canvas>
+
+<div id="dialogTbb" title="Activity Revenue Stream Management" class="w3-container w3-center w3-yellow">
+	<span id="moneymanagementHook"></span>
+</div>
+<div id="dialogBusinessHours" title="Activity Availability Management" class="w3-container w3-center w3-yellow">
+	<span id="businessHoursHook"></span>
+</div>
+
+<div id="dialogSeatingGrade" title="Revenue Stream Management" class="w3-container w3-center w3-yellow">
+	<span id="seatingGradeHook"></span>
+</div>
+
+<div id="dialogFixtures" title="Time Management" class="w3-container w3-center w3-yellow">
+	<span id="eventFixturesHook"></span>
+</div>
+
+<div id="dialogUsageSummary" style="min-width: 100% " title="Business Asset Detail" class="w3-container w3-center w3-yellow">
+	<span class="uxAssetSummaryWidget"></span>
+</div>
+
+<span id="uxLoading"></span>
+<div class="w3-container" style="margin-left: 10%; min-width: 80%; margin-right: 10%;" >
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Activity Detail</h4>
+	</div>
+	<!--	<fieldset >
+			<div class="w3-center">
+
+				<legend>Choose Billing Increment</legend>
+				<input type="radio" name="tbbOptions" value="minutes">Minutes
+				<input type="radio" name="tbbOptions" value="hours">Hours
+				<input type="radio" name="tbbOptions" value="days">Days
+				<input type="radio" name="tbbOptions" value="weeks">Weeks
+			</div>
+		</fieldset>-->
+	<fieldset >
+		<label><b>Title</b></label>
+		<input id=name class="w3-input w3-hover-grey" type="text" value="" required title=""/> <br>
+
+		<label><b>Description</b></label>
+		<textarea  id=description  style="width: 100%; height: 50px" required title="As will be read by customers" > </textarea>
+		<br>
+		<br>
+		<label><u>Inquiry Details</u></label>
+		<br>
+		<label><b>Point of contact name</b></label>
+		<input id=poc_name class="w3-input w3-hover-grey" type="text" value="" required title=""/> <br>
+		<label><b>Email address to be contacted on</b></label>
+		<input id=poc_email class="w3-input w3-hover-grey" type="email" value="" required title=""/> <br>
+		<label><b>Phone number</b></label>
+		<input id=poc_phone class="w3-input w3-hover-grey" type="tel" value="" required title=""/> <br>
+		<label><u>Location Management</u></label>
+		<button id=mgtLocationMgt class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage!</button>
+	</fieldset>
+
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Business Profile</h4>
+	</div>
+	<fieldset >
+		<label><b>Identify Asset</b></label>
+		<span id="resourceHook"></span>
+		<br>
+		<label><b>Want to register a business asset of your own?</b></label>
+		<button id=loadAssets class="w3-button w3-block w3-light-grey w3-section w3-padding" >Add New Asset</button>
+		<label><b>Insurance Management</b></label>
+		<span id="uxAssetCapacityWidget"></span>
+
+		<label><b>Time Management</b></label>
+		<span id="uxAssetBusinessHoursWidget"></span>
+
+		<label><b>Availability Management</b></label>
+		<button id=mgtAvailability class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage!</button>
+
+	</fieldset>
+
+	<div id="divLeasingOptions">
+		<fieldset >
+			<legend><b>Leasing Options</b></legend>
+			<span>Select payment option that is right for you. Q. Are you more of a subscription guy, or a time-based billing guy!</span>
+			<span id="uxAssetTbbWidget"></span>
+			<!--		<span id="uxAssetSbbWidget"></span>
+					<span id="uxAssetSbbWidgetMsg"></span>-->
+		</fieldset>
+	</div>
+	<fieldset >
+		<legend><b>Revenue Stream Management</b></legend>
+
+		<p><b>Here is where you get to charge your customers, you can opt to give them a discount at the same too</b></p>
+		<label><b>Offer Customer Discount</b></label>
+		<select id=couponId class="w3-select w3-hover-grey"  required>
+			<option value="" disabled selected>Please Select</option>
+			<option value=0 >N/A</option>
+			<option value=5 >5%</option>
+			<option value=10 >10%</option>
+			<option value=15 >15%</option>
+			<option value=25 >25%</option>
+		</select>
+		<label><b>Ready for sell now?</b></label>
+		<select id=sellable class="w3-select w3-hover-grey"  title="If you set this a 'No' it will not be displayed to customers to buy." required>
+			<option value="" disabled selected>Please Select</option>
+			<option value=true>Yes</option>
+			<option value=false>No</option>
+		</select>
+		<p><b>Time based billing costs are determined here!</b></p>
+		<button id=mgtTbb class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage!</button>
+		<br>
+		<label><b>Terms and Conditions Link</b></label>
+		<input id=tnc class="w3-input w3-hover-grey" type="url" value="" required title="Terms and conditions support the sale"/> <br>
+	</fieldset>
+
+
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Social Media Builder</h4>
+	</div>
+
+	<fieldset >
+		<legend>Carousel Gallery: High quality photos advised</legend>
+		<form id="frmIcon1">
+			<input id="iconName1"   name="iconName" type="file" class="w3-input w3-hover-grey" accept="image/*"  title=""/><br>
+		</form>
+		<form id="frmIcon2">
+			<input id="iconName2"   name="iconName" type="file" class="w3-input w3-hover-grey" accept="image/*"  title=""/><br>
+		</form>
+		<form id="frmIcon3">
+			<input id="iconName3"   name="iconName" type="file" class="w3-input w3-hover-grey" accept="image/*"  title=""/><br>
+		</form>
+		<form id="frmIcon4">
+			<input id="iconName4"   name="iconName" type="file" class="w3-input w3-hover-grey" accept="image/*"  title=""/><br>
+		</form>
+		<form id="frmIcon5">
+			<input id="iconName5"   name="iconName" type="file" class="w3-input w3-hover-grey" accept="image/*"  title=""/><br>
+		</form>
+	</fieldset>
+
+
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Form Submission</h4>
+	</div>
+
+	<fieldset >
+		<legend><b>Form Registration Completion</b></legend>
+		<p>Assets are the building blocks, on which your business is developes, the more assets you onboard, the more events, you can host, the more activities your can promote!<br><br> When considering asset managment, dont just consider your infrastructure, but also consider your staff, your partnes, your afflicates.<br><br>Finally aassets can also be registered as items of sale too, so be decerning about your business, they are form the start of a great relationship!</p>
+
+
+		<button id=save  class="w3-button w3-block w3-light-grey w3-section w3-padding" >Save</button>
+	</fieldset>
+
+</div>

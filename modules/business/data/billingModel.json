@@ -1,0 +1,52 @@
+[
+	{
+		"name": "default",
+		"version": 0.1,
+		"stripe": {
+			"stripCCPerCost": 1.40,
+			"stripCCFixCost": 0.25
+		},
+		"iot": {
+			"bookingUsage": false,
+			"bookingCost": 0.00,
+			"bookingFeeCost": 0.30,
+
+			"availabilityUsage": false,
+			"availabilityCost": 0.00,
+			"availabilityFeeCost": 0.30,
+
+			"smsUsage": false,
+			"smsCost": 0.20,
+			"smsFeeCost": 0.30,
+
+			"pnpUsage": false,
+			"pnpCost": 0.0,
+			"pnpFeeCost": 0.30,
+
+			"inventoryUsage": false,
+			"inventoryCost": 0.0,
+			"inventoryFeeCost": 0.30,
+
+			"emailUsage": false,
+			"emailCost": 0.10,
+			"emailFeeCost": 0.30,
+
+			"messagingUsage": false,
+			"messagingCost": 0.10,
+			"messagingFeeCost": 0.30,
+
+			"brandingUsage": false,
+			"brandingCost": 0.10,
+			"brandingFeeCost": 0.30,
+
+			"supportUsage": false,
+			"supportCost": 0.10,
+			"supportFeeCost": 0.30,
+
+			"applicationPerFee": 5.00
+		},
+		"members": [
+			"xxxx"
+		]
+	}
+]

@@ -1,0 +1,119 @@
+@startuml
+autonumber 1 "<b>(<u>##</u>)"
+
+Customer -> Customer: Click on new customer link
+note left
+New Customer [[http://localhost:8084/services/modules/stripe/customer/release/customer.jsp?accountId=acct_1HR0M7B5TxLur0iI Customer Create]]
+end note
+
+Browser -> Browser: Loads Page
+MBP -> MBP: Assigns primary account number to accountId
+== Ownership Transition#1 ==
+Customer -> Customer: Add Personal Info
+note left
+* email is used as username
+* email is used to uniquely ID any issuer on the platform!
+* email is validated for uniqueness
+* email is validated for form
+ pattern="[\w]+@[\w]+\.[\w]{2,}$"
+end note
+
+note right
+* phone is validated for form
+ pattern="0[\w]{4,}"
+* phone is used as password
+ * DOB is validated for form
+ pattern="[\d]{4}-[\d]{2}-[\d]{2}$"
+end note
+
+Customer -> Customer: Adds Address Info
+Customer -> Customer: Adds Payment Source Info(Card)
+note left
+* name on card is validated for form
+pattern="[\w]{2,50}$"
+* csv is validated for form: pattern="[\d]{3}$"
+* long number [\d]{10,18}$
+* year
+1. pattern="[\d]{4}$"
+2. min 2020, max 2050
+
+* month is validated for form
+1. pattern="[\d]{1,2}$"
+2. min 1, max 12.
+
+end note
+Customer -> Customer: Adds Payment Source Info(Sepa)?
+Customer -> Customer: Saves Information
+
+== Ownership Transition#1 ==
+MBP -> MBP: Create primary customer in stripe
+note left
+check stripe for new account with payment source!
+[[https://dashboard.stripe.com/acct_1HQBy6CZKWKKKlql/connect/accounts/acct_1HQBy6CZKWKKKlql Account Settings]]
+[[https://dashboard.stripe.com/acct_1HQBy6CZKWKKKlql/customers Customer Listing]]
+end note
+MBP -> MBP: Mail out primary customer details
+MBP -> MBP: create customer shadow db
+note left
+[[https://iottech-0d28.restdb.io/home/db/iottech-0d28/cards/5f4e37384ddf8b6c0004b46d Customer DB ]]
+end note
+note left
+Customer can login now
++
+purchase from primary account
+end note
+MBP -> MBP: Get account list from primary Account
+
+== Ownership Transition#1 ==
+Customer -> Customer: Do you agree?
+note left
+for your customer details
+to be cloned
+in a new community account
+end note
+
+loop for each community account
+Customer -> MBP: Yes
+MBP -> MBP: create customer on new account member
+MBP -> MBP: create payment source new account member
+MBP -> MBP: update customer shadow db
+note left
+[[https://iottech-0d28.restdb.io/home/db/iottech-0d28/cards/5f4e37384ddf8b6c0004b46d Customer DB ]]
+end note
+end loop
+Customer -> MBP: No
+MBP -> MBP: disable all community entities from purchasing/booking.
+
+== Customer Email ==
+Customer -> Customer: Read new customer account email
+note left
+Example Email Format.
+--
+Joining Date: 24 Sep 2020 09:20:13 GMT
+First Name: anto
+Family Name: ennis
+Email: user2@mybusinesspal.com
+Phone: 0877461070
+Account Key: acct_1GRdJxF6KR5nnzB2
+Customer Key: cus_I50dyUcCLP3Fze
+--
+--
+Login Details
+Username: user2@mybusinesspal.com
+Password: 0877461070
+Access URL: [[https://www.mybusinesspal.com/services/modules/stripe/customer/login/release/users.jsp?accountId=acct_1GRdJxF6KR5nnzB2 Login (PrimaryAccountID)]]
+end note
+
+Customer -> Customer: clicks on login  link
+Customer -> Customer: is presented with login page
+Customer -> Customer: fills enters username / password
+note left
+Tester:
+1. Do positive test
+2. Do negative test!
+end note
+Customer -> Customer: clicks on loing
+
+MBP -> MBP: Starts Authentication Sequence
+
+@enduml

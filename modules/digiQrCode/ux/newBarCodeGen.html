@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<span id="targetMessage"><br></span>
+<div class="w3-center w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+	<fieldset>
+		<legend><b>Identify</b></legend>
+		<label><b>Associated Business Entity</b></label>
+		<span class="existingList"></span>
+		<br>
+
+		<div class="ui form">
+			<div class="grouped fields">
+				<div class="ui selection dropdown barcodes">
+					<input type="hidden" id=barcodeFormat>
+					<i class="dropdown icon"></i>
+					<div class="default text">Bar Code</div>
+					<div class="menu">
+						<div class="item" data-value="CODE128">CODE128</div>
+						<div class="item" data-value="CODE39">CODE39</div>
+						<div class="item" data-value="EAN13">EAN-13, EAN-8, EAN-5, EAN-2)</div>
+						<div class="item" data-value="UPC">UPC (A)</div>
+						<div class="item" data-value="ITF">ITF, ITF-14</div>
+						<div class="item" data-value="MSI">MSI, MSI10, MSI11, MSI1010, MSI1110</div>
+						<div class="item" data-value="pharmacode">Pharmacode</div>
+						<div class="item" data-value="codabar">Codabar</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<label><b>Notes</b></label> <br>
+		<textarea id="notes" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+			  placeholder="Eg: Text Data"
+			  required></textarea>
+		<button id="btnBarCodeGen" class="w3-btn w3-round-xxlarge w3-padding-large w3-light-grey w3-right">Generate</button>
+		<br>
+		<br>
+		<br>
+		<hr>
+		<br>
+		<canvas id="barcode"></canvas>
+
+
+		<br>
+		<hr>
+		<br>
+
+	</fieldset>
+
+</div>
+<br>
+
+<br>
+<button id="save" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Add</button>
+<br>
+
+
+
+
+

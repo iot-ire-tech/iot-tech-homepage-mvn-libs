@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<br> <hr> <br>
+
+<div id="hdr" class="w3-container " style="display: none">
+	<label>Tag Line</label> <br>
+	<input id=tagLine class="w3-input w3-hover-grey" placeholder = "Eg: Squash Court Zone" value="" required="">
+	<br> <br>
+
+	<div id="external" class="w3-container " style="display: none">
+		<label>Number</label>
+		<input id=number class="w3-input w3-hover-grey" value="">
+		<label>Street</label>
+		<input id=street class="w3-input w3-hover-grey" required value="">
+		<label>Town</label><input id=town class="w3-input w3-hover-grey" value="">
+		<label>Zip/Postal Code</label><input id=zip class="w3-input w3-hover-grey" value="">
+		<label>City</label><input id=city class="w3-input w3-hover-grey" value="">
+		<label>Country</label><input id=country class="w3-input w3-hover-grey" value="">
+		<br>
+		<br>
+	</div>
+	<div id="campus" class="w3-container " style="display: none">
+		<label>Building</label>
+		<input id=building class="w3-input w3-hover-grey" value="">
+		<label>Department</label>
+		<input id=department class="w3-input w3-hover-grey" value="">
+		<label>Zone</label>
+		<input id=zone class="w3-input w3-hover-grey" value="">
+		<label>Floor</label>
+		<input id=floor class="w3-input w3-hover-grey" value="">
+		<label>Number</label>
+		<input id=campus_number class="w3-input w3-hover-grey" value="">
+	</div>
+	<div id="gps" class="w3-container " style="display: none">
+		<label>Latitude</label><input id=gpsLat class="w3-input w3-hover-grey" >
+		<label>Long</label><input id=gpsLong class="w3-input w3-hover-grey" >
+		<label>Zoom [1-21]</label><input id=gpsHgt class="w3-input w3-hover-grey" >
+		<br>
+		<button id="refresh" class="w3-btn w3-round w3-padding-large w3-gray w3-right">Update Map</button>
+		<br>
+		<br>
+		<!--https://www.maps.ie/create-google-map/-->
+		<div class="w3-container w3-center" style="width: 100%">
+			<iframe style="width:100%; height:600px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"> </iframe>
+
+		</div>
+	</div>
+
+
+
+
+
+	<br>
+	<button id="save" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Add</button>
+	<br>
+</div>

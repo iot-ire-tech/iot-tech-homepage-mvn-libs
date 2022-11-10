@@ -1,0 +1,60 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.mybusinesspal.com/</loc>
+        <lastmod>2020-09-05T09:11:26.145Z</lastmod>
+        <priority>1.0</priority>
+        <changefreq>always</changefreq>
+        <image:image>
+            <image:loc>https://www.mybusinesspal.com/logo.jpg?v=1583284408</image:loc>
+            <image:title>MyBusinessPal.Com</image:title>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://mybusinesspal.com/</loc>
+        <lastmod>2020-09-05T09:11:26.145Z</lastmod>
+        <priority>0.9</priority>
+        <changefreq>always</changefreq>
+        <image:image>
+            <image:loc>https://mybusinesspal.com/logo.jpg?v=1583284408</image:loc>
+            <image:title>MyBusinessPal.Com</image:title>
+        </image:image>
+    </url>
+    <!--    <url>-->
+    <!--        <loc>https://mybusinesspal.com/contactus.jsp</loc>-->
+    <!--        <lastmod>2020-09-05T09:11:26.145Z</lastmod>-->
+    <!--        <changefreq>always</changefreq>-->
+    <!--        <image:image>-->
+    <!--            <image:loc>https://mybusinesspal.com/logo.jpg?v=1583284408</image:loc>-->
+    <!--            <image:title>MyBusinessPal.Com</image:title>-->
+    <!--        </image:image>-->
+    <!--    </url>-->
+    <!--    <url>-->
+    <!--        <loc>https://mybusinesspal.com/pricing.jsp</loc>-->
+    <!--        <lastmod>2020-09-05T09:11:26.145Z</lastmod>-->
+    <!--        <changefreq>always</changefreq>-->
+    <!--        <image:image>-->
+    <!--            <image:loc>https://mybusinesspal.com/logo.jpg?v=1583284408</image:loc>-->
+    <!--            <image:title>MyBusinessPal.Com</image:title>-->
+    <!--        </image:image>-->
+    <!--    </url>-->
+
+    <!--    <url>-->
+    <!--        <loc>https://www.mybusinesspal.com/services/modules/stripe/connectaccount/head/release/signup.jsp</loc>-->
+    <!--        <lastmod>2020-09-05T09:11:26.145Z</lastmod>-->
+    <!--        <changefreq>always</changefreq>-->
+    <!--        <image:image>-->
+    <!--            <image:loc>https://mybusinesspal.com/logo.jpg?v=1583284408</image:loc>-->
+    <!--            <image:title>MyBusinessPal.Com</image:title>-->
+    <!--        </image:image>-->
+    <!--    </url>-->
+    <!--    <url>-->
+    <!--        <loc>https://mybusinesspal.com/signup.jsp</loc>-->
+    <!--        <lastmod>2020-09-05T09:11:26.145Z</lastmod>-->
+    <!--        <changefreq>always</changefreq>-->
+    <!--        <image:image>-->
+    <!--            <image:loc>https://mybusinesspal.com/logo.jpg?v=1583284408</image:loc>-->
+    <!--            <image:title>MyBusinessPal.Com</image:title>-->
+    <!--        </image:image>-->
+    <!--    </url>-->
+</urlset>

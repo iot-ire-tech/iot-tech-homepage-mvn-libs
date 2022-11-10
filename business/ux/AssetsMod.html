@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<div id="AssetsMod">
+	<br> <br>
+	<div class="w3-container w3-center">
+		<h4>Existing Resources</h4>
+		<label>Select resource to modify</label>
+		<span class="existingList"  ></span>
+	</div>
+	<br>
+	<hr>
+	<br>
+
+
+
+
+
+	<br> <br>
+	<label><b>Public Introduction</b></label> <br>
+	<textarea id="intro" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+		  placeholder="Eg: Our squash courts boast the highest quality finish, with supberb lighting, royal oak flooring, and qaulity markings. Its what makes the best in Ireland wanting to play here"
+		  required></textarea>
+	<br> <br>
+
+	<label><b>Asset Name</b></label>
+	<input id=name class="w3-input w3-hover-grey" type="text" value=""  placeholder="Eg: Squash Court"  required title="This name is seen by all.">
+	<br>
+	<br>
+
+
+	<fieldset>
+		<legend><b>Lets be social!!!</b></legend>
+		<label><b>Share with...</b></label>
+		<select id=scope class="w3-select " size=5 required >
+			<option value="" disabled selected>Please Select</option>
+			<option value="friends">Friends</option>
+			<option value="trusted">Trusted</option>
+			<option value="all">All</option>
+			<option value="private">None</option>
+
+		</select>
+		<br>
+		<br>
+		<label><b>Accessibility</b></label>
+		<select id=accessibility class="w3-select " size=5 required >
+			<option value="" disabled selected>Please Select</option>
+			<option value="public">Public</option>
+			<option value="private" >Private</option>
+		</select>
+		<br>
+		<br>
+		<label><b>Tags</b></label>
+		<input id=tags class="w3-input w3-hover-grey" type="text" value=""  placeholder="great, good value, etc"  required title="">
+
+		<label><b>Notes</b></label> <br>
+		<textarea id="notes" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+			  placeholder="Eg: Please wear white running shoes at all times"
+			  required></textarea>
+
+	</fieldset>
+	<br>
+	<br>
+
+
+	<label><b>Exactly how many of such resources do you have?</b></label>
+	<select id=quanity class="w3-select w3-hover-grey" required >
+		<option value="" disabled selected>Please Select</option>
+		<option value="1">One</option>
+		<option value="2">Two</option>
+		<option value="3">Three</option>
+		<option value="4">Four</option>
+		<option value="5">Five</option>
+		<option value="6">Six</option>
+		<option value="7">Seven</option>
+		<option value="8">Eight</option>
+		<option value="9">Nine</option>
+		<option value="10">Ten</option>
+		<option value="-1">Other</option>
+	</select>
+	<br>
+	<br>
+
+	<label><b>Identify The Resource Owner(s)</b></label>
+	<span id=ownerListTarget ></span>
+	<br>
+	<br>
+
+	<!--
+	<select id=visible class="w3-select w3-hover-grey"  required>
+		<option value="" disabled selected>Please Select</option>
+		<option value="true" >Yes</option>
+		<option value="false">No</option>
+	</select>
+	<br>
+	<br>
+
+
+	<label><b> <span class="w3-badge w3-small w3-yellow">New!!!</span>Preview click link below</b></label>
+	<br>
+	<a href="http://www.yahoo.com">launch preview!</a>-->
+
+
+	<label><b>Disclaimer</b></label>
+	<textarea id="disclaimer"
+		  class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+		  placeholder="Eg: Legal PDF link, Or Management reserve the right to....."></textarea>
+
+
+
+	<br>
+	<br>
+	<label><b>Q. Has Event?</b></label>
+	<select id=has class="w3-select" size=5 required >
+		<option value="" disabled selected>Please Select</option>
+		<option value=true>Yes</option>
+		<option value=false >No</option>
+	</select>
+
+
+
+
+
+
+
+
+
+
+	<br><br>
+	<button id=delete class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-delete"  >Delete</button>
+	<button id=update class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right"  >Update</button>
+	<br><br>
+</div>

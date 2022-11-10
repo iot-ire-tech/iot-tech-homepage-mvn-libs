@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<span id="targetMessage"><br></span>
+
+<div class="w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+	<label><b>Stock Rule Label</b></label>
+	<input id=name class="w3-input w3-hover-grey" type="text" value=""  placeholder="Eg: Better safe than sorry"  required title="">
+	<fieldset>
+		<legend><b>Alerting Threshold</b></legend>
+		<label>Upper Range [50-100%]</label>
+		<input id=upperEntity class="w3-input w3-hover-grey" type="number" min="0" max=".5" step="0.1" />
+		<label>Lower Range [0 - 50%]</label>
+		<input id=lowerEntity class="w3-input w3-hover-grey" type="number" min="0" max=".5" step="0.1" />
+		<label>Upper Expiry Date Range [50-100%]</label>
+		<input id=upperExpiry class="w3-input w3-hover-grey" type="number" min=".5" max="1" step="0.1" />
+		<label>Activate Rule [Default On]</label>
+		<div class="ui form">
+			<div class="grouped fields">
+				<div  class="ui toggle checkbox">
+					<input id='activateRule' type="checkbox" checked="">
+				</div>
+			</div>
+		</div>
+
+	</fieldset>
+
+</div>
+<br>
+<fieldset>
+	<legend><b>Response</b></legend>
+	<div class="w3-center">
+		<br>
+		<div class="ui pointing below label">Set Alerts Methods</div>
+		<br>
+		<div class="ui form">
+			<div class="grouped fields">
+				<div  class="ui toggle checkbox">
+					<input id='sms' type="checkbox" checked=""><label>SMS</label>
+				</div>
+				<div  class="ui toggle checkbox">
+					<input id='email' type="checkbox" checked=""><label>Email</label>
+				</div>
+			</div>
+		</div>
+	</div>
+	<label><b>Notes</b></label> <br>
+	<textarea id="notes" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+		  placeholder="Eg: This item sells fast, and the order is slow to arrive, stock well!"
+		  required></textarea>
+
+</fieldset>
+<br>
+<button id="save" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Add</button>
+<br>
+
+<script>
+	var today = new Date()
+	$('#calDob').calendar({
+		ampm: false,
+		firstDayOfWeek: 1,
+		inline: false
+	});
+
+	$('#rangestart').calendar({
+		ampm: false,
+		firstDayOfWeek: 1,
+		inline: false,
+		endCalendar: $('#rangeend')
+	});
+
+	$('#rangeend').calendar({
+		ampm: false,
+		firstDayOfWeek: 1,
+		inline: false,
+		startCalendar: $('#rangestart')
+	});
+
+
+
+</script>
+
+
+
+

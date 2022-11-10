@@ -1,0 +1,180 @@
+<img id="hdr" src="">
+<span id="banner"></span>
+
+
+<span id="uxLoading"></span>
+<div class="w3-container w3-center w3-mobile w3-white">
+
+    <div class="w3-row-padding  ">
+        <div class="w3-half">
+            <div class="w3-container">
+                <p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+            </div>
+        </div>
+        <div class="w3-half">
+            <div class="w3-container">
+                <p>Phone support<i class="fa fa-skype" style="font-size:48px;color:black"></i> <a
+                        href=tel:0035312542326>+353 1 254 2326</a></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+    <h1>Covid Tracker</h1>
+    <h3>Keep safe!</h3>
+</div>
+
+<div id="dialogMsg" class="w3-center" title="Public Broadcast Message">
+    <span id="dialogMsgHook"></span>
+</div>
+<div id="dialogMsgUser" class="w3-center" title="User(s) Broadcast Message">
+    <span id="dialogMsgUserHook"></span>
+</div>
+
+
+<div class="w3-container " style="width: 100%; ">
+    <br>
+    <span id="menuBarBizHook"></span>
+    <br>
+</div>
+<div class="w3-container" style="margin-left: 5%; min-width: 90%; margin-right: 5%;">
+
+
+    <table class="w3-table w3-bordered ">
+        <tr>
+            <th>Question</th>
+            <th>Response</th>
+        </tr>
+
+        <tr>
+            <td colspan="2" style="font-weight: bold;color: red; text-align: center"><label>If you answer “YES” to any
+                of the questions above or have indicated to us that you have symptoms of COVID19 you should not attend.
+                You are prohibited from entering or using the grounds/facilities and advised to seek professional
+                medical help/assistance
+            </label>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td><label> Date/Day and Time of your visit:</label></td>
+            <td><input id=1 class="w3-input" type="datetime-local"></td>
+        </tr>
+        <tr>
+            <td><label>Have you visited any of the countries outside Ireland excludingNorthern Ireland!!!</label></td>
+            <td><input id=2 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Are you suffering any flu like symptoms/symptoms of coronavirus covid-19?</label></td>
+            <td><input id=3 class="w3-check" type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td><label>Are you experiencing any difficulty in breathing, shortness of breath?</label></td>
+            <td><input id=4 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Are you experiencing any fever-like/Temperature symptoms?</label></td>
+            <td><input id=5 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>. Did you consult a Doctor or othermedical practitioner within the last 14 days ?</label></td>
+            <td><input id=6 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>How are you feeling Healthwise?</label></td>
+            <td><input id=7 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Have you been in contact with someone who has visited an affected region in the past 14
+                days?</label></td>
+            <td><input id=8 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Have been around someone with symptoms of Covid-19 in the last 14 days?</label></td>
+            <td><input id=9 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Is a member of your household self-isolating? </label></td>
+            <td><input id=10 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Are you in a period of self-isolation and/or cocooning under the current Health
+                PolicyRules?</label></td>
+            <td><input id=11 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label> Are you in a high-risk health category?</label></td>
+            <td><input id=12 class="w3-check" type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><label>Are you under 13 years of age or 70 years of age or over</label></td>
+            <td><input id=13 class="w3-check" type="checkbox"></td>
+        </tr>
+
+
+        <tr>
+            <td colspan="2" style="font-weight: bold;color: red; text-align: center"><label>When on site, please adhere
+                to our on-site standard processes/procedures
+                regarding
+                infection control, i.e. social
+                distancing, hand washing/hand sanitising and general coughing/sneezing etiquette
+            </label>
+            </td>
+        </tr>
+
+
+        <tr>
+            <td><label>Longitude:</label></td>
+            <td id="long"></td>
+        </tr>
+        <tr>
+            <td><label>Latitude:</label></td>
+            <td id="lat"></td>
+        </tr>
+
+        <tr>
+            <td><label>By checking this box, you agree to the above information as accurate, and the collection of your
+                location.</label></td>
+            <td><input id=agree class="w3-check" type="checkbox"></td>
+        </tr>
+
+
+    </table>
+    <br>
+    <br>
+    <button id="saveCovid" class="w3-button w3-right w3-blue">Save Information</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 11556993;
+    (function () {
+        var lc = document.createElement('script');
+        lc.type = 'text/javascript';
+        lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(lc, s);
+    })();
+</script>
+
+<noscript>
+    <a href="https://www.livechatinc.com/chat-with/11556993/" rel="nofollow">Chat with us</a>,
+    powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>
+</noscript>
+<!-- End of LiveChat code -->

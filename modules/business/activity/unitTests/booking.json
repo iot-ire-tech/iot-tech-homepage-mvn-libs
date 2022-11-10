@@ -1,0 +1,18 @@
+[
+	{
+		"accountId": "acct_1Fhwv2B2iGwtq5ly",
+		"productId": "prod_GPHqtj4fWRalHz",
+		"unitsRemaining": 9,
+		"startTimeMins": 26274300,
+		"bookings": [
+			{
+				"id": 22423,
+				"paid": false,
+				"endTimeMins": 26274330,
+				"alerts": "",
+				"reminders": "",
+				"comms": ""
+			}
+		]
+	}
+]

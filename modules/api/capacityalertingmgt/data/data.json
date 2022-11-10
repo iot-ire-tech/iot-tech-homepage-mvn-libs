@@ -1,0 +1,16 @@
+[
+	{
+		"accountId": "",
+		"productId": "",
+		"item": {
+			"active": false,
+			"email": "",
+			"sms": "",
+			"level1": -1,
+			"level2": -1,
+			"level3": -1,
+			"alertReminderCap": -1
+		},
+		"alertSchedule": ""
+	}
+]

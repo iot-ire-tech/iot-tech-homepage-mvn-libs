@@ -1,0 +1,15 @@
+{
+  "web": {
+    "client_id": "882563137037-oglu2s9c9806kv87cirqfdrhd4c26pih.apps.googleusercontent.com",
+    "project_id": "sportsco-217112",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "54kCU98q9E4MUAaYMzTyRw0d",
+    "javascript_origins": [
+      "http://localhost.com:8084",
+      "http://www.mybusinespal.com",
+      "https://localhost.com:8084"
+    ]
+  }
+}

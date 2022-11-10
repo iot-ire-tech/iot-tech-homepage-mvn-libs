@@ -1,0 +1,303 @@
+<h3>Insight: You have great assets, now create plans & subscription services around them, this will bring in a recurring
+    revenue stream!</h3>
+
+<br>
+<div class="w3-center">
+    <span id="orderHookSubs"></span>
+</div>
+<br>
+
+<div id="tabsSubs" style="border: none;">
+    <ul>
+        <!--        tabItem to be check on-->
+        <li><a href="#tabsSubs-1"> <span class="w3-padding ">Pricing Plans </span> </a></li>
+        <li><a href="#tabsSubs-2"> <span class="w3-padding tabItem">Coupons</span></a></li>
+        <li><a href="#tabsSubs-3"> <span class="w3-padding tabItem">Builder</span></a></li>
+    </ul>
+    <div id="tabsSubs-1">
+        <span>Insight: The more pricing you associated with a product, the more likely a customer will bite!</span>
+        <span>Example: you might have a single "gold" product that has plans for $10/month, $100/year, €9/month, and €90/year.!</span>
+        <fieldset>
+            <legend><b>Product Pricing Models</b></legend>
+            <br>
+            <label><b>Existing Plans</b></label>
+            <span class="existingPlansHook"></span>
+            <br>
+            <span id="planDeletedMsg"></span>
+
+            <br>
+            <span>You can delete plans here if they are no long being used, else continue.</span>
+            <br>
+            <div class="w3-center">
+                <button class="w3-button w3-round w3-blue  w3-padding w3-right deleteProductPlan">Delete</button>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <span>If you do not see a plan from the above list, that is suitable for your subscription, create a new one below</span>
+            <br>
+            <div class="w3-center">
+                <h3>**** Planning Form ****</h3>
+            </div>
+            <br>
+
+            <label><b>Select Product</b></label>
+            <br>
+            <span class="w3-tab w3-yellow">Stop items subscriptions coming soon!</span>
+            <div class="w3-row">
+                <div class="w3-third">
+                    <fieldset>
+                        <legend><b>Shop Items</b></legend>
+                        <span id="storeItemHookSub"></span>
+                        <br>
+                    </fieldset>
+                </div>
+
+                <div class="w3-third">
+                    <fieldset>
+                        <legend><b>Activity Items</b></legend>
+                        <span id="activityItemHookSub"></span>
+                        <br>
+                    </fieldset>
+                </div>
+
+                <div class="w3-third">
+                    <fieldset>
+                        <legend><b>Event Items</b></legend>
+                        <span id="eventItemHookSub" class="w3-tab w3-yellow">Coming soon!</span>
+                        <br>
+                    </fieldset>
+                </div>
+            </div>
+
+            <br>
+            <span id="selectedProductPlanName"></span>
+            <!--            <span class="existingPlansHook"></span>-->
+
+            <!-- <span id="selectProduct4PBuilderListHook" title="Before creating new plan, check the list of existing ones below. If you see an existing plan skip to step 2 below"></span>-->
+            <br>
+            <hr>
+            <br>
+            <span id="uxPlans"></span>
+            <!--    AddPlanToSub-->
+            <!--            <button id=saveProductPlan class="w3-button w3-block w3-light-grey w3-section w3-padding">Create Pricing Plan </button>-->
+            <br>
+        </fieldset>
+
+    </div>
+
+    <div id="tabsSubs-2">
+        <span>Insight: The more pricing you associated with a product, the more likely a customer will bite!</span>
+        <fieldset>
+            <legend><b>Coupon Model</b></legend>
+            <br>
+            <label><b>Existing Coupons</b></label>
+            <span class="existingCouponsHook"></span>
+            <br>
+            <span id="deleteCouponMsg"></span>
+            <br>
+            <div class="w3-center">
+                <button class="w3-button w3-round w3-blue  w3-padding w3-right deleteCoupon">Delete</button>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <span id="uxCoupons"></span>
+        </fieldset>
+    </div>
+    <div id="tabsSubs-3">
+        <br>
+        <!--        <div class="w3-panel w3-light-gray">-->
+        <!--            <p>Subscription Management</p>-->
+        <!--        </div>-->
+
+        <!--        <label><b>Existing subscriptions</b></label>-->
+        <!--        <br>-->
+        <!--        <span>These subscriptions are already published to customers</span><br>-->
+        <!--        <span class="existingEntities , existingSubs"></span>-->
+        <!--        <span id="existingSubsMsg"></span>-->
+        <!--        <br>-->
+        <!--        <span class="w3-right">You can delete subscriptions here if you know longer want them socialized to customers.</span>-->
+        <!--        <br>-->
+        <!--        <span class="w3-right">If subscribers are still signed up, then dont remove the subscription!</span>-->
+        <!--        <br>-->
+        <!--        <span id="msgSubDeleted"></span>-->
+        <!--        <br>-->
+        <!--        <div class="w3-center">-->
+        <!--            <button class="w3-button w3-round w3-blue  w3-padding w3-right deleteSub">Delete</button>-->
+        <!--        </div>-->
+        <!--        <br>-->
+        <!--        <br>-->
+        <br>
+        <fieldset>
+            <legend><b>Business Assets</b></legend>
+            <label><b>Catalogue Existing subscription items</b></label><br>
+            <span class="existingSubs"></span>
+            <!--            <span id="subsItemHook"></span>-->
+            <br>
+            <label><b>Upstream assets</b></label><br>
+            <span>These are assets made available for subscription purposes!</span><br>
+            <span id="subsResourceHook"></span>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--        <h3>Insight: Create subscriptions with sensible pricing plans that target customer groups!</h3>-->
+        <span id="uxSubs"></span>
+        <br>
+        <br>
+
+    </div>
+</div>
+<br>
+<hr>
+<div class="w3-center">
+    Final Step
+</div>
+<hr>
+<br>
+<br>
+<span class=customerListHook></span><br>
+<br>
+<br>
+<br>
+<br>
+<!--<span>Insight: Adding media content will help customer understand better your services!</span>-->
+<!--<div id="tabsMedia">-->
+<!--    <ul>-->
+<!--        <li><a href="#tabsMedia-1"> <span class="w3-padding ">Promo Video</span> </a></li>-->
+<!--        <li><a href="#tabsMedia-2"> <span class="w3-padding ">Facebook</span></a></li>-->
+<!--        <li><a href="#tabsMedia-3"> <span class="w3-padding ">Youtube</span></a></li>-->
+<!--    </ul>-->
+<!--    <div id="tabsMedia-1">-->
+<!--        <fieldset>-->
+<!--            <br>-->
+<!--            <div class="w3-row">-->
+<!--                <div class="w3-half">-->
+<!--                    <label>Header</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/>-->
+<!--                    <br>-->
+
+<!--                    <label><b>Video</b></label>-->
+<!--                    <form id="frmDocFrontMembership">-->
+<!--                        <input id="subscriptionVideoUpload" name="front_1" type="file" class="w3-input "-->
+<!--                               accept="video/*" title=""/><br>-->
+<!--                    </form>-->
+
+<!--                    <label>Youtube upload</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required-->
+<!--                           title=""-->
+<!--                           disabled/>-->
+<!--                    <br>-->
+
+<!--                    <label>Description</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="w3-half w3-center">-->
+<!--                    <video id="membershipVideoUpload" width=400 controls autoplay>-->
+<!--                        <source id=membershipVideoUploadOutput type=video/mp4>-->
+<!--                        Your browser does not support HTML video.-->
+<!--                    </video>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </fieldset>-->
+<!--    </div>-->
+
+<!--    <div id="tabsMedia-2">-->
+<!--        <fieldset>-->
+<!--            <br>-->
+<!--            <div class="w3-row">-->
+<!--                <div class="w3-half">-->
+<!--                    <label>Header</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/>-->
+<!--                    <br>-->
+
+
+<!--                    <label><b>Facebook Link....click <a id="facebookHowTo" href=facebook-howto.png-->
+<!--                                                        target="_top">here</a>-->
+<!--                        to find out how to insert facebook video into site </b></label>-->
+<!--                    <input id="subscriptionFacebookUpload" type="text" class="w3-input"-->
+<!--                           placeholder="Eg: https://www.facebook.com/facebook/videos/10153231379946729/"-->
+<!--                           title=""/><br>-->
+
+<!--                    <label>Description</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="w3-half w3-center">-->
+<!--                    <iframe-->
+<!--                            id="subscriptionFacebookUploadOutput"-->
+<!--                            src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Ffacebook%2Fvideos%2F10153231379946729%2F&show_text=true&width=734&height=502&appId"-->
+<!--                            width="400" height="200"-->
+<!--                            style="border:none;overflow:hidden" scrolling="no" frameborder="0"-->
+<!--                            allowTransparency="true" allow="encrypted-media" allowFullScreen="true">-->
+<!--                    </iframe>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </fieldset>-->
+<!--    </div>-->
+
+<!--    <div id="tabsMedia-3">-->
+<!--        <fieldset>-->
+<!--            <br>-->
+<!--            <div class="w3-row">-->
+<!--                <div class="w3-half">-->
+<!--                    <label>Header</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/>-->
+<!--                    <br>-->
+
+<!--                    <label><b>Youtube Link....click <a href=facebook-howto.png target="_top">here</a> to-->
+<!--                        find out-->
+<!--                        how to insert facebook video into site </b></label>-->
+<!--                    <input id="subscriptionYouTubeUpload" type="text" class="w3-input"-->
+<!--                           placeholder="Eg: https://www.facebook.com/facebook/videos/10153231379946729/"-->
+<!--                           title=""/><br>-->
+
+<!--                    <label>Description</label>-->
+<!--                    <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/>-->
+<!--                    <br>-->
+<!--                    <br>-->
+<!--                    <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add-->
+<!--                    </button>-->
+<!--                </div>-->
+<!--                <div class="w3-half w3-center">-->
+<!--                    <iframe-->
+<!--                            src="https://www.youtube.com/embed/DBXH9jJRaDk"-->
+<!--                            id="subscriptionYouTubeUploadOutput"-->
+<!--                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="400"-->
+<!--                            height="200"-->
+<!--                            type="text/html">-->
+<!--                    </iframe>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </fieldset>-->
+<!--    </div>-->
+<!--</div>-->
+<!--</fieldset>-->
+
+
+<!--Link Internet Video!!!<input id=subscriptionVideoLink class="w3-input w3-hover-grey" type="url" required title="Feel your plan needs an explaination?"/> <br>-->
+<!--Upload Video!!!<input id=subscriptionVideoUpload class="w3-input w3-hover-grey" type="file" required title="Feel your plan needs a demo, show and tell your customers what they get"/> <br>-->
+<br>
+<br>
+<br>
+<br>
+
+
+<br>
+<span id="msgConfirmation"></span>
+<br>
+<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding">Save
+</button>
+

@@ -1,0 +1,34 @@
+[
+	{
+		"accountId": "",
+		"uploads": [
+			"17/02/2020, 17:24"
+		],
+		"ts": "22/01/2019, 12:02",
+		"title": "sdsdf",
+		"tagLine": "this is one",
+		"media": {
+			"favIcon": {
+				"name": "acct/image/icon/1GAINZGfqh4DeGy5_Selection_026_icon.png",
+				"tabbar": false
+			},
+			"picHeader": {
+				"name": "acct/image/hdr1/1GAINZGfqh4DeGy5_Selection_025_header.png",
+				"slideshow": false
+			},
+			"picFooter": {
+				"name": "acct/image/tdr1/1GAINZGfqh4DeGy5_Selection_024_footer.png",
+				"slideshow": false
+			}
+		},
+		"font": {
+			"color": "w3-text-deep-purple",
+			"size": "",
+			"family": "Georgia"
+		},
+		"timings": {
+			"publishDate": "2020-02-18T00:00:00.000Z",
+			"expiryDate": "2020-02-18T00:00:00.000Z"
+		}
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"accountId": "",
+		"usage": [
+		],
+		"entries": [
+			[
+				{
+					"productId": "productId#1",
+					"source": "sold|event|activity",
+					"purpose": "trend",
+					"ts": [
+						"2020-02-29T13:21:12.229Z",
+						"2020-02-29T13:21:13.466Z"
+					]
+				}
+				,
+				{
+					"productId": "productId#2",
+					"source": "sold|event|activity",
+					"purpose": "trend",
+					"ts": [
+						"2020-03-29T13:21:12.229Z",
+						"2020-03-29T13:21:13.466Z"
+					]
+				}
+			]
+		]
+	}
+
+]
+

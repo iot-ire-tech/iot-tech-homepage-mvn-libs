@@ -1,0 +1,344 @@
+{
+  "message": [
+    {
+      "id": 718779,
+      "resourcePoolId": 0,
+      "eventId": 0,
+      "subeventId": 186096,
+      "patronId": 0,
+      "messageAck": false,
+      "target": "SubEvent",
+      "duration": "day",
+      "importance": "High priority and important!",
+      "headline": "Business Hours - Christmas",
+      "start": "2018-06-26",
+      "message": "Sub evetns rock ...."
+    }
+  ],
+  "uxRankingOrderList": [
+    {
+      "id": 20,
+      "name": "20th"
+    }
+  ],
+  "daysOfWeek": [
+    {
+      "id": 7,
+      "name": "Sun"
+    }
+  ],
+  "hourOfDay": [
+    {
+      "id": 28,
+      "name": "18 to 09"
+    }
+  ],
+  "timePeriods": [
+    {
+      "range": "7-23"
+    }
+  ],
+  "client": [
+    {
+      "id": 392436,
+      "ts": "2018-05-13T15:44:56.887Z",
+      "name": "sportsco",
+      "businessSite": "http://www.sportsco.com",
+      "businessLocation": "Ireland",
+      "offering": "pro",
+      "staffCount": 30,
+      "branding": true
+    }
+  ],
+  "clientLocation": [
+    {
+      "id": 618643,
+      "type": "Event",
+      "clientId": "392436",
+      "name": "2nd Floor"
+    }
+  ],
+  "patron": [
+    {
+      "id": 254287,
+      "pics": {
+        "pic1": "C:\\fakepath\\sqa-logo.png"
+      },
+      "title": "Mrs.",
+      "fname": "Rosemary",
+      "lname": "Ennis",
+      "name": "Rosemary Ennis",
+      "patronType": "Member",
+      "address": "19 kerlogue",
+      "address2": "ringsend",
+      "city": "Dublin",
+      "zip": "4",
+      "country": "IE",
+      "mobile": "09889778989",
+      "email": "iot.ca.usera@gmail.com",
+      "dob": "1977-01-02",
+      "account": {
+        "username": "rennis",
+        "password": "FionnAnto1972"
+      },
+      "clientId": 392436,
+      "customerId": "-1",
+      "customerIdReal": "cus_Dcazi22eTd8gpt"
+    },
+    {
+      "id": 493700,
+      "patronType": "Member, Box League",
+      "ts": "2018-06-10T10:49:35.939Z",
+      "pics": {},
+      "name": "Snop Dog",
+      "mobile": "098998089090",
+      "email": "tonygennis@gmail.com",
+      "account": {
+        "username": "tonygennis@gmail.com",
+        "password": "FionnAnto1972"
+      },
+      "customerId": "-1",
+      "clientId": 392436
+    }
+  ],
+  "leagueResultsHistoric": [],
+  "leagueResults": [],
+  "event": [
+    {
+      "id": 438426,
+      "resourcePoolId": 691109,
+      "type": "Educational",
+      "visible": true,
+      "startTs": "May 1, 2018 1:00 PM",
+      "endTs": "May 1, 2018 10:00 AM",
+      "name": "Streaming",
+      "owner": {
+        "name": "Mark Kelly",
+        "email": "iot.ca.userb@gmail.com",
+        "mobile": "088978989"
+      },
+      "location": "Squash Courts 1, 2, 3",
+      "mediaLinkYouTube": "https://www.youtube.com/tgbNymZ7vqY",
+      "mediaLinkFaceBook": "https://www.facebook.com/SPORTSCORingsend/videos/1502194963150954/",
+      "pics": {
+        "pic1": "",
+        "pic2": "",
+        "pic3": ""
+      },
+      "clientId": 392436
+    }
+  ],
+  "eventTypes": [
+    {
+      "id": 7,
+      "name": "Educational"
+    }
+  ],
+  "subEvent": [
+    {
+      "location": "Squash Court 1,2,3",
+      "id": 770739,
+      "eventId": 438426,
+      "type": "Community",
+      "uxRankingOrder": null,
+      "visible": true,
+      "pics": {},
+      "name": "Squash Ireland Finals",
+      "note": " Worth while points about this activity",
+      "owner": {
+        "name": "Anthony Ennis",
+        "email": "tonyennis@yahoo.com",
+        "mobile": "877461070"
+      },
+      "clientId": 392436
+    }
+  ],
+  "subEventCosts": 
+    {
+}
+  ,
+  "subEventMembers": [
+    {
+      "id": 737332,
+      "subEventId": 451130,
+      "members": [
+        {
+          "name": "Anto",
+          "email": "iot.ca.userc@gmail.com",
+          "patronId": 366572
+        },
+        {
+          "name": "Paul",
+          "email": "tonyennis@yahoo.com",
+          "patronId": 627169
+        },
+        {
+          "name": "Alan",
+          "email": "tonyennis@yahoo.com",
+          "patronId": 257746
+        },
+        {
+          "name": "Antoo",
+          "email": "fionnennis@yahoo.com",
+          "patronId": 310133
+        },
+        {
+          "name": "Snop Dog",
+          "email": "tonygennis@gmail.com",
+          "patronId": 493700
+        }
+      ]
+    },
+    {
+      "id": 544764,
+      "subEventId": 945891,
+      "members": [
+        {
+          "name": "Lord Godfry",
+          "email": "tonyennis@yahoo.com",
+          "mobile": "09089999999",
+          "patronId": 697366
+        },
+        {
+          "name": "Antoo",
+          "email": "tonyennis@yahoo.com",
+          "mobile": "009809880",
+          "patronId": 310133
+        },
+        {
+          "name": "Alan",
+          "email": "tonyennis@yahoo.com",
+          "mobile": "009888888",
+          "patronId": 257746
+        },
+        {
+          "name": "Paul",
+          "email": "tonyennis@yahoo.com",
+          "mobile": "00999990000",
+          "patronId": 627169
+        },
+        {
+          "name": "Anto",
+          "email": "iot.ca.userc@gmail.com",
+          "mobile": "009323432",
+          "patronId": 366572
+        }
+      ]
+    },
+    {
+      "id": 992280,
+      "subEventId": 770739,
+      "members": [
+        {
+          "name": "Alan",
+          "email": "tonyennis@yahoo.com",
+          "mobile": "009888888",
+          "patronId": 257746
+        }
+      ]
+    }
+  ],
+  "resourcePool": [
+    {
+      "id": 691109,
+      "clientId": 392436,
+      "name": "CoachPhilips",
+      "cname": "Coach Philips",
+      "alias": "Coach Philips",
+      "location": "Ground Floor",
+      "pics": {
+        "pic1": "sportsco_CoachPhilips_composity-testrun",
+        "pic2": "sportsco_CoachPhilips_",
+        "pic3": "sportsco_CoachPhilips_",
+        "vid1": "sportsco_CoachPhilips_"
+      },
+      "quanity": 1,
+      "owner": {
+        "name": "Mark Kelly",
+        "email": "iot.ca.userb@gmail.com",
+        "mobile": "088978989"
+      },
+      "grammer": {
+        "ppt": "Person",
+        "patronId": 231215
+      },
+      "categoryId": 2,
+      "accessibility": "Public",
+      "uxRankingOrder": 2,
+      "visible": true,
+      "note": "Please be early"
+    },
+    {
+      "id": 67611,
+      "clientId": 392436,
+      "name": "UrbanHealthSpa",
+      "cname": "Urban Health Spa",
+      "alias": "Urban Health Spa",
+      "location": "2nd Floor",
+      "pics": {
+        "pic1": "sportsco_UrbanHealthSpa_urban_health_spa",
+        "pic2": "sportsco_UrbanHealthSpa_",
+        "pic3": "sportsco_UrbanHealthSpa_",
+        "vid1": "sportsco_UrbanHealthSpa_"
+      },
+      "quanity": 3,
+      "owner": {
+        "name": "Rosemary Ennis",
+        "email": "iot.ca.usera@gmail.com",
+        "mobile": "09889778989"
+      },
+      "grammer": {
+        "ppt": "Place",
+        "patronId": 0
+      },
+      "categoryId": 4,
+      "accessibility": "Public",
+      "uxRankingOrder": 1,
+      "visible": true,
+      "note": "Magnificant"
+    }
+  ],
+  "resourceAvailabilityDays": [
+    {
+      "day": "1",
+      "hour": "25",
+      "reason": "Our Day Off",
+      "resourcePoolId": 67611,
+      "id": 4
+    }
+  ],
+  "resourceUnAvailabilityDates": [],
+  "bookableResource": [
+    {
+      "id": 214448,
+      "clientId": 392436,
+      "patronId": 254287,
+      "resourcePoolId": 68538,
+      "username": "rennis",
+      "patronEmail": "iot.ca.usera@gmail.com,iot.ca.usera@gmail.com",
+      "subEventName": "Box A",
+      "subEventCost": "10",
+      "subEventOwner": "Mark Kelly",
+      "subEventLocation": "Squash Court 1,2,3",
+      "startDate": "May 23, 2018 0:00",
+      "startDateMins": 25450500,
+      "endDateMins": 25450530,
+      "duration": 30
+    }
+  ],
+  "bookingDuration": [
+    {
+      "id": 8,
+      "name": "2hrs"
+    }
+  ],
+  "analyticsResource": [
+    {
+      "date": "June 6, 2018 18:00",
+      "resource": "booked",
+      "resourcePoolId": "68538",
+      "id": 30
+    }
+  ],
+  "analyticsPatron": []
+}

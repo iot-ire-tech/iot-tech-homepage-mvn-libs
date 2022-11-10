@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+
+<div id="spinner">
+
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+				Loading
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<br>
+<br>
+<br>
+<div id="content" class="w3-card-4 w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+	<div  class="centerMain">
+		<div class="centerHdr" >
+			<h2 class="ui center aligned icon header">
+				<i class="circular users icon"></i>
+				MyBusinessPal.Com - Smart Sales
+			</h2>
+			<span id="todaysDate"></span>
+
+			<div class=" w3-container w3-border-gray ">
+				<div class="w3-row ">
+					<div class="w3-third w3-container ">
+						<div class="ui pointing below label">Payment Stream</div>
+						<span id="cashier"></span>
+					</div>
+					<div class="w3-third w3-center w3-container">
+						<video id="video" style="width:50%; height:10%" autoplay="" playsinline=""></video>
+						<canvas id="canvas" style="width:0%; height:0%;"></canvas>
+						<br>
+						<button class="w3-button w3-gray w3-hover-shadow" id="snap">Scan</button>
+						<span id="snapped"></span>
+						<audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autoplay=""></audio>
+					</div>
+					<div class="w3-third w3-container">
+						<div class="ui pointing below label"> Payee Name</div>
+						<span id="payee"></span>
+					</div>
+
+				</div>
+
+				<div class="w3-row">
+					<div class="w3-third w3-container">
+						<div class="ui pointing below label">Payment Method</div>
+						<br>
+
+						<div class="ui form">
+							<div class="grouped fields">
+								<div class="ui toggle checkbox">
+									<input class='paymentMethod' type="radio" name="paymentMethod" checked="checked" value="ePayment"> <label>E-Payment</label>
+								</div>
+								<div class="ui toggle checkbox">
+									<input class='paymentMethod' type="radio" name="paymentMethod" value="cash"> <label>Cash</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w3-third w3-container">
+						<br>
+						<div class="ui pointing below label">Charge Type</div>
+						<br>
+						<div class="ui toggle checkbox">
+							<input class='paymentMethod' type="radio" name="paymentMethod" value="refund"> <label>Refund</label>
+						</div>
+					</div>
+					<div class="w3-third w3-container">
+						<div class="ui pointing below label"> Receipt Method </div>
+						<br>
+						<div class="ui form">
+							<div class="grouped fields">
+								<div  class="ui toggle checkbox">
+									<input class='mgtMethodSms' type="checkbox" name="public" checked=""> <label>SMS</label>
+								</div>
+								<div  class="ui toggle checkbox">
+									<input class='mgtMethodEmail' type="checkbox" name="public"> <label>Email</label>
+								</div>
+								<div  class="ui toggle checkbox">
+									<input class='mgtMethodHardCopy' type="checkbox" name="public"> <label>Hard Copy</label>
+									<!--<iframe id="iFramePdf" src="C:\Users\ennisa\Downloads/hardcopy.pdf" style="display:none;"></iframe>-->
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+
+				</div>
+			</div>
+
+		</div>
+
+		<span id="payeeDetails"></span>
+		<span id="btnCheckout" ></span>
+		<span id="cardRegistration">---</span>
+
+		<span id="total"><br>
+			<h1>//</h1>
+		</span>
+
+		<hr>
+
+		<div class="w3-bar w3-black" >
+			<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Assets')">Assets</button>
+			<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Events')">Events</button>
+			<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'SubEvents')">Activities</button>
+		</div>
+
+		<div  >
+
+			<div id="Assets" class="w3-container city" style="height: 100%; display:block; " >
+
+				<div class="w3-container " >
+					<span id="targetAssets"></span>
+
+				</div>
+
+
+			</div>
+
+			<div id="Events" class="w3-container city"  style="height: 100%; display:none;">
+				<div class="w3-container" >
+					<span id="targetEvents"></span>
+
+				</div>
+			</div>
+			<div id="SubEvents" class="w3-container city"  style="height: 100%; display:none; ">
+				<div class="w3-container" >
+					<span id="targetActivities"></span>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+

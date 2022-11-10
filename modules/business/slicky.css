@@ -1,0 +1,15 @@
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  width: 200px; 
+  height: 200px;
+  /*color: #333;*/
+  /*background: ;*/
+}
+
+.slick-slide {
+  text-align: center;
+  /*color: #419be0;*/
+  /*background: white;*/
+}

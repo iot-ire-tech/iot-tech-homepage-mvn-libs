@@ -1,0 +1,15 @@
+[
+	{
+		"accountId": "",
+		"productId": "",
+		"unitsRemaining": 0,
+		"item": {
+			"active": false,
+			"date": "",
+			"durationMins": "",
+			"alerts": [
+			],
+			"reminderdate": ""
+		}
+	}
+]

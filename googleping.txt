@@ -1,0 +1,11 @@
+--2022-04-17 09:01:00--  http://www.google.com/ping?sitemap=https://mybusinesspal.com/sitemap.xml
+Resolving www.google.com (www.google.com)... 2a00:1450:400b:c02::68, 2a00:1450:400b:c02::69, 2a00:1450:400b:c02::6a, ...
+Connecting to www.google.com (www.google.com)|2a00:1450:400b:c02::68|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘ping?sitemap=https:%2F%2Fmybusinesspal.com%2Fsitemap.xml.12’
+
+     0K                                                        1.45M=0.001s
+
+2022-04-17 09:01:00 (1.45 MB/s) - ‘ping?sitemap=https:%2F%2Fmybusinesspal.com%2Fsitemap.xml.12’ saved [940]
+

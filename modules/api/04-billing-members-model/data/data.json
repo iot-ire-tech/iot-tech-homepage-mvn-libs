@@ -1,0 +1,16 @@
+[
+	{
+		"accountId": "",
+		"productId": "",
+		"items": [
+			{
+				"dow": "",
+				"startTime": "",
+				"startTimeMins": "",
+				"endTime": "",
+				"endTimeMins": "",
+				"comment": ""
+			}
+		]
+	}
+]

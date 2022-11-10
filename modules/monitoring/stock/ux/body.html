@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+
+<div id="spinner">
+
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+				Loading
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="w3-card-4 w3-center w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+		<h2 class="ui center aligned icon header">
+			<i class="circular users icon"></i>
+			IoT Tech<br>Smart Stock Control
+		</h2>
+		<span id="todaysDate"></span>
+
+		<br>
+		<div class="ui pointing below label"> Manage Own Stock Levels </div>
+		<br>
+		<div class="ui form">
+			<div class="grouped fields">
+				<div  class="ui toggle checkbox">
+					<input class='mgtOwnStockLevels' type="checkbox" name="public" ><label>Yes</label>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<hr>
+	<span id="targetMessageResult"><br></span>
+	<hr>
+
+	<div class="w3-bar w3-black" >
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'StockRules')">Stock Policies</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Assets')">Assets</button>
+		<button class="w3-bar-item w3-button tablink"  onclick="openCity(event, 'QuickEntry')">Quick Entry</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Browser')">Online Browser</button>
+	</div>
+
+
+	<div id="StockRules" class="w3-container city" style="height: 100%; display:block" >
+		<h2>Stock Policies Managment</h2>
+		<p>Insight : Build up rules, that will alert you when certain items are becoming limiting</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Stock Policy <input class="w3-radio entityMonitoringMgt" type="radio"  value="newStockRule" >
+					Modify Existing <input  class="w3-radio entityMonitoringMgt"  type="radio"  value="modStockRule">
+				</div>
+				<br> <hr> <br>
+				<span id="targetStockRules"></span>
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div id="Assets" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>Asset Stock Control</h2>
+		<p>Insight : No one likes an empty cupboard</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Stock <input id=welecomeNew class="w3-radio entityMonitoringMgt" type="radio" name="welecomeCat" value="newAssetMonitor" >
+					Modify Existing <input id=welecomeMod class="w3-radio entityMonitoringMgt"  type="radio" name="welecomeCat" value="modAssetMonitor">
+				</div>
+				<br> <hr> <br>
+				<span id="targetAssets"></span>
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div id="QuickEntry" class="w3-container city"  style="height: 100%; display:none;">
+		<div class="w3-container" >
+			<span id="targetQuickEntry"></span>
+		</div>
+	</div>
+	<div id="Browser" class="w3-container w3-border city" style="height: 200%;  display:none">
+		<h2 class="ui icon header">
+			<i class="settings icon"></i>
+			<div class="content">
+				Online Browser
+				<div class="sub header">
+					Insight - Preview your rules before activating them.
+				</div>
+			</div>
+		</h2>
+		<br> <br>
+		<span id="targetBrowser"></span>
+	</div>
+</div>
+
+
+
+
+
+
+

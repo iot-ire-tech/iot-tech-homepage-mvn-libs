@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<title>W3.CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.css" rel="stylesheet" type="text/css" />
+
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.4/semantic.min.js"></script>
+	<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
+	<script>
+
+
+	</script>
+
+
+	<body>
+
+		<div class="ui form">
+			<div class="two fields">
+				<div class="field">
+					<label>Start date</label>
+					<div class="ui calendar" id="rangestart">
+						<div class="ui input left icon">
+							<i class="calendar icon"></i>
+							<input type="text" placeholder="Start">
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label>End date</label>
+					<div class="ui calendar" id="rangeend">
+						<div class="ui input left icon">
+							<i class="calendar icon"></i>
+							<input type="text" placeholder="End">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br/>
+
+
+	</body>
+
+	<script>
+
+		$('#rangestart').calendar({
+			type: 'datetime',
+			ampm: true,
+			minDate: new Date(),
+			maxDate: new Date(),
+			endCalendar: $('#rangeend'),
+			isDisabled: function (date, mode) {
+				console.log("ho");
+				return true;
+			},
+		});
+		$('#rangeend').calendar({
+			type: 'date',
+			startCalendar: $('#rangestart')
+		});
+
+
+
+	</script>
+
+</html>

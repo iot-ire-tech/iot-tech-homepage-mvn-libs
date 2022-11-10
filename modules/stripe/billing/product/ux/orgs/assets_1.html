@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<div class="w3-container w3-center w3-mobile w3-white">
+
+	<div class="w3-row-padding  " >
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+			</div>
+		</div>
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+<div id="dialogBusinessHours" title="Asset Availability Management" class="w3-container w3-yellow">
+	<span id="businessHoursHook"></span>
+</div>
+<div id="dialogTbb" title="Time Base: Revenue Stream Management" class="w3-container w3-yellow">
+	<span id="moneymanagementHook"></span>
+</div>
+<div id="dialogVbb" title="Volume Based: Revenue Stream Management" class="w3-container w3-yellow">
+	<span id="volumebasedManagementHook"></span>
+</div>
+<div id="dialogPnP" title="Shipping Cost: Revenue Stream Management" class="w3-container w3-yellow">
+	<span id="postNpackageCostHook"></span>
+</div>
+
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+	<h1>Business Asset Management</h1>
+	<h3>Business are built on sound asset management, and promotion!</h3>
+</div>
+
+
+<span id="uxLoading"></span>
+<div class="w3-container" style="margin-left: 5%; min-width: 90%; margin-right: 5%;" >
+
+
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Business Profile</h4>
+	</div>
+	<fieldset >
+		<legend>Global Business Assets</legend>
+		<br>
+		<label><b>Existing Assets</b></label>
+		<span id="resourceHook"></span>
+		<br>
+	</fieldset>
+	<fieldset >
+		<legend>Asset Details</legend>
+		<label><b>Alias</b></label>
+		<input id=name class="w3-input w3-hover-grey" type="text" value="" required title=""/> <br>
+
+		<label><b>Asset Description</b></label>
+		<textarea  id=description rows="2" cols="10" title="This will be seen be all end users"> </textarea> <br>
+
+		<label><b>Visible To Vendor</b></label>
+		<select id=active class="w3-select w3-hover-grey"  title="If you set this a 'No' it will not be seen by shop, event, and activities shoppers!" required>
+			<option value="" disabled selected>Please Select</option>
+			<option value=true>Yes</option>
+			<option value=false>No</option>
+		</select>
+		<br>
+	</fieldset>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Business Scope</h4>
+	</div>
+	<fieldset>
+		<!--		<label><b>Select the target audience of this asset</b></label>
+				<div class="w3-center">
+					<input name="scopeTarget" type="radio" value="store">Store
+					<input name="scopeTarget" type="radio" value="notstore">Activities & Events
+				</div>
+				<br>
+				<hr>
+				<br>
+
+				<div class="ui center aligned basic segment">
+					<div class="">
+						<label><b>Confirm target audience as store vendors?</b></label>
+						<select disabled id=scopeShop size="4"  class="w3-select w3-hover-grey" required title="To select more than one option, hold down the CTRL key, and click on the respective items">
+							<option value=shop_on>Available to Online Shoppers?</option>
+						</select>
+					</div>
+					<div class="ui horizontal divider">
+						Or
+					</div>
+					<div class="">
+						<label><b>Who will consume this asset?</b></label>
+						<select  disabled id=scope size="4" multiple="multiple" class="w3-select w3-hover-grey" required title="To select more than one option, hold down the CTRL key, and click on the respective items">
+							<option value="" disabled selected>Please Select One or More Options</option>
+							<option value=event_on>Event Owners?</option>
+							<option value=activity_on>Activity Owners?</option>
+						</select>
+					</div>
+				</div>-->
+
+
+		<div class="">
+			<label><b>Make available to upstream builders</b></label>
+			<select   id=scope size="4" multiple class="w3-select w3-hover-grey" required title="To select more than one option, hold down the CTRL key, and click on the respective items">
+				<option value="" disabled selected>Please Select One or More Options</option>
+				<option value=shop_on>Online Shoppers Owners</option>
+				<option value=event_on>Event Owners?</option>
+				<option value=activity_on>Activity Owners?</option>
+			</select>
+		</div>
+
+
+		<div id="divSocializeAsset">
+			<br>
+			<br>
+			<label><b>On what level do you want to socialize this asset</b></label>
+			<select id=accessLevel size="3" class="w3-select w3-hover-grey" required title="Do you want to make this asset available to all platform associates, or restrict access. Default is all!">
+				<option value="" disabled selected>Please Select One Option</option>
+				<option value=public>Public</option>
+				<option value=restricted>Restricted To Select Partners</option>
+			</select>
+			<span id="whitelistHook"></span>
+		</div>
+
+	</fieldset>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Asset Management</h4>
+	</div>
+
+	<fieldset >
+		<div id="assetAvailability" class="w3-show">
+			<label><b>Business Availability Management</b></label>
+			<span id=availabilityMsgBox></span>
+			<button id=mgtAvailability class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage Availability!</button>
+			<br>
+		</div>
+
+		<label><b>Revenue Stream Management</b></label>
+		<br>
+
+		<label>Terms and Conditions Link</label>
+		<input id=tnc class="w3-input w3-hover-grey" type="url" value="" required title="Terms and conditions support the sale"/> <br>
+
+		<label>Customer Discount</label>
+		<select id=couponId class="w3-select w3-hover-grey"  required>
+			<option value="" disabled selected>Please Select</option>
+			<option value=0 >N/A</option>
+			<option value=5 >5%</option>
+			<option value=10 >10%</option>
+			<option value=15 >15%</option>
+			<option value=25 >25%</option>
+		</select>
+
+		<div id="divScope" class="w3-hide">
+			<br>
+			<label><b>Determine what costs, you will be offering this to your vendors</b></label>
+			<button id=mgtTbb class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage TTB!</button>
+		</div>
+		<div id="divScopeShop" class="w3-hide">
+			<br>
+			<label><b>Determine what costs, you will be offering this to your vendors</b></label>
+			<button id=mgtVbb class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage VVB!</button>
+		</div>
+		<br>
+
+		<label><b>Inventory Management</b></label>
+		<br>
+		<p>When thinking about capacity think about how you would normally book this item. If you have three squash courts, the set cap. to 3. If you have 1 tennis court, set it to one</p>
+
+		<div id="shippableDiv" class="w3-hide">
+			<label>Shippable</label>
+			<input id=shippable class="w3-input w3-hover-grey" type="checkbox" required title="If shippable add Post/Package Cost!"/>
+			<label>Post and Package Cost</label>
+			<!--<input id=postNpackageCost class="w3-input w3-hover-grey" type="number" min=0.00 step="0.25" required title="If shippable add Post/Package Cost!"/>-->
+			<button disabled id=mgtPostNpackageCost class="w3-button w3-block w3-light-grey w3-section w3-padding" >Manage Post N Package Costs</button>
+		</div>
+
+
+		<label>Maximum available units</label>
+		<input id=units_total class="w3-input w3-hover-grey" type="number"  min=1 value=0 required title="This is the physical amount available, please adjust accordingly. This will affect your sales capacity, if reflected wrong!"/>
+		<br>
+		<p>Setting an alert level will better help with analytics</p>
+		<label>Minimum threshold before alerting: <span id="lowerHook">0</span> [%]</label>
+		<br>
+		<input type="range" min="1" max="100" value=0 class="slider" id="units_lower" title="Email Alert will be sent out once threshold is met"/>
+		<br>
+		<p>Setting an alert level will better help with analytics</p>
+		<label>Safe threshold level: <span id="upperHook">0</span>[%]</label>
+		<br>
+		<input type="range" min=50 max="100" value="51" class="slider" id="units_upper" title="Email Update will be sent out once threshold is met"/>
+		<br>
+		<label>Activate Alerts</label>
+		<input id=alert_inventory class="w3-input w3-hover-grey" type="checkbox"  required title=""/> <br>
+		<label>Contact email in the case of an alert</label>
+		<input id=email_inventory class="w3-input w3-hover-grey" type="email"  required title=""/> <br>
+		<label>Contact SMS in the advent of an alert></label>
+		<input id=sms_inventory class="w3-input w3-hover-grey" type="tel"  required title=""/> <br>
+	</fieldset>
+
+
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Primary Contact Owner</h4>
+	</div>
+
+	<fieldset>
+		<label><b>Communication Detail</b></label>
+		<br>
+
+		<label>Point of contact name</label>
+		<input id=poc_name class="w3-input w3-hover-grey" type="text" value="" required title=""/> <br>
+		<label>Email address to be contacted on</label>
+		<input id=poc_email class="w3-input w3-hover-grey" type="email" value="" required title=""/> <br>
+		<label>Phone number</label>
+		<input id=poc_phone class="w3-input w3-hover-grey" type="tel" value="" required title=""/> <br>
+	</fieldset>
+
+
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="w3-panel w3-light-grey w3-center w3-padding-16" style="min-width: 100%;">
+		<h4 class="w3-gray ">Bulk Asset Management - <span class="w3-tag w3-yellow">Coming Soon!</span></h4>
+	</div>
+	<fieldset >
+		<form id="frmIcon">
+			<input id="iconName1"  disabled name="iconName" type="file" class="w3-input w3-hover-grey" accept="image/*"  title=""/><br>
+		</form>
+		<button id=save disabled class="w3-button w3-block w3-light-grey w3-section w3-padding" >Upload Now!</button>
+	</fieldset>
+
+
+	<fieldset >
+		<legend>Form Registration Completion</legend>
+		<br>
+		<br>
+		<br>
+		<br>
+		<p>Assets are the building blocks, on which your business is developes, the more assets you onboard, the more events, you can host, the more activities your can promote!<br><br> When considering asset managment, dont just consider your infrastructure, but also consider your staff, your partnes, your afflicates.<br><br>Finally aassets can also be registered as items of sale too, so be decerning about your business, they are form the start of a great relationship!</p>
+
+
+		<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding" >Save</button>
+	</fieldset>
+
+</div>

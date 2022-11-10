@@ -1,0 +1,65 @@
+{
+  "client": [
+    {
+      "id": 392436,
+      "ts": "2018-05-13T15:44:56.887Z",
+      "name": "sportsco",
+      "businessSite": "http://www.sportsco.com",
+      "businessLocation": "Ireland",
+      "offering": "pro",
+      "staffCount": 30,
+      "branding": true
+    }
+  ],
+  "clientLocation": [
+    {
+      "id": 618643,
+      "type": "Event",
+      "clientId": "392436",
+      "name": "2nd Floor"
+    }
+  ],
+  "patron": [
+    {
+      "id": 254287,
+      "pics": {
+        "pic1": "C:\\fakepath\\sqa-logo.png"
+      },
+      "title": "Mrs.",
+      "fname": "Rosemary",
+      "lname": "Ennis",
+      "name": "Rosemary Ennis",
+      "patronType": "Member",
+      "address": "19 kerlogue",
+      "address2": "ringsend",
+      "city": "Dublin",
+      "zip": "4",
+      "country": "IE",
+      "mobile": "09889778989",
+      "email": "iot.ca.usera@gmail.com",
+      "dob": "1977-01-02",
+      "account": {
+        "username": "rennis",
+        "password": "FionnAnto1972"
+      },
+      "clientId": 392436,
+      "customerId": "-1",
+      "customerIdReal": "cus_Dcazi22eTd8gpt"
+    },
+    {
+      "id": 493700,
+      "patronType": "Member, Box League",
+      "ts": "2018-06-10T10:49:35.939Z",
+      "pics": {},
+      "name": "Snop Dog",
+      "mobile": "098998089090",
+      "email": "tonygennis@gmail.com",
+      "account": {
+        "username": "tonygennis@gmail.com",
+        "password": "FionnAnto1972"
+      },
+      "customerId": "-1",
+      "clientId": 392436
+    }
+  ]
+}

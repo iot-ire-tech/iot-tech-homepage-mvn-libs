@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<div class="w3-center w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+
+	<label><b>Associated Business Entity</b></label>
+	<span class="existingList"></span>
+	<br>
+	<fieldset>
+		<legend><b>Rule To Apply To This Item</b></legend>
+		<label>Scanning Item</label>
+		<span id="scanner"></span>
+		<div id="div-video-container" class="w3-center" >
+			<video class="dbrScanner-video"  style="width:200px; height:200px" playsinline="true"></video>
+		</div>
+		<span id="scanResultCode">New Code Here</span>
+	</fieldset>
+
+	<br>
+	<fieldset>
+		<legend><b>Identify</b></legend>
+		<label><b>Tag</b></label><br>
+		<input id=tagNameQr class="w3-input w3-hover-grey" type="text" value=""  placeholder="Sports Bags"  required title="">
+		<br>
+
+		<label>Quantity</label> <br>
+		<input id=quantity class="w3-input w3-hover-grey " type="number" min="1" step="1" title=""/>
+		<br>
+
+
+		<label><b>Notes</b></label> <br>
+		<textarea id="digiNotesQr" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+			  placeholder="Eg: need to get new Scanner"
+			  required></textarea>
+	</fieldset>
+
+</div>
+<br>
+<span id="qrCodeResults"></span>
+<br>
+<button id="mod" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Mod</button>
+<br>
+
+
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<div id="ActivitiesMod">
+	<br> <br>
+	<div class="w3-container w3-center">
+		<h4>Existing Activities</h4>
+		<label>Select activity to modify</label>
+		<span class="existingList"  ></span>
+	</div>
+	<br>
+	<hr>
+	<br>
+
+
+
+	<label><b>Public Introduction</b></label> <br>
+	<textarea id="intro" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+		  placeholder="Eg: Box A is were its all at, the current reighing champion is waiting for you!"
+		  required></textarea>
+	<br> <br>
+
+	<label><b>Activity Name</b></label>
+	<input id=name class="w3-input w3-hover-grey" type="text" value=""  placeholder="Eg: Box A, or Spinning, or Scrum Session"  required title="">
+	<br>
+	<br>
+
+
+	<fieldset>
+		<legend><b>Lets be social!!!</b></legend>
+		<label><b>Share with...</b></label>
+		<select id=scope class="w3-select " size=5 required >
+			<option value="" disabled selected>Please Select</option>
+			<option value="friends">Friends</option>
+			<option value="trusted">Trusted</option>
+			<option value="all">All</option>
+			<option value="private">None</option>
+
+		</select>
+		<br>
+		<br>
+		<label><b>Accessibility</b></label>
+		<select id=accessibility class="w3-select " size=5 required >
+			<option value="" disabled selected>Please Select</option>
+			<option value="public">Public</option>
+			<option value="private" >Private</option>
+		</select>
+		<br>
+		<br>
+		<label><b>Tags</b></label>
+		<input id=tags class="w3-input w3-hover-grey" type="text" value=""  placeholder="great, good value, etc"  required title="">
+
+		<label><b>Notes</b></label> <br>
+		<textarea id="notes" class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+			  placeholder="Eg: Please wear white running shoes at all times"
+			  required></textarea>
+
+
+	</fieldset>
+	<br>
+	<br>
+
+
+	<!--<label><b>Identify the event capacity?</b></label>
+	<input id=quanity class="w3-input w3-hover-grey" type="text" value=""  placeholder="Eg: 10, 20, 100 persons?"  required title="">
+	<br>
+	<br>-->
+
+	<!--<fieldset>
+		<legend><b>Define the event period</b></legend>
+		<div class="ui form">
+			<div class="two fields">
+				<div class="field">
+					<label>Start date</label>
+					<div class="ui calendar" id="rangestart">
+						<div class="ui input left icon">
+							<i class="calendar icon"></i>
+							<input type="text" placeholder="Start" id="startEvent" required >
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label>End date</label>
+					<div class="ui calendar" id="rangeend">
+						<div class="ui input left icon">
+							<i class="calendar icon"></i>
+							<input type="text" placeholder="End" id="endEvent" required>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</fieldset>
+	<br>
+	<br>-->
+
+
+	<label><b>Disclaimer</b></label>
+	<textarea id="disclaimer"
+		  class="w3-center  w3-hover-grey" rows="5" style="margin-left: 10%; width: 80%; margin-right: 10%"
+		  placeholder="Eg: Legal PDF link, Or Management reserve the right to....."></textarea>
+
+
+
+
+
+
+
+
+
+
+
+	<br><br>
+	<button id=delete class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-delete"  >Delete</button>
+	<button id=update class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right"  >Update</button>
+	<br><br>
+</div>

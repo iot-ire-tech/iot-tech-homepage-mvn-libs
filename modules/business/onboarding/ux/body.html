@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<img id="hdr" src="">
+
+<div id="messageHook" title="">
+    <span id="messageBody"></span>
+</div>
+
+
+<span id=modelsTarget></span>
+
+<div id=brandingHeader class="w3-container w3-center  sticky_top">
+</div>
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+    <h1>Onboarding Portal</h1>
+    <h3>No-one likes filling in forms, but when you do, its best done in one go!</h3>
+</div>
+
+<div class="w3-center">
+    <span id="menuBarHook" class="">menubar</span>
+</div>
+<br>
+
+
+<div class="w3-container">
+    <center>
+        <p>The Number</p>
+        <p>#1</p>
+        <p>collaborative business solution provider welcomes you!</p>
+        <h3 id="primaryAccountOwner"></h3>
+        <span id="tagLine"></span>
+    </center>
+</div>
+
+<div class="w3-container w3-center" style="margin-left: 15%; min-width: 70%; margin-right: 15%;">
+    <span id="orderHook" class=""></span>
+</div>
+
+
+<div class="w3-container" style="margin-left: 15%; min-width: 30%; margin-right: 15%;">
+
+
+    <div class="w3-panel w3-center w3-gray w3-padding w3-round-xxlarge"
+         style="margin-left: 15%; min-width: 30%; margin-right: 15%;">
+        Revenue<br>
+        Identify the bank account you would like customer payments to be deposited into.
+    </div>
+    <div class="w3-border w3-center w3-padding-24 mySlidesOnboarding">
+
+        <div>
+            <!--https://www.mybusinesspal.com/services/modules/stripe/connectaccount/extBankAccount/release/form.jsp?accountId=acct_1Gf2bYAjpBNs61bv-->
+            <span><i class="fa fa-money"></i><br>Banking</span><br>
+            <input id="bankAccountService" class="offering w3-check w3-border onboarding" value=bankAccountService
+                   type="radio"
+                   name="offering"
+                   title="Banking details where monies will be deposited into when customer purchase items...">
+        </div>
+
+
+    </div>
+
+
+    <div class="w3-panel w3-center w3-grey w3-padding w3-round-xxlarge"
+         style="margin-left: 15%; min-width: 30%; margin-right: 15%;">
+        Legal Entity<br>
+        Select an entrepreneurial type that is suitable to you!
+        <br>
+        <!--            Select the registration that is suitable to you! Remember operating as a corporation or limited entity has-->
+        <!--            responsibilities, and company description is important, to list in clear terms.-->
+    </div>
+    <div class="w3-border w3-center w3-padding-24 mySlidesOnboarding">
+        <!--https://www.mybusinesspal.com/services/modules/stripe/connectaccount/individual/release/profile.jsp?accountId=acct_1Gf2bYAjpBNs61bv-->
+        <div>
+            <span><i class="fa fa-spinner"></i><br>Private Individual</span><br>
+            <input id="individualProfile" class="offering w3-check w3-border onboarding" value=individualProfile
+                   type="radio"
+                   title="In order to be compliant with our payment provider, you need to complete following...."
+                   name="offering">
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+            <span><i class="fa fa-square"></i><br>Limited Company/Corporation</span><br>
+            <input id="ltdProfile" class="offering w3-check w3-border onboarding" value=ltdProfile type="radio"
+                   name="offering"
+                   title="In order to be compliant with our payment provider, you need to complete following....">
+        </div>
+        <div>
+            <span><i class="fa fa-star"></i><br>Non Profit</span><br>
+            <input id="nonProfitProfile" class="offering w3-check w3-border onboarding" value=nonProfitProfile
+                   type="radio"
+                   title="In order to be compliant with our payment provider, you need to complete following...."
+                   name="offering">
+        </div>
+        <div>
+            <span><i class="fa fa-star"></i><br>Sole Trader</span><br>
+            <input id="soleTraderProfile" class="offering w3-check w3-border onboarding" value=soleTraderProfile
+                   type="radio"
+                   title="In order to be compliant with our payment provider, you need to complete following...."
+                   name="offering">
+        </div>
+    </div>
+
+    <br>
+    <div class="w3-border w3-center w3-padding-24 mySlidesOnboarding">
+        <div class="w3-panel w3-center w3-grey w3-padding w3-round-xxlarge"
+             style="margin-left: 15%; min-width: 30%; margin-right: 15%;">
+            Account Status <br>
+            If you account status is green, you can precede with user account management and subscription planning.
+            <br>
+        </div>
+
+        <div>
+            <span><i class="fa-hand-spock-o"></i><br>Account Status</span><br>
+            <input id="accountStatus" class="offering w3-check w3-border  " value=accountStatus type="radio"
+                   title="If there are any issues with your account, please address. If you are unclear, contact support asap...."
+                   name="offering">
+        </div>
+        <!--            <div>-->
+        <!--                &lt;!&ndash;https://www.mybusinesspal.com/services/modules/stripe/connectaccount/accountstatus/release/check.jsp?accountId=acct_1Gf2bYAjpBNs61bv&ndash;&gt;-->
+        <!--                <span><i class="fa-hand-spock-o"></i><br>Account Deletion</span><br>-->
+        <!--                <input disabled id="accountDeletion" class="offering w3-check w3-border" value=accountDeletion-->
+        <!--                       type="radio" name="offering">-->
+        <!--            </div>-->
+    </div>
+
+
+    <!--        <div class="w3-panel w3-center w3-gray w3-padding w3-round-xxlarge"-->
+    <!--             style="margin-left: 15%; min-width: 30%; margin-right: 15%;">-->
+    <!--            User Account Management<br>-->
+    <!--            Only on completion of your account setup above, will you be able to setup an member account.-->
+    <!--        </div>-->
+    <!--        <div class="w3-border w3-center w3-padding-24 mySlidesOnboarding">-->
+    <!--            <div>-->
+    <!--                &lt;!&ndash;https://www.mybusinesspal.com/services/modules/stripe/billing/subscription/release/signup.jsp?customerId=cus_HDTYaJszCuifS7&ndash;&gt;-->
+    <!--                <span><i class="fa fa-share"-->
+    <!--                ></i><br>User Account Portal</span><br>-->
+    <!--                <input disabled id="newUser" class="offering w3-check w3-border" value=newUser originId="onboarding"-->
+    <!--                       type="radio" name="offering"-->
+    <!--                       title="Best place to start is to create a new login account for yourself...">-->
+    <!--            </div>-->
+
+    <!--        </div>-->
+
+    <!--        <div class="w3-panel w3-center w3-gray w3-padding w3-round-xxlarge"-->
+    <!--             style="margin-left: 15%; min-width: 30%; margin-right: 15%;">-->
+    <!--            Subscription Plan<br>-->
+    <!--            The plan you choose will determine the how much revenue you can potentially bring in, low level plans are-->
+    <!--            restrictive.-->
+    <!--        </div>-->
+    <!--        <div class="w3-border w3-center w3-padding-24 mySlidesOnboarding">-->
+
+    <!--            <div>-->
+    <!--                &lt;!&ndash;https://www.mybusinesspal.com/services/modules/stripe/billing/subscription/release/signup.jsp?customerId=cus_HDTYaJszCuifS7&ndash;&gt;-->
+    <!--                <span><i class="fa fa-share"-->
+    <!--                ></i><br>Payment Plan</span><br>-->
+    <!--                <input id="subscriptionService" class="offering w3-check w3-border" value=subscriptionServices-->
+    <!--                       type="radio" name="offering" title="Pricing plan you would like to sign up to...">-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+</div>
+<br>
+
+<div class="w3-container" style="margin-left: 35%; min-width: 30%; margin-right: 35%;">
+    <div class="w3-container">
+        <button id=btnOnboardMe class="w3-button w3-block w3-light-grey w3-section w3-padding" type="submit">Enter
+        </button>
+    </div>
+</div>
+
+
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<br> <br> <br>
+<div id=brandingFooter class="w3-container w3-center">
+    <!--<img id="tdr" src="/resources/media/clients/acct/image/hdr1/1GAINZGfqh4DeGy5_pic-1920x130_header.png">-->
+</div>
+
+</div>
+
+<!-- Start of LiveChat (www.livechatinc.com) code -->
+<script type="text/javascript">
+    window.__lc = window.__lc || {};
+    window.__lc.license = 11556993;
+    (function () {
+        var lc = document.createElement('script');
+        lc.type = 'text/javascript';
+        lc.async = true;
+        lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(lc, s);
+    })();
+</script>
+
+<noscript>
+    <!--<a href="https://www.livechatinc.com/chat-with/11556993/" rel="nofollow">Chat with us</a>,-->
+    <!--powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a>-->
+</noscript>
+<!-- End of LiveChat code -->

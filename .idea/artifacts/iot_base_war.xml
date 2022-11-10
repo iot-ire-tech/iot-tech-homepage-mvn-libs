@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="iot-base:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>iot-base</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="iot-base-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="iot-base:war exploded" />
+    </root>
+  </artifact>
+</component>

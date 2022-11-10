@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>W3.CSS</title>
+		<link rel="icon" href="" type="image/gif" sizes="16x16">
+
+
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+		<script src="/iot-base/services/bootstrap/bootStrap.js"></script>
+		<script src="/iot-base/services/nw/crudIt.js"></script>
+		<script src="/iot-base/services/db/dbAllocation.js"></script>
+		<script src="/iot-base/services/db/dbHandler.js"></script>
+		<script src="/iot-base/services/nw/httpHandler.js"></script>
+		<script src="/iot-base/services/utils/env/env-controller.js"></script>
+		<script src="/iot-base/env.js"></script>
+
+		<script src="/iot-base/services/ux/pageLoad.js"></script>
+
+		<script src="/iot-base/services/utils/time/Time.js"></script>
+		<script src="/iot-base/services/utils/numbers/Numbers.js"></script>
+		<script src="/iot-base/services/utils/logging/Log.js"></script>
+		<script src="/iot-base/services/utils/browser/Browser.js"></script>
+		<script src="/iot-base/services/utils/strings/Strings.js"></script>
+
+
+		<!--// Services under test-->
+		<script src="../ux/cardRegistrationModel.html"></script>
+		<script src="../billing.js"></script>
+		<script src="../model.js"></script>
+
+		<!--// Consumer of services.-->
+		<script src="testBilling.js"></script>
+	</head>
+
+	<body>
+
+		<div class="w3-container w3-border-gray" style="margin-left: 20%; margin-right: 20%">
+			<span id="header"></span>
+			<br> <br> <br> <br>
+			<br> <br> <br> <br>
+
+			<span id="proportionalBillingTarget"></span>
+			<span id="patronTarget"></span>
+			<span id="Target"></span>
+
+			<br> <br> <br> <br>
+			<br> <br> <br> <br>
+			<span id="footer"></span>
+		</div>
+
+
+	</body>
+</html>

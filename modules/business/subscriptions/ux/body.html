@@ -1,0 +1,211 @@
+<img id="hdr" src="">
+<span id="banner"></span>
+<br>
+
+<div id="dialogAlerts" title="Information Checkpoint" class="w3-container w3-center ">
+    <span id="dialogAlertsHook"></span>
+</div>
+<div id="dialogCoupon" title="Information Checkpoint" class="w3-container w3-center ">
+    <span id="dialogCouponHook"></span>
+</div>
+
+<div id="dialogSubscriptionMgt" title="Subscription Management" class="w3-container w3-center ">
+    <span id="dialogSubscriptionMgtHook"></span>
+</div>
+<div class="w3-container" style="margin-left: 1%; min-width: 98%; margin-right: 1%">
+
+
+    <!--<button id=save   class="w3-button  w3-light-grey w3-section w3-padding w3-right-align " style="max-width: 10%;" ><--- Return Back To Login</button>-->
+
+    <br>
+    <div class="w3-row w3-border">
+        <h3 class="w3-center w3-light-grey">New Offers All The Time!</h3>
+        <div class="w3-center">
+<!--            <span id=cost class="fa fa-euro" style="font-size:26px;color:#21BA45"> 0.00</span> <br>-->
+            <span id="addSubscriptionMsg"></span>
+            <span id="buySubscriptionMsg"></span>
+            <span class="w3-yellow " id="msgError"></span>
+            <span style="color:#21BA45" id="msgConfirmation"></span>
+            <span id=selectAccountsHookMsg>  </span>
+        </div>
+        <div class="w3-center">
+            <!--<label><b>Browse subscription offers from other affiliate providers</b></label>-->
+<!--            <h5 class="w3-light-rey">Browse Subscription Offers</h5>-->
+            <span id=selectAccountsHook>  </span>
+            <br>
+
+            <div class="ui ordered steps">
+                <div class="completed step">
+                    <div class="content">
+                        <div class="title">Subscriptions</div>
+                        <div class="description">Click on a subscription below to see whats on offer.</div>
+                    </div>
+                </div>
+                <div class="completed step">
+                    <div class="content">
+                        <div class="title">Bundles</div>
+                        <div class="description">Click on a bundle item to see what costs are involved.</div>
+                    </div>
+                </div>
+                <div class="completed step">
+                    <div class="content">
+                        <div class="title">Further Information</div>
+                        <div class="description">Review the details below regarding each plan!!!</div>
+                    </div>
+                </div>
+                <div class="completed step">
+                    <div class="content">
+                        <div class="title">Add To Cart</div>
+                        <div class="description">The details below make up this particular plan!!!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w3-third w3-container w3-white w3-padding-16"
+             style="overflow: auto; max-height: 600px;height: 600px; max-width: 25%;width: 25%">
+            <h5 class="w3-light-grey">1. Subscriptions</h5>
+            <span id=selectSubscriptionHook style="overflow: auto; max-height: 600px;height: 600px">  </span>
+        </div>
+        <div class="w3-third w3-container  w3-white w3-padding-16"
+             style="overflow: auto; max-height: 600px;height: 600px;max-width: 25%;width: 25%">
+            <h5 class="w3-light-grey">2. Bundles</h5>
+            <span id=selectPlansHook>  </span>
+        </div>
+        <div class="w3-third w3-container  w3-white w3-padding-16"
+             style="overflow: auto; max-height: 600px;height: 600px;max-width: 50%;width: 50%">
+            <h5 class="w3-light-grey">3. Checkout further subscription/planning information below...</h5>
+
+
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1"> <span class="w3-padding tabItem">Promo Video</span> </a></li>
+                    <li><a href="#tabs-7"> <span class="w3-padding tabItem">Social Media</span></a></li>
+                    <li><a href="#tabs-8"> <span class="w3-padding tabItem">Subscription Details</span> </a></li>
+                    <li><a href="#tabs-3"> <span class="w3-padding tabItem">Pricing Plan</span></a></li>
+                    <li><a href="#tabs-2"> <span class="w3-padding tabItem">Business Hours</span></a></li>
+                    <li><a href="#tabs-4"> <span class="w3-padding tabItem">Contact</span></a></li>
+                    <!--                    <li><a href="#tabs-5"> <span class="w3-padding tabItem">Location</span></a></li>-->
+                    <li><a href="#tabs-6"> <span class="w3-padding tabItem">Coupon Info</span></a></li>
+                </ul>
+                <div id="tabs-1">
+                    <div id="tabMedia">
+                        <fieldset>
+                            <br>
+                            <span id=planMediaHook>  </span>
+                        </fieldset>
+                    </div>
+                </div>
+                <div id="tabs-2">
+                    <div id="tabTimeTable">
+                        <fieldset>
+                            <br>
+                            <span id=planTimetableHook>  </span>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="tabs-3">
+                    <div id="tabCosts">
+                        <fieldset>
+                            <br>
+                            <span id=planCostsHook>  </span>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="tabs-4">
+                    <div id="tabContact">
+                        <fieldset>
+                            <br>
+                            <span id=planContactHook>  </span>
+                        </fieldset>
+                    </div>
+                </div>
+                <!--                <div id="tabs-5">-->
+                <!--                    <div id="tabLocation">-->
+                <!--                        <fieldset>-->
+                <!--                            <br>-->
+                <!--                            <span id=planLocationHook>  </span>-->
+                <!--                        </fieldset>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <div id="tabs-6">
+                    <div id="tabCoupon">
+                        <fieldset>
+                            <br>
+                            <span id=planCouponHook>  </span>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div id="tabs-7">
+                    <fieldset>
+                        <div id="tabsMedia">
+                            <ul>
+                                <li><a href="#tabsmedia-2"> <span class="w3-padding ">Facebook</span></a></li>
+                                <li><a href="#tabsmedia-3"> <span class="w3-padding ">Youtube</span></a></li>
+                            </ul>
+                            <div id="tabsmedia-2">
+                                <fieldset>
+                                    <br>
+                                    <span id=planFacebookHook>  </span>
+                                </fieldset>
+                            </div>
+                            <div id="tabsmedia-3">
+                                <fieldset>
+                                    <br>
+                                    <span id=planYoutubeHook>  </span>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="tabs-8">
+                    <div id="tabMeta">
+                        <fieldset>
+                            <br>
+                            <span id=subMetaHook>  </span>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+
+
+            <br>
+            <span id=planRecurringHook>  </span>
+            <br>
+        </div>
+    </div>
+
+</div>
+
+<br>
+<div class="w3-row w3-center">
+    <div class="w3-quarter w3-container w3-white ">
+        <button id=login class="w3-button w3-light-grey w3-padding ">Return To Login</button>
+    </div>
+
+
+    <div class="w3-quarter w3-container w3-white ">
+        <!--<button id=btnMgtSubscriptions  class="w3-button w3-light-grey w3-padding " > <span style="color: #4183C4">Manage My Subscriptions</span> </button>-->
+        <button id=btnMgtSubscriptions class="w3-button w3-light-grey w3-padding ">Cancel My Subscriptions</button>
+    </div>
+    <div class="w3-quarter w3-container w3-white ">
+        <!--<button id=addPlan   class="w3-button w3-light-grey w3-padding"  ><span style="color:#4183C4 ">Add New Subscription</span></button>-->
+        <button id=addSubscription class="w3-button w3-light-grey w3-padding" disabled>Add To Cart</button>
+    </div>
+    <div class="w3-quarter w3-container w3-white ">
+        <button id="buySubscription" class="w3-button w3-light-grey w3-padding " disabled>Buy Now</button>
+    </div>
+</div>
+
+
+<br>
+<br>
+<br>
+
+
+
+

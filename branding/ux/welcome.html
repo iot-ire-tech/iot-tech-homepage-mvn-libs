@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<fieldset class="w3-padding-32 w3-center">
+	<legend><b>Welcome Message</b></legend>
+	<div class="w3-row" >
+		<div class="w3-half" >
+			<label>Video</label><br>
+			<form id="frmWelecomeVid">
+				<input name="welecomeVid" class="w3-input w3-hover-grey" type="file" accept="video/mp4,video/x-m4v,video/*" /><br>
+			</form>
+		</div>
+		<div class="w3-half" >
+			<video  id="welecomeVid" style="margin-left: 10%; width: 80%; margin-right: 10%" controls> </video>
+		</div>
+	</div>
+	<div class="w3-row" >
+		<div class="w3-content" >
+			<label>Heading</label><br>
+			<input name="welecomeTitle" class="w3-input w3-hover-grey" type="file" accept="video/mp4,video/x-m4v,video/*" /><br>
+		</div>
+	</div>
+	<div class="w3-row" >
+		<div class="w3-half" >
+			<label>Icon</label><br>
+			<form id="frmWelecomeIcon">
+				<input name="welcomeIcon" class="w3-input w3-hover-grey" type="file" accept="video/mp4,video/x-m4v,video/*" /><br>
+			</form>
+		</div>
+		<div class="w3-half" >
+			<img id=welcomeIcon style=""  alt="Preview Image" border="1"  src=""/><br>
+		</div>
+	</div>
+
+	<div class="ui horizontal divider">
+		Or
+	</div>
+
+	<div class="w3-row" >
+		<div class="w3-half" >
+			<label>Social Media</label><br>
+			<input id="welecomeSocial" class="w3-input w3-hover-grey" type="text" accept="video/mp4,video/x-m4v,video/*" value="Eg: https://www.youtube.com/embed/tgbNymZ7vqY"/><br>
+		</div>
+		<div class="w3-half" >
+			<iframe
+			    id=socialmedia1
+			    style="margin-left: 10%; width: 80%; margin-right: 10%"
+			    frameborder="0"
+			    allow="autoplay; encrypted-media"
+			    allowfullscreen
+			    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+			    >
+			</iframe>
+		</div>
+	</div>
+</fieldset>
+<br>
+
+<label><b>Publish Date[YYYY-DD-MM]</b></label>
+<input id=publishDate class="w3-input w3-hover-grey" type="date" value="" required title=""/> <br>
+
+
+<label><b>Welcome Message</b></label>
+<textarea id=welcomeMessage class="w3-input w3-hover-grey" placeholder="Welcome to Gold's Gym venice beach!"  value=""></textarea>

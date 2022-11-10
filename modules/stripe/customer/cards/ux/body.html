@@ -1,0 +1,40 @@
+<div class="w3-center">
+    <!--<h3>Upon completing this sign-up form, check your email</h3>-->
+    <!--<h4>Only then will you be able to login.</h4>-->
+</div>
+<hr>
+
+<label><b>Name On Card</b></label>
+<input id=name class="w3-input w3-hover-grey" type="text" value="" required title=""
+       pattern="[\w]{2,50}$"
+/> <br>
+<span id="nameMsg" class="w3-tag w3-yellow"></span><br>
+
+
+<label><b>Long Number</b></label>
+<input id=number class="w3-input w3-hover-grey" type="text" value="" required title=""
+       pattern="[\d]{10,18}$"
+/> <br>
+<span id="numberMsg" class="w3-tag w3-yellow"></span><br>
+
+<!--	<label><b>Expiry Day</b></label>
+	<input id=day class="w3-input w3-hover-grey" type="number" value="1" required title=""/> <br>-->
+<label><b>Expiry Month</b></label>
+<input id=month class="w3-input w3-hover-grey" type="number" value="" min="1" max="12" required title=""
+       pattern="[\d]{1,2}$"
+/> <br>
+<span id="monthMsg" class="w3-tag w3-yellow"></span><br>
+<label><b>Expiry Year</b></label>
+<input id=year class="w3-input w3-hover-grey" type="number" value="" min="2020" max="2050" required title=""
+       pattern="[\d]{4}$"
+/> <br>
+<span id="yearMsg" class="w3-tag w3-yellow"></span><br>
+
+<label><b>CVS Number(3-digits back of card)</b></label>
+<input id=cvs class="w3-input w3-hover-grey" type="number" value="" required title=""
+       pattern="[\d]{3}$"
+/> <br>
+<span id="cvsMsg" class="w3-tag w3-yellow"></span><br>
+
+
+

@@ -1,0 +1,702 @@
+<h3>Insight: Whoa you just transformed my asset into an online video commodity!!!!</h3>
+<fieldset>
+    <legend><b>Business Assets</b></legend>
+    <label>Catalogue Existing Videohub Items</label>
+    <span id="videoHubItemHook"></span>
+    <br>
+
+    <label>Upstream assets available!</label>
+    <span id="videoHubResourceHook"></span>
+    <br>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+
+<fieldset>
+    <legend><b>Hub Item Profile</b></legend>
+    <label>Title</label>
+    <input class="w3-input w3-hover-grey name" type="text" value="" required title=""/> <br>
+    <br>
+    <label>Description</label>
+    <textarea class=description rows="2" cols="10" title="This will be seen be all end users"> </textarea> <br>
+    <br>
+    <br>
+    <label>Category</label>
+    <select class="w3-select w3-hover-grey category" title="Categories are used during a search." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="118" data-spec="select-option">Auto, Boat &amp; Air</option>
+        <option value="101" data-spec="select-option">Business &amp; Professional</option>
+        <option value="111" data-spec="select-option">Charity &amp; Causes</option>
+        <option value="113" data-spec="select-option">Community &amp; Culture</option>
+        <option value="115" data-spec="select-option">Family &amp; Education</option>
+        <option value="106" data-spec="select-option">Fashion &amp; Beauty</option>
+        <option value="104" data-spec="select-option">Film, Media &amp; Entertainment</option>
+        <option value="110" data-spec="select-option">Food &amp; Drink</option>
+        <option value="112" data-spec="select-option">Government &amp; Politics</option>
+        <option value="107" data-spec="select-option">Health &amp; Wellness</option>
+        <option value="119" data-spec="select-option">Hobbies &amp; Special Interest</option>
+        <option value="117" data-spec="select-option">Home &amp; Lifestyle</option>
+        <option value="103" data-spec="select-option">Music</option>
+        <option value="199" data-spec="select-option">Other</option>
+        <option value="105" data-spec="select-option">Performing &amp; Visual Arts</option>
+        <option value="114" data-spec="select-option">Religion &amp; Spirituality</option>
+        <option value="120" data-spec="select-option">School Activities</option>
+        <option value="102" data-spec="select-option">Science &amp; Technology</option>
+        <option value="116" data-spec="select-option">Seasonal &amp; Holiday</option>
+        <option value="108" data-spec="select-option">Sports &amp; Fitness</option>
+        <option value="109" data-spec="select-option">Travel &amp; Outdoor</option>
+
+    </select>
+    <br>
+    <br>
+    <label>Type</label>
+    <select class="w3-select w3-hover-grey type" title="Types are used during a search." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value="19" data-spec="select-option">Appearance or Signing</option>
+        <option value="17" data-spec="select-option">Attraction</option>
+        <option value="17" data-spec="select-option">Squash</option>
+        <option value="17" data-spec="select-option">Coaching</option>
+        <option value="17" data-spec="select-option">Event</option>
+        <option value="17" data-spec="select-option">Webinar</option>
+        <option value="17" data-spec="select-option">Registration</option>
+        <option value="18" data-spec="select-option">Camp, Trip, or Retreat</option>
+        <option value="9" data-spec="select-option">Class, Training, or Workshop</option>
+        <option value="6" data-spec="select-option">Concert or Performance</option>
+        <option value="1" data-spec="select-option">Conference</option>
+        <option value="4" data-spec="select-option">Convention</option>
+        <option value="8" data-spec="select-option">Dinner or Gala</option>
+        <option value="5" data-spec="select-option">Festival or Fair</option>
+        <option value="14" data-spec="select-option">Game or Competition</option>
+        <option value="10" data-spec="select-option">Meeting or Networking Event</option>
+        <option value="100" data-spec="select-option">Other</option>
+        <option value="11" data-spec="select-option">Party or Social Gathering</option>
+        <option value="15" data-spec="select-option">Race or Endurance Event</option>
+        <option value="12" data-spec="select-option">Rally</option>
+        <option value="7" data-spec="select-option">Screening</option>
+        <option value="2" data-spec="select-option">Seminar or Talk</option>
+        <option value="16" data-spec="select-option">Tour</option>
+        <option value="13" data-spec="select-option">Tournament</option>
+        <option value="3" data-spec="select-option">Tradeshow, Consumer Show, or Expo</option>
+    </select>
+    <br>
+    <br>
+    <label>Tag</label>
+    <input class="w3-input w3-hover-grey tag" type="text" value="" required
+
+           title="Improve discoverability of your event by adding tags relevant to the subject-matter"/> <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addMetaVideo">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<span class=customerListHook></span>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Revenue Stream Management</b></legend>
+    <span class="w3-tag w3-yellow revenueMsg"></span>
+    <br>
+
+
+    <label>Apply a sale price!</label>
+    <input class="w3-input w3-hover-grey cost" type="number" min="0.00" step="0.01" placeholder="10.00" required
+           title="Value under which I will resell this item to my customers"/> <br>
+
+    <label>Select currency</label>
+    <select class='currency w3-select w3-hover-grey' required>
+        <option disabled selected>Please Select</option>
+        <option value=EUR>EUR</option>
+        <option value=BPD>UK Pound</option>
+        <option value=USD>US Dollar</option>
+        <option value="">Request More Contact Support</option>
+    </select>
+    <br>
+    <label>Apply customer discount</label>
+    <select class="w3-select w3-hover-grey discount" required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=0>0%</option>
+        <option value=5>5%</option>
+        <option value=10>10%</option>
+        <option value=15>15%</option>
+        <option value=25>25%</option>
+    </select>
+    <label>Ready for sell now?</label>
+    <select class="w3-select w3-hover-grey sellable"
+            title="If you set this a 'No' it will not be displayed to customers ." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=true>Yes</option>
+        <option value=false>No</option>
+    </select>
+    <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addRevenueVideo">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Multimedia Content: VideoHub</b></legend>
+    <span>High quality pictures and videos advised</span><br>
+    <span>The order in which the content is presented here, is the order in which they will be displayed to your customers</span><br>
+    <span>Content should be mindful of community guidelines</span><br>
+    <span>Min. Image size: 200px By 200px</span>
+    <br>
+    <span class="w3-tag w3-yellow">Be sure to click on the 'Add' button before switching to a different media item tab, else your item will be overwritten!</span><br>
+    <br>
+    <div id="tabsMediaVideo">
+        <ul>
+            <li><a href="#tabsMediaVideo-1"> <span title="Presentation image which is customer facing"
+                                                   class="w3-padding "> Profile Picture</span> </a></li>
+            <li><a href="#tabsMediaVideo-2"> <span class="w3-padding ">Preview</span></a></li>
+
+            <li><a href="#tabsMediaVideo-3"> <span class="w3-padding ">Video#1</span></a></li>
+            <li><a href="#tabsMediaVideo-4"> <span class="w3-padding ">Video#2</span></a></li>
+            <li><a href="#tabsMediaVideo-5"> <span class="w3-padding ">Video#3</span></a></li>
+            <li><a href="#tabsMediaVideo-6"> <span class="w3-padding ">Video#4</span></a></li>
+            <li><a href="#tabsMediaVideo-7"> <span class="w3-padding ">Video#5</span></a></li>
+            <li><a href="#tabsMediaVideo-8"> <span class="w3-padding ">Video#6</span></a></li>
+            <li><a href="#tabsMediaVideo-9"> <span class="w3-padding ">Video#7</span></a></li>
+            <li><a href="#tabsMediaVideo-10"> <span class="w3-padding ">Video#8</span></a></li>
+            <li><a href="#tabsMediaVideo-11"> <span class="w3-padding ">Video#9</span></a></li>
+            <li><a href="#tabsMediaVideo-12"> <span class="w3-padding ">Video#10</span></a></li>
+            <li><a href="#tabsMediaVideo-13"> <span class="w3-padding ">Video#11</span></a></li>
+            <li><a href="#tabsMediaVideo-14"> <span class="w3-padding ">Video#12</span></a></li>
+        </ul>
+        <div id="tabsMediaVideo-1">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon1Video">
+                            Profile#1: <input id="iconName1Video" name="iconNameVideo" type="file"
+                                              class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+
+                        <br>
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <img src="" id=imgiconName1Video><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-2">
+            <fieldset>
+                <span>Try to keep your preview content under 5 minutes</span><br>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon2Video">
+                            Preview#1: <input id="iconName2Video" name="iconNameVideo" type="file"
+                                              class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem ">
+                            Add
+                        </button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName2Video" width=400 controls autoplay>
+                            <source id=imgiconName2VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="tabsMediaVideo-3">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+                        <form id="frmIcon3Video">
+                            Video#1: <input id="iconName3Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <button id="addVideHubBtn3"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName3Video" width=400 controls autoplay>
+                            <source id=imgiconName3VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-4">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon4Video">
+                            Video#2: <input id="iconName4Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+
+                        <button id="addVideHubBtn4"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem ">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName4Video" width=400 controls autoplay>
+                            <source id=imgiconName4VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-5">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon5Video">
+                            Video#3: <input id="iconName5Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+
+                        <button id="addVideHubBtn5"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem ">
+                            Add
+                        </button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName5Video" width=400 controls autoplay>
+                            <source id=imgiconName5VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-6">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon6Video">
+                            Video#4: <input id="iconName6Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+
+                        <button id="addVideHubBtn6"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName6Video" width=400 controls autoplay>
+                            <source id=imgiconName6VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-7">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon7Video">
+                            Video#5: <input id="iconName7Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+
+                        <button id="addVideHubBtn7"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName7Video" width=400 controls autoplay>
+                            <source id=imgiconName7VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-8">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon8Video">
+                            Video#6: <input id="iconName8Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+
+
+                        <button id="addVideHubBtn8"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName8Video" width=400 controls autoplay>
+                            <source id=imgiconName8VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-9">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon9Video">
+                            Video#7: <input id="iconName9Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button id="addVideHubBtn9"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName9Video" width=400 controls autoplay>
+                            <source id=imgiconName9VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-10">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon10Video">
+                            Video#8: <input id="iconName10Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button id="addVideHubBtn10"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName10Video" width=400 controls autoplay>
+                            <source id=imgiconName10VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-11">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon11Video">
+                            Video#9: <input id="iconName11Video" name="iconNameVideo" type="file"
+                                            class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button id="addVideHubBtn11"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName11Video" width=400 controls autoplay>
+                            <source id=imgiconName11VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-12">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+                        <form id="frmIcon12Video">
+                            Video#10: <input id="iconName12Video" name="iconNameVideo" type="file"
+                                             class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button id="addVideHubBtn12"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName12Video" width=400 controls autoplay>
+                            <source id=imgiconName12VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-13">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+
+                        <form id="frmIcon13Video">
+                            Video#11: <input id="iconName13Video" name="iconNameVideo" type="file"
+                                             class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button id="addVideHubBtn13"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName13Video" width=400 controls autoplay>
+                            <source id=imgiconName13VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaVideo-14">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label>Youtube upload</label>
+                        <input class="w3-input w3-hover-grey mmYoutube" type="checkbox" value="up" required title=""
+                               disabled/>
+                        <br>
+                        <form id="frmIcon14Video">
+                            Video#12: <input id="iconName14Video" name="iconNameVideo" type="file"
+                                             class="w3-input w3-hover-grey" accept="video/*" title=""/><br>
+                        </form>
+                        <br>
+
+                        <button id="addVideHubBtn14"
+                                class="w3-button w3-block w3-light-grey w3-section w3-padding addMmItem">
+                            Add
+                        </button>
+
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <video id="imgiconName14Video" width=400 controls autoplay>
+                            <source id=imgiconName14VideoOutPut type=video/mp4>
+                            Your browser does not support HTML video.
+                        </video>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</fieldset>
+<br>
+
+<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding saveVideo">Save</button>
+
+
+<!--<button onclick="myFunction('storeDetail')" class="w3-button w3-block w3-light-grey  w3-center">Video Item Detail</button>-->
+<!--<div id="storeDetail" class="w3-hide w3-animate-zoom">-->
+
+
+<!--<button onclick="myFunction('businessprofile')" class="w3-button w3-block w3-light-grey  w3-center">Video Item Detail</button>-->
+<!--<div id="businessprofile" class="w3-hide w3-animate-zoom">-->

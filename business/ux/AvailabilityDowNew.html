@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<br> <br>
+
+<label><b>Tag line</b></label>
+<input id=tagLine class="w3-input w3-hover-grey" type="text" value=""  placeholder="Eg: Squash Court"  required title="This name is seen by all.">
+<br>
+<br>
+
+
+<label><b>Applies to patron type</b></label>
+<select id=patronType class="w3-select w3-hover-grey" required >
+	<option value="" disabled selected>Please Select</option>
+	<option value=guest>Guest</option>
+	<option value=member>Member</option>
+</select>
+<br>
+<br>
+
+<label><b>Select a day of the week to assign opening times to.</b></label>
+<select id=dow class="w3-select w3-hover-grey" required >
+	<option value="" disabled selected>Please Select</option>
+	<option value=1>Monday</option>
+	<option value=2>Tuesday</option>
+	<option value="3">Wednesday</option>
+	<option value="4">Thursday</option>
+	<option value="5">Friday</option>
+	<option value="6">Saturday</option>
+	<option value="7">Sunday</option>
+</select>
+<br>
+<br>
+
+<h3>Select start and end of business opening times</h3>
+<div class="ui form">
+	<div class="two fields">
+		<div class="field">
+			<label>Start date</label>
+			<div class="ui calendar" id="rangestartTime">
+				<div class="ui input left icon">
+					<i class="calendar icon"></i>
+					<input id=dowStart type="text" placeholder="Start">
+				</div>
+			</div>
+		</div>
+		<div class="field">
+			<label>End date</label>
+			<div class="ui calendar" id="rangeendTime">
+				<div class="ui input left icon">
+					<i class="calendar icon"></i>
+					<input id=dowEnd type="text" placeholder="End">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br/>
+<label><b>Comment</b></label>
+<input id=reason class="w3-input w3-hover-grey" type="text" value=""  placeholder="Eg: Regular Opening Times"  required title="This comment is seen by end users">
+
+
+<br>
+<button id='save' class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right ">Add</button>
+<br>

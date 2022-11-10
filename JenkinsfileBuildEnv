@@ -1,0 +1,65 @@
+#!groovy
+
+
+node () {
+
+	stage("User Profile"){
+		echo "INF: Uploading Profile"
+// https://support.cloudbees.com/hc/en-us/articles/218517228-How-to-Ignore-Failures-in-a-Shell-Step-
+sh '''
+		echo "INF: Best handle errors"
+		set +e
+		DIR_TC=/opt/tomcat 
+		mkdir workspace	|| true
+		alias lsm='ls -l --block-size=M' 
+		alias ll='ls -lrt' 
+		touch ~/.bash_profile 
+'''
+	}
+
+	stage("Java"){
+
+sh '''
+whoami
+	# Java updates
+	sudo apt-get update
+	sudo apt-get install -y default-jdk imagemagick
+	TMP=$(update-java-alternatives -l | awk '{print $3}')
+	export JAVA_HOME=${TMP}/jre
+	echo "export JAVA_HOME=$JAVA_HOME" >> ~/.bash_profile
+'''
+
+}
+	stage("Tomcat"){
+		echo "INF: ng Profile"
+		echo "INF: Uploading latest jar"
+sh '''
+	set +e
+	#########################
+	# Create TC User
+	#########################
+	sudo groupadd tomcat
+	sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+
+	#########################
+	# Install
+	#########################
+#	read ans Do you want to dir install dir?
+#	if [ "$ans" == "y" ] ; then 
+#		rm -rf $DIR_TC 
+#	else
+#		mkdir $DIR_TC 
+#
+#	fi
+	TC=apache-tomcat-7.0.91.tar.gz
+	URL=http://apache.mirrors.ionfish.org/tomcat/tomcat-7/v7.0.91/bin/$TC
+	TC=apache-tomcat-8.5.34.tar.gz
+	URL=http://apache.mirrors.ionfish.org/tomcat/tomcat-8/v8.5.34/bin/$TC
+
+	cd /tmp
+	curl -O $URL 
+#	sudo tar xzvf ${TC} -C /opt/tomcat --strip-components=1
+'''
+	}
+}
+

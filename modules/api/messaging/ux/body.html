@@ -1,0 +1,121 @@
+<h3>Insight : Being able to update your customer base with timely and relevant content can only be good!</h3>
+
+<fieldset>
+    <legend><b>Message Detail </b></legend>
+    <label><b>Importance</b></label>
+    <select id=importance class="w3-select w3-hover-grey" required>
+        <option value="" disabled selected>Please Choose</option>
+        <option value="hp_i">High Priority/Important</option>
+        <option value="hp_ni">High Priority/Not Important</option>
+        <option value="lp_i">Low Priority/Important</option>
+        <option value="lp_ni">Low Priority/Not Important</option>
+    </select>
+    <br>
+    <br>
+
+    <label><b>Publish Date[YYYY-DD-MM]</b></label>
+    <input id=publishDate class="w3-input w3-hover-grey" type="date" required title=""/> <br>
+    <br>
+
+    <label><b>Message Expires On Below Date At Midnight</b></label>
+    <input id=expiryDate class="w3-input w3-hover-grey" type="date" required title=""/> <br>
+    <br>
+
+    <label><b>Media Scope</b></label>
+    <select id=scope class="w3-select w3-hover-grey" multiple size="5" required>
+        <option value="" disabled selected>Please Choose</option>
+        <option value="http">WebSite</option>
+        <option value="email" disabled>Email</option>
+        <option value="sms" disabled>SMS</option>
+        <option value="both" disable>SMS/Email</option>
+    </select>
+    <br>
+    <hr>
+    <br>
+
+
+    <label><b>Headline</b></label>
+    <input id=headline class="w3-input w3-hover-grey" placeholder="Eg: Happy holidays eveyone!!!" type="text"
+           value="" required title=""/> <br>
+
+    <label><b>Broadcast Message</b></label>
+    <textarea id=content class="w3-input w3-hover-grey"
+              placeholder="Eg: Business Hours christmas is as follows...."></textarea>
+    <br><br>
+
+
+</fieldset>
+
+<div class="w3-center">
+    <br>
+    <span id="msgConfirmation"></span>
+    <span id="msgError"></span>
+    <br>
+</div>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#tabsMsg-1"> <span class="w3-padding-large tabItem">Public</span> </a></li>
+        <li><a href="#tabsMsg-2"> <span class="w3-padding-large tabItem">Individuals</span></a></li>
+        <li><a href="#tabsMsg-3"><span class="w3-padding-large tabItem">Entity Based <span class="w3-tag w3-yellow">Coming Soon!</span></span></a>
+        </li>
+    </ul>
+    <div id="tabsMsg-1">
+        <div id="msgPublic">
+            <fieldset>
+                <legend><b>Message Audience </b></legend>
+                <label>Selecting public will broadcast the message to all your registered members in the
+                    system!!!</label>
+                <br>
+                <input class="w3-radio" id="public" name=audience type="radio">Public<br>
+                <br>
+            </fieldset>
+            <br>
+            <br>
+            <button id=savePublic disabled class="w3-button w3-block w3-light-grey w3-section w3-padding">Save</button>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div id="tabsMsg-2">
+        <div id="msgEntity">
+            <fieldset>
+                <legend><b>Message Audience </b></legend>
+                <label>Selecting Users will broadcast this message to the selected users only!!!</label>
+                <br>
+                <input class="w3-radio" id="user" name=audience type="radio">Users<br>
+                <div id="customerListMessagingHook"></div>
+                <br>
+            </fieldset>
+            <br>
+            <br>
+            <button id=saveUsers disabled class="w3-button w3-block w3-light-grey w3-section w3-padding">Save</button>
+            <br>
+            <br>
+        </div>
+    </div>
+
+
+    <div id="tabsMsg-3">
+        <div id="msgIndividuals">
+            <fieldset>
+                <legend><b>Message Audience </b></legend>
+                <label>Selecting this option will broadcast this message to the selected products and services
+                    only!!!</label>
+                <br>
+                <input class="w3-radio" id="entity" name=audience type="radio">Entities<br>
+                <br>
+            </fieldset>
+        </div>
+
+        <br>
+        <br>
+        <button id=saveEntities disabled class="w3-button w3-block w3-light-grey w3-section w3-padding">Save</button>
+        <br>
+        <br>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>

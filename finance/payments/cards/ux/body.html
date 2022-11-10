@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+<div class="w3-container w3-center w3-mobile w3-white">
+	<div class="w3-row-padding  " >
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+			</div>
+		</div>
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+	<h1>Business Infrastructure</h1>
+	<h3>Identify business assets, events, and activities, then lets build them!</h3>
+</div>
+<br>
+
+<div class="w3-container w3-center" >
+	<span id="stepsHook"></span>
+	<div class="w3-container w3-center" style="margin-left: 30%; margin-right: 30%" >
+		<label>Payments Enabled</label>
+		<select id=type class="w3-select w3-hover-grey"  required>
+			<option value="" disabled selected>Please Select</option>
+			<option value="enabled">enabled</option>
+			<option value="disabled">disabled</option>
+		</select>
+		<br> <br>
+		<button class="w3-button w3-gray" >Save</button>
+	</div>
+</div>
+<br>
+
+
+<!--
+			Tabs Start Below....
+-->
+
+<div class="w3-bar w3-black">
+	<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Registration')">Registration</button>
+	<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'PatronTopUp')">Top-Up</button>
+	<!--<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Refund')">Refund</button>-->
+	<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ViewAll')">Online Browser</button>
+
+</div>
+
+<div id="Registration" class="w3-container w3-border city">
+	<h2>Insight : Register someone else behalf</h2>
+	<p>Email sent to patron on successful registration.</p>
+	<br>
+	<br>
+	<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+		<span id="registrationTarget"> </span>
+	</div>
+</div>
+
+<div id="PatronTopUp" class="w3-container w3-border city" style="display:none">
+	<h2>Insight : Allows you to remove the finance from the day 2 day site, and put in an operators hands</h2>
+	<p>Ensure to put correct amount in. Email sent to patron on successful payment.</p>
+	<br>
+	<br>
+	<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+		<span id="topUpTarget"> </span>
+	</div>
+</div>
+<!--<div id="Refund" class="w3-container w3-border city" style="display:none">
+	<h2>Insight : </h2>
+	<p>Ensure to put correct amount in. Email sent to patron on successful payment.</p>
+	<br>
+	<br>
+	<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+		<span id="refundTarget"> </span>
+	</div>
+</div>-->
+
+<div id="ViewAll" class="w3-container w3-border city" style="height: 200%;  display:none">
+	<h2 class="ui icon header">
+		<i class="settings icon"></i>
+		<div class="content"> Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+	</h2>
+	<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+		<div class="w3-container w3-center">
+			Registered Cards <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="registrations" >
+			TopUps <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="cardPayments" >
+			<!--Refunds <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="cardRefunds" >-->
+		</div>
+		<br> <br>
+		<span id="targetManagementBrowser"></span>
+	</div>
+</div>
+
+<script>
+	function openCity(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("city");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " w3-gray";
+	}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

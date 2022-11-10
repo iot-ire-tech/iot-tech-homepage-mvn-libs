@@ -1,0 +1,112 @@
+<h3>Business are built on sound asset management, and promotion!</h3>
+<fieldset>
+    <legend><b>Global Business Assets</b></legend>
+    <br>
+    <label>Existing Assets</label>
+    <span id="assetResourceHook"></span>
+    <br>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Asset Profile</b></legend>
+    <label>Alias</label>
+    <input class="w3-input w3-hover-grey name" type="text" value="" required/> <br>
+
+    <label>Description</label>
+    <textarea rows="2" cols="10"
+              class="description"
+              title="This first 22 character of this discription will appear on your customers bank statement"> </textarea>
+    <br>
+
+    <!--		<label>Visible To Vendor</label>
+            <select id=active class="w3-select w3-hover-grey"  title="If you set this a 'No' it will not be seen by shop, event, and activities shoppers!" required>
+                <option value="" disabled selected>Please Select</option>
+                <option value=true>Yes</option>
+                <option value=false>No</option>
+            </select>-->
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addMetaAsset">Add</button>
+</fieldset>
+
+<br>
+<br>
+<br>
+<br>
+<span class=customerListHook></span><br>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Business Scope</b></legend>
+
+    <div class="">
+        <label>Select which upstream services, you would like to make this asset available to</label>
+        <select id=scope size="7" multiple class="w3-select w3-hover-grey" required
+                title="To select more than one option, hold down the CTRL key, and click on the respective items">
+            <option value="" disabled selected>Please Select One or More Options</option>
+            <option value=membership_on>Customer Subscriptions</option>
+            <option value=store_on>Shopping Portal</option>
+            <option value=event_on>Event Portal</option>
+            <option value=activity_on>Activity Portal</option>
+            <option value=resale_on>Resale Management</option>
+            <option value=videohub_on>VideoHub</option>
+            <option value=webinar_on>WebinarHub</option>
+        </select>
+    </div>
+
+
+    <div id="divSocializeAsset">
+        <br>
+        <br>
+        <label>Asset Restriction Level</label>
+        <select id=accessLevel size="3" class="w3-select w3-hover-grey" required
+                title="Do you want to make this asset available to all platform associates, or restrict access. Default is all!">
+            <option value="" disabled selected>Please Select One Option</option>
+            <option value=public>Public</option>
+            <option value=restricted>Exclude follow accounts holder(s)</option>
+        </select>
+        <span id="blacklistHook"></span>
+    </div>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addBusinessAsset">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Capacity Planning</b></legend>
+    <span>The physical amounts of the asset, are determined here</span>
+    <div class="w3-center">
+        <button disabled class="w3-button w3-round w3-green w3-padding mgtCapacityAsset" style="min-width: 200px">Capacity
+            Planning!
+        </button>
+    </div>
+    <br>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Availability Management</b></legend>
+    <span>Opening and closing hours for this asset, are determined here</span>
+    <div class="w3-center">
+        <button disabled class="w3-button w3-round w3-green w3-padding mgtAvailabilityAsset">Manage Business Hours!
+        </button>
+    </div>
+    <br>
+</fieldset>
+<br>
+<br>
+
+
+<!--<button id=previewAsset class="w3-button w3-block w3-light-grey w3-section w3-padding">Preview</button>-->
+<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding saveAsset">Save</button>
+<br>
+<br>
+<br>
+<br>

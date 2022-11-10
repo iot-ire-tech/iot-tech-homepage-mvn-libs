@@ -1,0 +1,25 @@
+[
+	{
+		"accountId": "",
+		"ts": "",
+		"admin": {
+			"productId": "",
+			"assetId": "",
+			"contactMe": "",
+			"ttbId": "",
+			"pocId": "",
+			"capacityMgtId": "",
+			"capacityAlertingId": "",
+			"capacityAlertingId": ""
+		},
+		"customer": {
+			"social": {
+				"followMeId": "",
+				"likeMeId": "",
+				"shareMeId": ""
+			},
+			"bookingIds": [
+			]
+		}
+	}
+]

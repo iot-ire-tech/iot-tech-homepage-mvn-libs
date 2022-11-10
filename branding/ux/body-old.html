@@ -1,0 +1,328 @@
+<body>
+	<div class="w3-container w3-center w3-mobile w3-white">
+
+		<div class="w3-row-padding  " >
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+				</div>
+			</div>
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<div class="w3-panel  w3-leftbar w3-light-grey">
+		<h1>Branding</h1>
+		<h3>Insight : your clients will be able to identify with you immediately. Take the opportunity, also to try different styles!</h3>
+	</div>
+	<br>
+
+
+
+	<div class="w3-bar w3-black">
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Multimedia')">Rich Content</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Value Added Services')">Value Added Services</button>
+	</div>
+
+
+	<div id="Multimedia" class="w3-container w3-border city">
+		<h2>Insight : Relating to your customer is the best way to do business</h2>
+		<p>Personalize your customers experience, let them know you care!</p>
+		<br>
+		<br>
+
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Really want to resonate with your clients, then use our new targeted branding feature</b></label><br>
+			<form>
+				<fieldset id=group class="w3-padding-32 w3-center">
+					<legend><b>Branding Target - Default</b></legend>
+					<input class="w3-radio brandingTargetGeneric" type="radio" name="group" value="generic" > General
+				</fieldset>
+				<div class="ui horizontal divider">
+					Or
+				</div>
+				<fieldset class="w3-padding-32 w3-center">
+					<fieldset id=groupAge class="w3-padding-32 w3-center">
+						<legend><b>Branding Target - Gender</b></legend>
+						Females <input class="w3-radio brandingTargetGender"  type="radio" name="groupAge" value="female">
+						Males <input class="w3-radio brandingTargetGender" type="radio" name="groupAge" value="male">
+					</fieldset>
+					<br>
+					<fieldset id=groupGender  class="w3-padding-32 w3-center">
+						<legend><b>Branding Target - Age </b></legend>
+						VIPs <input class="w3-radio brandingTargetAge"  type="radio" name="groupGender" value="vip">
+						60s <input class="w3-radio brandingTargetAge"  type="radio" name="groupGender" value="60s">
+						50s <input class="w3-radio brandingTargetAge"  type="radio" name="groupGender" value="50s">
+						40s <input class="w3-radio brandingTargetAge"  type="radio" name="groupGender" value="40s">
+						30s <input class="w3-radio brandingTargetAge"  type="radio" name="groupGender" value="30s" >
+						20s <input class="w3-radio brandingTargetAge"   type="radio" name="groupGender" value="20s">
+						Teens <input class="w3-radio brandingTargetAge"  type="radio" name="groupGender" value="teens">
+						Kids <input class="w3-radio brandingTargetAge"   type="radio" name="groupGender" value="kids">
+					</fieldset>
+					<br>
+				</fieldset>
+			</form>
+
+			<fieldset class="w3-padding-32 w3-center">
+				<legend><b>Site Branding </b></legend>
+				<label>Page Title</label>
+				<input id=title class="w3-input w3-hover-grey" type="text" value="" required title=""/>
+				<br>
+				<br>
+
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label>Fav Icon</label><br>
+						<form id="frmBrandingFavIcon">
+							<input name=brandingFavIcon class="w3-input w3-hover-grey" type="file" accept="image/*" required/><br>
+						</form>
+					</div>
+					<div class="w3-half" >
+						<img id=brandingFavIcon  src="" alt="icon displayed only if uploaded..." ><br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label>Banner/Header Image</label><br>
+						<form id="frmBrandingHdrImg">
+							<input name="brandingHdrImg" class="w3-input w3-hover-grey" type="file" accept="image/*" required/><br>
+						</form>
+					</div>
+					<div class="w3-half" >
+						<img id=brandingHdrImg  style="margin-left: 10%; width: 80%; margin-right: 10%" alt="Header Image Placeholder" border="1"   src=""/><br>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label>Footer Image</label><br>
+						<form id="frmUploadImgTdr">
+							<input name="brandingTdrImg" class="w3-input w3-hover-grey" type="file" accept="image/*" required/><br>
+						</form>
+					</div>
+					<div class="w3-half" >
+						<img id=brandingTdrImg style="margin-left: 10%; width: 80%; margin-right: 10%"  alt="Footer Image Placeholder" border="1"  src=""/><br>
+					</div>
+				</div>
+			</fieldset>
+			<br>
+			<br>
+
+
+			<fieldset class="w3-padding-32 w3-center">
+				<legend><b>Welcome Message</b></legend>
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label>Video</label><br>
+						<form id="frmWelecomeVid">
+							<input name="welecomeVid" class="w3-input w3-hover-grey" type="file" accept="video/mp4,video/x-m4v,video/*" /><br>
+						</form>
+					</div>
+					<div class="w3-half" >
+						<video  id="welecomeVid" style="margin-left: 10%; width: 80%; margin-right: 10%" controls> </video>
+					</div>
+				</div>
+				<div class="w3-row" >
+					<div class="w3-content" >
+						<label>Heading</label><br>
+						<input name="welecomeTitle" class="w3-input w3-hover-grey" type="text" accept="video/mp4,video/x-m4v,video/*" /><br>
+					</div>
+				</div>
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label>Icon</label><br>
+						<form id="frmWelecomeIcon">
+							<input name="welcomeIcon" class="w3-input w3-hover-grey" type="file" accept="video/mp4,video/x-m4v,video/*" /><br>
+						</form>
+					</div>
+					<div class="w3-half" >
+						<img id=welcomeIcon style=""  alt="Preview Image" border="1"  src=""/><br>
+					</div>
+				</div>
+
+				<div class="ui horizontal divider">
+					Or
+				</div>
+
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label>Social Media</label><br>
+						<input id="welecomeSocial" class="w3-input w3-hover-grey" type="text" accept="video/mp4,video/x-m4v,video/*" value="Eg: https://www.youtube.com/embed/tgbNymZ7vqY"/><br>
+					</div>
+					<div class="w3-half" >
+						<iframe
+						    id=socialmedia1
+						    style="margin-left: 10%; width: 80%; margin-right: 10%"
+						    frameborder="0"
+						    allow="autoplay; encrypted-media"
+						    allowfullscreen
+						    src="https://www.youtube.com/embed/tgbNymZ7vqY"
+						    >
+						</iframe>
+					</div>
+				</div>
+			</fieldset>
+
+			<br>
+			<br>
+			<br>
+
+
+			<fieldset class="w3-padding-32 w3-center">
+				<legend><b>Typeface </b></legend>
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label><b>Header Text</b></label>
+						<input id=textPicker class="w3-input w3-hover-grey " type="text" value="" title="This will appear under your banner image if set"/> <br>
+					</div>
+					<div class="w3-half" >
+						<span class="ref "></span>
+					</div>
+				</div>
+
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label><b>Header Font Family</b></label>
+						<span id="fontPickerUx"></span>
+					</div>
+					<div class="w3-half" >
+						<div class="w3-container">
+							<span class="ref "></span>
+						</div>
+					</div>
+				</div>
+
+				<div class="w3-row" >
+					<div class="w3-half" >
+						<label><b>Header Color</b></label>
+						<span id="colorPickerUx"></span>
+					</div>
+
+					<div class="w3-half" >
+						<span class="ref "></span>
+					</div>
+				</div>
+			</fieldset>
+
+
+
+			<br>
+
+			<label><b>Publish Date[YYYY-DD-MM]</b></label>
+			<input id=publishDate class="w3-input w3-hover-grey" type="date" value="" required title=""/> <br>
+
+
+
+
+			<label><b>Welcome Message</b></label>
+			<textarea id=welcomeMessage class="w3-input w3-hover-grey" placeholder="Welcome to Gold's Gym venice beach!"  value=""></textarea>
+
+
+
+			<br><br>
+			<br><br>
+			<span id="addComms"></span>
+			<br><br>
+			<br><br>
+			<br><br>
+
+		</div>
+	</div>
+
+
+	<div id="Value Added Services" class="w3-container w3-border city" style="display:none">
+		<h2>Subscriptions</h2>
+		<p>Insigt : Rich customer experiences, presents your business in a professional manner!!!</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Add Targeted Branding to your bundle?</b></label>
+			<select id=enableTargeted class="w3-select w3-hover-grey"  required>
+				<option value="" disabled selected>Please Select</option>
+				<option value="on">On</option>
+			</select>
+			<br>
+
+			<label><b>Add Media Branding to your bundle?</b></label>
+			<select id=enableMedia class="w3-select w3-hover-grey"  required>
+				<option value="" disabled selected>Please Select</option>
+				<option value="on">On</option>
+			</select>
+			<br>
+
+			<label><b>Add Social Branding to your bundle?</b></label>
+			<select id=enableSocial class="w3-select w3-hover-grey"  required>
+				<option value="" disabled selected>Please Select</option>
+				<option value="on">On</option>
+			</select>
+			<br>
+
+			<label><b>Add Scheduled Branding to your bundle?</b></label>
+			<select id=enableScheduled class="w3-select w3-hover-grey"  required>
+				<option value="" disabled selected>Please Select</option>
+				<option value="on">On</option>
+			</select>
+			<br>
+
+
+			<br><br>
+			<br><br>
+			<span id="addVAS"></span>
+			<br><br>
+			<br><br>
+			<br><br>
+
+		</div>
+	</div>
+
+
+	<script>
+		function openCity(evt, cityName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " w3-gray";
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>

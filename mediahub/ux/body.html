@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+
+<div id="spinner">
+	<!--	<h2 class="ui header">
+			<img class="ui image" src="../../../../resources/media/icons/inbox-small.png">
+			<div class="content">
+				Learn More
+			</div>
+		</h2>-->
+
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+				Loading
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="w3-container w3-center w3-mobile w3-white">
+		<div class="w3-row-padding  " >
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+				</div>
+			</div>
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="w3-panel  w3-leftbar w3-light-grey">
+		<h1>Media Hub</h1>
+		<h3>Insight : If it looks good it must be good, present your business in the best light!</h3>
+	</div>
+	<br>
+	<br>
+
+
+
+	<div class="w3-bar w3-black">
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Asset')">Assets</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Event')">Events</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'SubEvent')">Activities</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Patron')">Patrons</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ViewAll')">Online Browser</button>
+	</div>
+
+
+	<div id="Asset" class="w3-container  city" style="height: 100%; display:block" >
+		<h2>Assets</h2>
+		<p>Applying visual and social layers will enrich your end users experience!!!</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<fieldset class="w3-padding-32 ">
+				<legend><b>Media Builder</b></legend>
+				<br>
+				<label>Select item to layer</label><br>
+				<span class="entityList"></span>
+				<br> <hr> <br>
+				<label>Select presentation layer to apply</label><br>
+				<div id=divSocialCat  class="w3-container w3-center">
+					Rich Content <input class="content w3-radio" type="radio" name="contentCat" value="Visual" >
+					Social Content <input  class="content w3-radio"  type="radio" name="contentCat" value="Social">
+				</div>
+				<br>
+				<label>Management Option</label>
+				<div id=divMgtCat class="w3-container w3-center">
+					New Layer <input class="mgt w3-radio" type="radio" name="mgtCat" value="new" >
+					Modify Existing <input class="mgt w3-radio view"  type="radio" name="mgtCat" value="mod">
+				</div>
+				<br>
+				Can be social or rich
+				<span id="targetMediaManagmentResources"></span>
+			</fieldset>
+		</div>
+
+	</div>
+	<div id="Event" class="w3-container city" style="height: 100%; display:none" >
+		<h2>Events</h2>
+		<p>Applying visual and social layers will enrich your end users experience!!!</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<fieldset class="w3-padding-32 ">
+				<legend><b>Media Builder</b></legend>
+				<br>
+				<label>Select item to layer</label><br>
+				<span class="entityList"></span>
+				<br> <hr> <br>
+				<label>Select presentation layer to apply</label><br>
+				<div id=divSocialCat  class="w3-container w3-center">
+					Rich Content <input class="content w3-radio" type="radio" name="contentCat" value="Visual" >
+					Social Content <input  class="content w3-radio"  type="radio" name="contentCat" value="Social">
+				</div>
+				<br>
+				<label>Management Option</label>
+				<div id=divMgtCat class="w3-container w3-center">
+					New Layer <input class="mgt w3-radio" type="radio" name="mgtCat" value="new" >
+					Modify Existing <input class="mgt w3-radio view"  type="radio" name="mgtCat" value="mod">
+				</div>
+				<br>
+				Can be social or rich
+				<span id="targetMediaManagmentEvents"></span>
+			</fieldset>
+		</div>
+
+	</div>
+
+
+	<div id="SubEvent" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>Activities</h2>
+		<p>Applying visual and social layers will enrich your end users experience!!!</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<fieldset class="w3-padding-32 ">
+				<legend><b>Media Builder</b></legend>
+				<br>
+				<label>Select item to layer</label><br>
+				<span class="entityList"></span>
+				<br> <hr> <br>
+				<label>Select presentation layer to apply</label><br>
+				<div id=divSocialCat  class="w3-container w3-center">
+					Rich Content <input class="content w3-radio" type="radio" name="contentCat" value="Visual" >
+					Social Content <input  class="content w3-radio"  type="radio" name="contentCat" value="Social">
+				</div>
+				<br>
+				<label>Management Option</label>
+				<div id=divMgtCat class="w3-container w3-center">
+					New Layer <input class="mgt w3-radio" type="radio" name="mgtCat" value="new" >
+					Modify Existing <input class="mgt w3-radio view"  type="radio" name="mgtCat" value="mod">
+				</div>
+				<br>
+				Can be social or rich
+				<span id="targetMediaManagmentSubEvents"></span>
+			</fieldset>
+		</div>
+
+	</div>
+
+	<div id="Patron" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>Patron</h2>
+		<p>Applying visual and social layers will enrich your end users experience!!!</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<fieldset class="w3-padding-32 ">
+				<legend><b>Media Builder</b></legend>
+				<br>
+				<label>Select item to layer</label><br>
+				<span class="entityList"></span>
+				<br> <hr> <br>
+				<label>Select presentation layer to apply</label><br>
+				<div id=divSocialCat  class="w3-container w3-center">
+					Rich Content <input class="content w3-radio" type="radio" name="contentCat" value="Visual" >
+					Social Content <input  class="content w3-radio"  type="radio" name="contentCat" value="Social">
+				</div>
+				<br>
+				<label>Management Option</label>
+				<div id=divMgtCat class="w3-container w3-center">
+					New Layer <input class="mgt w3-radio" type="radio" name="mgtCat" value="new" >
+					Modify Existing <input class="mgt w3-radio view"  type="radio" name="mgtCat" value="mod">
+				</div>
+				<br>
+				Can be social or rich
+				<span id="targetMediaManagmentPatrons"></span>
+			</fieldset>
+		</div>
+
+
+
+
+	</div>
+
+	<div id="ViewAll" class="w3-container w3-border city" style="height: 200%;  display:none">
+		<h2 class="ui icon header">
+			<i class="settings icon"></i>
+			<div class="content">
+				Online Browser
+				<div class="sub header">
+					Insight - Preview your patrons before releasing to public.
+				</div>
+			</div>
+		</h2>
+		<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<div class="w3-container w3-center">
+				<fieldset class="w3-padding-32 ">
+					<legend><b>Visual Listings</b></legend>
+					Assets <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="resourceVisual" >
+					Events <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="eventVisual" >
+					Activities <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="subEventVisual" >
+					Patrons <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="patronVisual" >
+				</fieldset>
+				<fieldset class="w3-padding-32 ">
+					<legend><b>Social Listings</b></legend>
+					Assets <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="resourceSocial" >
+					Events <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="eventSocial" >
+					Activities <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="subEventSocial" >
+					Patrons <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="patronSocial" >
+				</fieldset>
+			</div>
+			<br> <br>
+			<span id="targetManagementBrowser"></span>
+		</div>
+	</div>
+</div>
+
+
+
+<script>
+	function openCity(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("city");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " w3-gray";
+	}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

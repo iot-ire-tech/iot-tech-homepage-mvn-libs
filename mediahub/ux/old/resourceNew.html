@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<div class="w3-container w3-center">
+	<h4>Existing Asset</h4>
+	<label>Associate a  ......... </label>
+	<span class="existingList"  ></span>
+</div>
+<br>
+<hr>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+<fieldset class="w3-padding-32 w3-center">
+	<legend><b>Multimedia Support</b></legend>
+	<label><b><span class="fa fa-facebook">Tag Line</span></b></label><br>
+	<input id=tag class="w3-input w3-hover-grey" type="text" value="" placeholder="Eg: Irish Seascape" required>
+	<br> <br>
+	<br> <br>
+	<div class="w3-row" >
+		<div class="w3-third" >
+			<label><b>Icon</b></label><br>
+			<form id="frmIcon">
+				<input name="iconName" type="file" accept="image/*" required/><br>
+			</form>
+		</div>
+		<div class="w3-third" >
+			<label><b>Visible</b></label><br>
+			<input name="iconVisible" type="checkbox" value="true" checked/><br>
+		</div>
+		<div class="w3-third" >
+			<img id=iconImg  alt="Icon displayed once uploaded..."><br>
+		</div>
+	</div>
+	<hr>
+	<br>
+
+	<div class="w3-row" >
+		<div class="w3-third" >
+			<label><b>Photo</b></label><br>
+			<form id="frmPic">
+				<input name="picName" type="file" accept="image/*" required/><br>
+			</form>
+		</div>
+		<div class="w3-third" >
+			<label><b>Visible</b></label><br>
+			<input name="picVisible" type="checkbox" value="true" checked/><br>
+		</div>
+		<div class="w3-third" >
+			<img id=picImg  alt="photo displayed once uploaded..."><br>
+		</div>
+	</div>
+	<hr>
+	<br>
+
+
+	<div class="w3-row" >
+		<div class="w3-third" >
+			<label><b>Video</b></label><br>
+			<form id="frmVid">
+				<input name="vidName" type="file" accept="video/mp4,video/x-m4v,video/*" required/><br>
+			</form>
+		</div>
+		<div class="w3-third" >
+			<label><b>Visible</b></label><br>
+			<input name="vidVisible" type="checkbox" value="true" checked/><br>
+		</div>
+		<div class="w3-third " >
+			<video id="vid" style="margin-left: 10%; width: 80%; margin-right: 10%" controls>
+			</video><br>
+		</div>
+	</div>
+	<hr>
+	<br>
+
+	<div class="w3-row" >
+		<div class="w3-third" >
+			<label><b><span class="fa fa-youtube">Youtube </span></b></label><br>
+			<input id=utube class="w3-input w3-hover-grey" type="text"  value="Eg: https://www.youtube.com/embed/I_2D8Eo15wE?start=1" required>
+		</div>
+		<div class="w3-third" >
+			<label><b>Visible</b></label><br>
+			<input name="utubeVisible" type="checkbox" value="true"/><br>
+		</div>
+		<div class="w3-third" >
+			<iframe id=utubeTarget   style="margin-left: 10%; width: 80%; margin-right: 10%"  allowfullscreen src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+		</div>
+	</div>
+	<hr>
+	<br>
+
+	<div class="w3-row" >
+		<div class="w3-third" >
+			<label><b><span class="fa fa-facebook">Facebook</span></b></label><br>
+			<input id=facebook class="w3-input w3-hover-grey" type="text" value="Eg: https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSPORTSCORingsend%2Fvideos%2F1502194963150954%2F&show_text=1&width=560" required>
+		</div>
+		<div class="w3-third" >
+			<label><b>Visible</b></label><br>
+			<input name="facebookVisible" type="checkbox" value="true"/><br>
+		</div>
+		<div class="w3-third" >
+			<iframe id=facebookTarget  style="margin-left: 10%; width: 80%; margin-right: 10%" frameborder="0"
+				src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSpinning%2Fvideos%2F10154573864611129%2F&show_text=0&width=560">
+			</iframe>
+		</div>
+	</div>
+
+</fieldset>
+
+
+
+
+
+
+<br>
+<button id="saveXXXXX" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Add</button>
+<br>

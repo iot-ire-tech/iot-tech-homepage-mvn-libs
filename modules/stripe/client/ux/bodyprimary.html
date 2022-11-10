@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<div class="w3-container w3-center w3-mobile w3-white">
+
+	<div class="w3-row-padding  " >
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+			</div>
+		</div>
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+	<h1>Account</h1>
+	<h3>No obligation. No credit card required.</h3>
+</div>
+
+
+
+
+<div id=accountWidetSrc class="w3-container" style="margin-left: 35%; min-width: 30%; margin-right: 35%;" >
+	<div class="w3-section">
+		<label><b>Select Your Business Sector</b></label>
+		<select class="w3-select" required id="sector">
+			<option value="" disabled selected>Please Choose</option>
+			<option value="Health">Health</option>
+			<option value="Social" >Social</option>
+			<option value="Legal">Legal</option>
+			<option value="Political">Political</option>
+			<option value="Education">Education</option>
+			<option value="Wellness">Wellness/Beauty</option>
+		</select>
+		<label><b>Select Your Business Location</b></label>
+		<select class="w3-select" required id="location">
+			<option value="" disabled selected>Please Choose</option>
+			<option value="IE">IE</option>
+		</select>
+
+		<label><b>First Name</b></label>
+		<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="First Name *" id="fname" required>
+		<label><b>Last Name</b></label>
+		<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Last Name *" id="lname" required>
+		<label><b>Email</b></label>
+		<input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="Work Email *" id="email" required>
+		<span>Your client API key will be sent here</span><br>
+
+
+		<label><b>Password</b></label>
+		<input class="w3-input w3-border" type="password" placeholder="Password *" id="pass" required>
+
+
+		<label><b>Company</b></label>
+		<input class="w3-input w3-border" type="text" placeholder="Registered Company Name..." id="company" >
+		<label><b>Work Phone</b></label>
+		<input class="w3-input w3-border" type="tel" placeholder="Phone " id="phone" >
+
+		<input id ="agree" class="w3-check w3-margin-top" type="checkbox" required value=true>
+		<span>I agree to with the </span> <a href="toc.jsp" target="_blank">terms of service</a><br>
+
+		<hr>
+		<div class="g-recaptcha" data-sitekey="6LeL0XIUAAAAAA0nZxdlrXQxgr2yfwVlNuCfM8TV"></div>
+
+		<button id=newAccount class="w3-button w3-block w3-light-grey w3-section w3-padding" >Create New Business Account</button>
+	</div>
+</div>

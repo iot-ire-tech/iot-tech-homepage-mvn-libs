@@ -1,0 +1,41 @@
+[
+	{
+		"accountId": "",
+		"customerId": "",
+		"offering": "",
+		"items": [
+			{
+				"accountId": "",
+				"productId": "",
+				"customerId": "",
+				"paid": false,
+				"revenue": {
+					"barcode": "",
+					"discount": "",
+					"cost": {
+						"transaction": 0,
+						"transactionDecimal": 0.00,
+						"discountedAmount": 0.00,
+						"fee": 0,
+						"tax": 0.00
+					},
+					"quantity": ""
+				},
+				"comms": {
+					"smsAlert": false,
+					"emailAlert": false
+				},
+				"links": {
+					"usageId": "",
+					"dbInventoryMgtId": "",
+					"pocId": "",
+					"pnpId": "",
+					"webinarId": "",
+					"bookingId": "",
+					"videoHubId": ""
+				}
+			}
+		]
+	}
+
+]

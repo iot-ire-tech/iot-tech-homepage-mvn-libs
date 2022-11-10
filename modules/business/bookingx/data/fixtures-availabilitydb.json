@@ -1,0 +1,15 @@
+[
+	{
+		"productId": "prod_GQsiENxiBjdugD",
+		"fixtures": [
+			{
+				"reason": "booked out for xmas event",
+				"status": false,
+				"from": "25/12/19 09:14:30",
+				"to": "25/12/19 09:14:30"
+			}
+		]
+	}
+]
+
+

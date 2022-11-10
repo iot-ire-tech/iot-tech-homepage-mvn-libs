@@ -1,0 +1,127 @@
+
+<div id="spinner">
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+
+	<div class="w3-container w3-center w3-mobile w3-white">
+
+		<div class="w3-row-padding  " >
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+				</div>
+			</div>
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<div class="w3-panel  w3-leftbar w3-light-grey">
+		<h1>Communication</h1>
+		<h3>Insight : Being able to update your customer base with timely and relevant content can only be good!</h3>
+	</div>
+	<div  class="w3-container" style="margin-left: 15%; min-width: 70%; margin-right: 15%;" >
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+
+
+			<fieldset>
+				<legend><b>Message Audience </b></legend>
+				<p>Selecting public will broadcast the message to all your registered members in the system!!!</p>
+				<input class="w3-radio" id="public" name=audience type="radio"  > Public<br>
+				<input class="w3-radio"  id="user"  name=audience type="radio" > Individual<br>
+				<div  id="customerListingAll" class="w3-hide" > </div>
+			</fieldset>
+			<br>
+
+			<fieldset>
+				<legend><b>Message Detail </b></legend>
+
+				<label><b>Importance</b></label>
+				<select id=importance class="w3-select w3-hover-grey"  required>
+					<option value="" disabled selected>Please Choose</option>
+					<option value="hp_i">High Priority/Important</option>
+					<option value="hp_ni">High Priority/Not Important</option>
+					<option value="lp_i">Low Priority/Important</option>
+					<option value="lp_ni">Low Priority/Not Important</option>
+				</select>
+				<br>
+				<br>
+
+				<label><b>Publish Date[YYYY-DD-MM]</b></label>
+				<input id=publishDate class="w3-input w3-hover-grey" type="date"  required title=""/> <br>
+				<br>
+
+				<label><b>Message Expires On Below Date At Midnight</b></label>
+				<input id=expiryDate class="w3-input w3-hover-grey" type="date"  required title=""/> <br>
+				<br>
+
+				<label><b>Media Scope</b></label>
+				<select id=scope class="w3-select w3-hover-grey"  required>
+					<option value="" disabled selected>Please Choose</option>
+					<option value="http">Desktop - System Inbox</option>
+					<option value="sms">Handheld - SMS Message</option>
+					<option value="both">Both</option>
+				</select>
+				<br>
+				<hr>
+				<br>
+
+
+				<label><b>Headline</b></label>
+				<input id=headline class="w3-input w3-hover-grey" placeholder="Eg: Happy holidays eveyone!!!" type="text" value="" required title=""/> <br>
+
+				<label><b>Broadcast Message</b></label>
+				<textarea id=noteComms class="w3-input w3-hover-grey" placeholder="Eg: Business Hours christmas is as follows...."  ></textarea>
+			</fieldset>
+			<br><br>
+			<span id="msgConfirmation"></span>
+			<span id="msgError"></span>
+			<br><br>
+			<button id="save" class="w3-btn w3-round-xxlarge w3-padding-large w3-gray w3-right">Save</button>
+			<br>
+			<br><br>
+			<br><br>
+			<br><br>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,32 @@
+{
+  "OutboxShopItems": [
+    {
+      "ts": "10/11/2018, 18:30",
+      "patronId": 731667,
+      "quanity": 1,
+      "status": "selected",
+      "type": "subEvent",
+      "traigeId": {
+        "resourceId": 68538,
+        "eventId": 743135,
+        "subEventId": 451133
+      },
+      "note": "",
+      "id": 2
+    },
+    {
+      "ts": "10/11/2018, 18:47",
+      "patronId": 538535,
+      "quanity": 1,
+      "status": "selected",
+      "type": "subEvent",
+      "traigeId": {
+        "resourceId": 68538,
+        "eventId": 743135,
+        "subEventId": 451133
+      },
+      "note": "",
+      "id": 3
+    }
+  ]
+}

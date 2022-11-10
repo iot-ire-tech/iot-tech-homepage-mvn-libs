@@ -1,0 +1,137 @@
+
+<body>
+	<div class="w3-container w3-center w3-mobile w3-white">
+
+		<div class="w3-row-padding  " > <div class="w3-half" >
+				<div class="w3-container">
+					<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+				</div>
+			</div>
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+				</div>
+
+			</div>
+		</div>
+
+
+	</div>
+
+
+
+	<div class="w3-panel  w3-leftbar w3-light-grey">
+		<h1>Business Analytics</h1>
+		<h3>Just the right amount of information to make critical business decisions!</h3>
+		<h4>Compare and Contrast!</h4>
+	</div>
+
+
+	<br>
+
+
+
+	<div class="w3-bar w3-black">
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Revenue')">Revenue</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Customers')">Customers</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'GrowthDevelopment')">Growth & Development</button>
+	</div>
+
+
+	<div id="Revenue" class="w3-container w3-border city" >
+		<!--analysis of a situation or event, especially a financial market, by means of complex mathematical and statistical modelling.-->
+		<!--"I did a lot of quantitative analysis early in my career, translating information into insight"-->
+		<h2>Quantitative Analysis</h2>
+		<p>Business Insight: See clearly those items that make your business great.</p>
+		<p> <span class="w3-badge w3-small w3-yellow">New!!!</span>To enable monetary analysis click <span class="w3-badge w3-small w3-light-grey">+</span></p>
+
+
+		<div class="w3-row-padding  w3-padding-large" style="margin-left: 10%;width:80%; margin-right: 10%">
+			<div class="w3-container w3-center">
+				<h1 >Customer Purchases Over Time</h1>
+				<div id="historicalPurchasesBarHook"></div>
+			</div>
+			<div class="w3-container w3-center">
+				<h1>Transactional Purchases Over Time</h1>
+				<div id="historicalPurchasesHook"></div>
+			</div>
+			<div class="w3-container w3-center">
+				<h1>Uptake Distribution Over Time</h1>
+				<div id="quanitySoldHook"></div>
+			</div>
+
+			<div class="w3-container w3-center">
+				<h1>Pricing Distribution Over Time</h1>
+				<div id="productPricingHook"></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="Customers" class="w3-container w3-border city" style="display:none">
+		<h2>Know your customers</h2>
+		<p>Business Insight: Know who your customer base is!</p>
+		<p> <span class="w3-badge w3-small w3-yellow">New!!!</span>To enable age, gender, demographic and occupational distributions of customers, joining and leaving your business, click <span class="w3-badge w3-small w3-light-grey">+</span></p>
+
+		<div class="w3-row-padding  w3-padding-large" style="margin-left: 10%;width:80%; margin-right: 10%">
+			<div class="w3-container  w3-center">
+				<h2>Location, Location, Location!!!</h2>
+				<p>Business Insight: City Slickers versus Country folk!</p>
+				<div id="customerMapHook" style="width: 400px; height: 300px"  ></div>
+			</div>
+			<div class="w3-container  w3-center">
+				<h1>Customer Age Distribution</h1>
+				<div id="ageDistributionHook"></div>
+			</div>
+			<div class="w3-container  w3-center">
+				<h1>Customer Gender Distribution</h1>
+				<div id="genderSpreadHook"></div>
+			</div>
+			<div class="w3-container  w3-center">
+				<h1>Customer Onboarding Rate Over Time</h1>
+				<div id="signupSpreadHook"></div>
+			</div>
+		</div>
+
+	</div>
+
+	<div id="GrowthDevelopment" class="w3-container w3-border city" style="display:none">
+		<h2>Capacity</h2>
+		<p>Business Insight: Some services are so much in demand that a queue forms, and customer demand/load cant be serviced, now you know where these queues are formed. Increase your capacity at these times and your missed bookings will turn into revenue!</p>
+
+		<div class="w3-row-padding  w3-padding-large" style="margin-left: 10%;width:80%; margin-right: 10%">
+			<div class="w3-container  w3-center">
+				<h1>Lost Revenue Over Time</h1>
+				<div id="historicalBookingMissedHook"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<script>
+		function openCity(evt, cityName) {
+			var i, x, tablinks;
+			x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < x.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+			}
+			document.getElementById(cityName).style.display = "block";
+			evt.currentTarget.className += " w3-gray";
+		}
+	</script>
+
+
+
+
+
+
+
+
+
+</body>

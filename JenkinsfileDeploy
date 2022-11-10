@@ -1,0 +1,47 @@
+#!groovy
+
+
+node () {
+
+	stage("Code"){
+		warDir="/media/ae/ssd-workspace/workspace/sw/projects/bookings/mvn/iot-tech-homepage-mvn/target"
+		echo "INF: Uploading latest jar ($warDir)"
+
+		sh '''
+			whoami
+			SRC_APP=iot-tech-homepage-mvn-1.0-SNAPSHOT.war
+			GCLOUD=/media/ae/ssd-workspace/workspace/sw/cloud-services/google-cloud-sdk/bin
+			WARDIR=/media/ae/ssd-workspace/workspace/sw/projects/bookings/mvn/iot-tech-homepage-mvn/target
+
+			DEPLOY_APP=ROOT
+#			APP=ROOT
+			APP=green
+			WEBAPP_DIR=/opt/tomcat/webapps
+			DEPLOY_DIR=/opt/tomcat/webapps/$APP
+
+#			sudo chmod -R a+wrx ${WARDIR}/
+
+#			${GCLOUD}/gcloud info 
+#			${GCLOUD}/gcloud compute ssh iot-base --zone "europe-west2-a" --command "sudo service tomcat stop"
+
+			scp -i /home/ae/.ssh/google_compute_engine \
+			-oStrictHostKeyChecking=no \
+			$WARDIR/$SRC_APP  ae@www.iot-social.com:~/${APP}.war
+
+			ssh -o UserKnownHostsFile=/dev/null \
+			-o CheckHostIP=no \
+			-o StrictHostKeyChecking=no \
+			-i /home/ae/.ssh/google_compute_engine -A -p 22 \
+			ae@www.iot-social.com \
+			"sudo service tomcat stop && 
+			sudo rm -rf $DEPLOY_DIR/${APP}.war  && 
+			sudo rm -rf $DEPLOY_DIR  && 
+			sudo ls -l ${APP}.war && 
+			sudo mv ${APP}.war ${WEBAPP_DIR} && 
+			sudo service tomcat start"
+
+#			${GCLOUD}/gcloud compute ssh iot-base --zone "europe-west2-a" --command "sudo service tomcat start"
+		'''
+	}
+}
+

@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Jun-2020, 11:53:05
+    Author     : ennisa
+*/
+
+.contentVideoTab {
+
+/*        width: 600px;
+        height: 600px;*/
+	display: table-cell; vertical-align: middle;text-align:center ; width: 600px
+
+    }
+.contentVideoTab2 {
+        width: 600px;
+        height: 600px;
+        /*background-color: blue;*/
+
+ left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+        overflow:auto;
+    }
+

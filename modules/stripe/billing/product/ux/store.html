@@ -1,0 +1,341 @@
+<h3>Insight: Whoa you just transformed my asset into an online shopping commodity!!!!</h3>
+<div id="businessprofile">
+    <fieldset>
+        <legend><b>Business Assets</b></legend>
+        <label>Existing shopping items catalogued</label>
+        <span id="shopItemHook"></span>
+        <br>
+
+        <label><b>Select an store item to configure!</b></label>
+        <span id="shopResourceHook"></span>
+        <br>
+
+        <div class="uxVenderOffering ">
+            <!--            <span class="uxAssetCapacityWidget"></span>-->
+            <!--            <label>Suppliers Terms and Conditions To Vendor</label>-->
+            <!--            <br>-->
+            <!--            <span id=tncHook> </span>-->
+            <!--            <br>-->
+        </div>
+
+    </fieldset>
+</div>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Shop Item Profile</b></legend>
+    <label>Alias</label>
+    <input class="w3-input w3-hover-grey name" type="text" value="" required title=""/> <br>
+
+    <label>Description</label>
+    <textarea class=description rows="2" cols="10" title="This will be seen be all end users"> </textarea> <br>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addMetaStore">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<span class=customerListHook></span><br>
+
+<!--<div class="uxVenderOffering ">-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <br>-->
+<!--    <fieldset>-->
+<!--        <legend><b>Vendor Offering</b></legend>-->
+<!--        <br>-->
+<!--        <span id="uxAssetPostNPackageListing"></span>-->
+<!--        <span id="uxAssetVbbWidget"></span>-->
+<!--        &lt;!&ndash;<span id="uxAssetSbbWidget"></span>&ndash;&gt;-->
+<!--        <br>-->
+<!--        <label>Resellers TnC</label>-->
+<!--        <input id=tnc class="w3-input w3-hover-grey" type="url" required title="Terms and conditions support the sale"/>-->
+<!--        <br>-->
+
+<!--        <button class="w3-button w3-round w3-blue w3-right w3-padding addLegalStore">Add</button>-->
+
+<!--    </fieldset>-->
+<!--</div>-->
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Revenue Stream Management</b></legend>
+    <div class="w3-center ">
+        <span class="w3-tag w3-round w3-yellow revenueMsg"></span>
+        <br>
+    </div>
+
+
+    <br>
+
+    <label>Apply a sale price!</label>
+    <input class="w3-input w3-hover-grey cost" type="number" min="0.00" step="0.01" placeholder="10.00" required
+           title="Value under which I will resell this item to my customers"/> <br>
+    <br>
+
+
+    <label>Apply customer discount</label>
+    <select class="w3-select w3-hover-grey discount" required>
+        <option value=0 disabled selected>Please Select</option>
+        <option value=5>5%</option>
+        <option value=10>10%</option>
+        <option value=15>15%</option>
+        <option value=25>25%</option>
+    </select>
+    <label>Ready for sell now?</label>
+    <select class="w3-select w3-hover-grey sellable"
+            title="If you set this a 'No' it will not be displayed to customers to buy." required>
+        <option value="" disabled selected>Please Select</option>
+        <option value=true>Yes</option>
+        <option value=false>No</option>
+    </select>
+
+    <br>
+    <br>
+    <fieldset>
+        <legend><b>Capacity Planning Management</b></legend>
+        <label>Capacity Planning</label>
+        <span class=uxAssetCapacityWidget></span>
+        <div class="w3-center">
+            <button class="w3-button w3-round w3-green w3-padding mgtCapacityStore" style="min-width: 200px">Capacity
+                Planning!
+            </button>
+        </div>
+        <br>
+        <label>Capacity Alerting </label>
+        <div class="w3-center">
+            <button class="w3-button w3-round w3-green w3-padding mgtCapacityAlertingStore" style="min-width: 200px">
+                Capacity
+                Alerting!
+            </button>
+        </div>
+    </fieldset>
+
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addRevenueStore">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Legal</b></legend>
+    <label>Terms and Conditions Link</label>
+    <input class="w3-input w3-hover-grey tnc" type="url" value="" required
+           title="Terms and conditions support the sale"/>
+    <br>
+    <label>Privacy Policy Link</label>
+    <input class="w3-input w3-hover-grey tnc" type="url" value="" required
+           title="Terms and conditions support the sale"/>
+    <br>
+    <button class="w3-button w3-round w3-blue w3-right w3-padding addLegalStore">Add</button>
+</fieldset>
+<br>
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Post N Packaging</b></legend>
+    <label>Is item shippable?</label>
+    <input id=shippable class="w3-input w3-hover-grey checkboxtext" type="checkbox"
+           title="check box, to apply default settings"/>
+
+    <br>
+    <label>Manage delivery costs here, for this item</label>
+    <div class="w3-center">
+        <button disabled id=mgtPostNpackageCost class="w3-button w3-round w3-green w3-padding "
+                style="min-width: 200px">Post N Packaging
+        </button>
+    </div>
+
+
+    <label>Enable alerting</label>
+    <input id=alert_pnp class="w3-input w3-hover-grey" type="checkbox" required title=""/> <br>
+    <label>Postal Inbox email</label>
+    <input id=email_pnp class="w3-input w3-hover-grey" type="email" required title=""/> <br>
+    <label>Postal SMS Coordinator</label>
+    <input id=sms_pnp class="w3-input w3-hover-grey" type="tel" required title=""/> <br>
+</fieldset>
+
+<br>
+<br>
+<br>
+<fieldset>
+    <legend><b>Multimedia Content: Store</b></legend>
+    <span>High quality pictures advised</span><br>
+    <span>The order in which the content is presented here, is the order in which they will be displayed to your customers</span><br>
+    <span>Content should be mindful of community guidelines</span><br>
+    <span>Min. Image size: 200px By 200px</span>
+    <br>
+    <span class="w3-tag w3-yellow">Be sure to click on the 'Add' button before switching to a different media item tab, else your item will be overwritten!</span><br>
+    <br>
+
+    <div id="tabsMediaStore">
+        <ul>
+            <li><a href="#tabsMediaStore-1"> <span title="Presentation Image which is customer facing"
+                                                   class="w3-padding "> Image#1</span> </a></li>
+            <li><a href="#tabsMediaStore-2"> <span class="w3-padding ">Image#2</span></a></li>
+            <li><a href="#tabsMediaStore-3"> <span class="w3-padding ">Image#3</span></a></li>
+            <li><a href="#tabsMediaStore-4"> <span class="w3-padding ">Image#4</span></a></li>
+            <li><a href="#tabsMediaStore-5"> <span class="w3-padding ">Image#5</span></a></li>
+        </ul>
+        <div id="tabsMediaStore-1">
+            <div class="w3-row">
+                <div class="w3-half">
+                    <label>Header</label>
+                    <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+
+                    <label>Description</label>
+                    <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                    <br>
+
+
+                    <label><b>Headline Image</b></label>
+                    <form id="frmIcon1Store">
+                        Image#1: <input id="iconName1Store" name="iconNameStore" type="file"
+                                        class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                    </form>
+
+
+                    <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+                </div>
+                <div class="w3-half w3-center">
+                    <label>Preview</label><br>
+                    <img src="" id=imgiconName1Store><br>
+                </div>
+            </div>
+        </div>
+        <div id="tabsMediaStore-2">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+                        <br>
+
+                        <label><b>Headline Image</b></label>
+                        <form id="frmIcon2Store">
+                            Image#2: <input id="iconName2Store" name="iconNameStore" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+
+
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+                    </div>
+                    <div class="w3-half w3-center">
+                        <label>Preview</label><br>
+                        <img src="" id=imgiconName2Store><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+
+        <div id="tabsMediaStore-3">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label><b>Headline Image</b></label>
+                        <form id="frmIcon3Store">
+                            Image#3: <input id="iconName3Store" name="iconNameStore" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+
+                        <br>
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <label>Preview</label><br>
+                        <img src="" id=imgiconName3Store><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaStore-4">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label><b>Headline Image</b></label>
+                        <form id="frmIcon4Store">
+                            Image#4: <input id="iconName4Store" name="iconNameStore" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+
+
+                        <br>
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <label>Preview</label><br>
+                        <img src="" id=imgiconName4Store><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+        <div id="tabsMediaStore-5">
+            <fieldset>
+                <br>
+                <div class="w3-row">
+                    <div class="w3-half">
+                        <label>Header</label>
+                        <input class="w3-input w3-hover-grey mmHdr" type="text" value="" required title=""/> <br>
+
+                        <label>Description</label>
+                        <input class="w3-input w3-hover-grey mmDesc" type="text" value="" required title=""/> <br>
+
+                        <label><b>Headline Image</b></label>
+                        <form id="frmIcon5Store">
+                            Image#5: <input id="iconName5Store" name="iconNameStore" type="file"
+                                            class="w3-input w3-hover-grey" accept="image/*" title=""/><br>
+                        </form>
+
+                        <br>
+                        <button class="w3-button w3-block w3-light-grey w3-section w3-padding  addMmItem">Add</button>
+
+                    </div>
+                    <div class="w3-half w3-center">
+                        <label>Preview</label><br>
+                        <img src="" id=imgiconName5Store><br>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</fieldset>
+<br>
+
+<button id=save class="w3-button w3-block w3-light-grey w3-section w3-padding saveStoreItem">Save</button>
+
+
+<!--<button onclick="myFunction('storeDetail')" class="w3-button w3-block w3-light-grey  w3-center">Store Item Detail</button>-->
+<!--<div id="storeDetail" class="w3-hide w3-animate-zoom">-->
+
+
+<!--<button onclick="myFunction('businessprofile')" class="w3-button w3-block w3-light-grey  w3-center">Store Item Detail</button>-->
+<!--<div id="businessprofile" class="w3-hide w3-animate-zoom">-->

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<div class="w3-container w3-center w3-mobile w3-white">
+
+	<div class="w3-row-padding  " >
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+			</div>
+		</div>
+		<div class="w3-half" >
+			<div class="w3-container">
+				<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+			</div>
+
+		</div>
+	</div>
+
+
+</div>
+
+
+
+<div class="w3-panel  w3-leftbar w3-light-grey">
+	<h1>Membership Builder Options</h1>
+	<h3>Select a plan that suits you best!</h3>
+</div>
+
+
+<div  class="w3-container" style="margin-left: 15%; min-width: 70%; margin-right: 15%;" >
+
+
+	<div class="w3-container w3-white w3-padding-16">
+		<h2 class="w3-light-grey" >Step 1. Plan Builder</h2>
+		<p>Before creating new plan, check existing plans. If exist plan exists,skip to step 2.</p>
+
+		<label><b>Product to associate with new plan</b></label>
+		<span id="selectProduct4PBuilderListHook"></span>
+		<label><b>Name</b></label>
+		<input id=planName class="w3-input w3-hover-grey" type="text" required title=""/> <br>
+		<label><b>Cost</b></label>
+		<input id=planCost class="w3-input w3-hover-grey" type="text" required title=""/> <br>
+		<label><b>Interval</b></label>
+		<select id=planInterval  class="w3-select "   required>
+			<option value="" disabled selected >Please Select</option>
+			<option value=day>day</option>
+			<option value=week>week</option>
+			<option value=month>month</option>
+			<option value=year>year</option>
+		</select>
+
+		<label><b>Frequency </b></label>
+		<input id=planFrequency class="w3-input w3-hover-grey" type="number" min=1 max=12 required title=""/> <br>
+		<span id=planFrequencyMsg class="w3-tag w3-yellow"></span> <br>
+		<label><b>Description </b></label>
+		<input id=planDescription class="w3-input w3-hover-grey" type="text" required title=""/> <br>
+		<label ><b>Is this subscription to include a trail period? <span>Eg: 30 Day Free Trial Plan </span></b></label> <br>
+		<input id=planTrialPeriod  class="w3-input w3-hover-grey" type=checkbox />
+		<br>
+	</div>
+	<button id=addPlan   class="w3-button w3-block w3-light-grey w3-section w3-padding" >Add Plan To Subscription Model</button>
+	<br>
+	<hr>
+	<br>
+
+	<h2 class="w3-light-grey">Step 2. Revenue Plans</h2>
+	<p>Insight: The more plans you associated with a product, the more likely a customer will bite!</p>
+	<label><b> Plans All Ready On Offer</b></label>
+	<span id="selectPlanListHook"></span>
+	<span id="msgErrorPlanSelection"></span>
+
+
+	<br>
+	<hr>
+	<br>
+	<h2 class="w3-light-grey">Step 3. Subscription Detail</h2>
+	<label><b>Subscription Name</b></label>
+	<input id=subscriptionName class="w3-input w3-hover-grey" type="text" required title=""/> <br>
+	<label><b>Video Promotion</b></label> <br>
+	Link Internet Video!!!<input id=subscriptionVideoLink class="w3-input w3-hover-grey" type="url" required title=""/> <br>
+	Upload Video!!!<input id=subscriptionVideoUpload class="w3-input w3-hover-grey" type="file" required title=""/> <br>
+
+	<label><b>Do you want to offer a promotion coupon <span>Eg. 10% discount </span> </b><span class="w3-tag w3-yellow">New!!!</span></label>
+	<select id=coupon  class="w3-select "   required>
+		<option value="" disabled selected >Please Select</option>
+		<option value=12>5%</option>
+		<option value=12>10%</option>
+		<option value=12>15%</option>
+	</select>
+	<label><b>Should this subscription be tagged as recurring?</b></label> <br>
+	<input id=recurring class="w3-input w3-hover-grey" checked type="checkbox" required title=""/>
+
+
+	<span id="msgConfirmation"></span>
+	<br>
+	<button id=save   class="w3-button w3-block w3-light-grey w3-section w3-padding" >Create New Subscription</button>
+
+
+</div>
+

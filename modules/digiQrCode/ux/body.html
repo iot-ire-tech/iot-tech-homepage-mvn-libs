@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+
+<div id="spinner">
+
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+				Loading
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="w3-card-4 w3-center w3-padding-large" style="margin-left: 10%; width:80%; margin-right: 10%;">
+		<h2 class="ui center aligned icon header">
+			<i class="circular users icon"></i>
+			IoT Tech<br>Digitizing Center
+		</h2>
+		<span id="todaysDate"></span>
+
+		<br>
+		<div class="ui pointing below label"> Manage Own Digital Information </div>
+		<br>
+		<div class="ui form">
+			<div class="grouped fields">
+				<div  class="ui toggle checkbox">
+					<input class='mgtOwnStockLevels' type="checkbox" name="public" ><label>Yes</label>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<hr>
+	<span id="targetMessageResult"><br></span>
+	<hr>
+
+	<div class="w3-bar w3-black" >
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'barCode')">Bar Code Integration</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'barCodeHardCopy')">Bar Code Generator</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'qrCode')">QR Code Integration</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'qrCodeHardCopy')">QR Code Generator</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'browser')">Online Browser</button>
+	</div>
+
+
+	<div id="barCode" class="w3-container city" style="height: 100%; display:block" >
+		<h2>Bar Code Management</h2>
+		<p>Insight : Integrate existing digitized assets into the system</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Data Entry Management Options</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Bar Code <input class="w3-radio entityMonitoringMgt" type="radio"  value="newBarCodeInt" >
+					Modify Existing <input  class="w3-radio entityMonitoringMgt"  type="radio"  value="modBarCodeInt">
+				</div>
+				<br> <hr> <br>
+				<span id="targetBarCodeInt"></span>
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div id="qrCode" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>QR Code Management</h2>
+		<p>Insight : Digitize assets across your business</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New QR <input id=welecomeNew class="w3-radio entityMonitoringMgt" type="radio" name="welecomeCat" value="newQRCodeInt" >
+					Modify Existing <input id=welecomeMod class="w3-radio entityMonitoringMgt"  type="radio" name="welecomeCat" value="modQRCodeInt">
+				</div>
+				<br> <hr> <br>
+				<span id="targetQRInt"></span>
+			</fieldset>
+
+		</div>
+	</div>
+
+
+	<div id="barCodeHardCopy" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>Bar Code Generator</h2>
+		<p>Insight : Digitize your business landscape </p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New Bar Code <input id=welecomeNew class="w3-radio entityMonitoringMgt" type="radio" name="welecomeCat" value="newBarCodeGen" >
+					Modify Existing <input id=welecomeMod class="w3-radio entityMonitoringMgt"  type="radio" name="welecomeCat" value="modBarCodeGen">
+				</div>
+				<br> <hr> <br>
+				<span id="targetBarCodeGen"></span>
+			</fieldset>
+
+		</div>
+	</div>
+
+
+
+	<div id="qrCodeHardCopy" class="w3-container  city" style="height: 100%; display:none" >
+		<h2>QR Code Generator</h2>
+		<p>Insight : Digitize your landscape items</p>
+
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Management Option</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					New QR <input id=welecomeNew class="w3-radio entityMonitoringMgt" type="radio" name="welecomeCat" value="newQRCodeGen" >
+					Modify Existing <input id=welecomeMod class="w3-radio entityMonitoringMgt"  type="radio" name="welecomeCat" value="modQRCodeGen">
+				</div>
+				<br> <hr> <br>
+				<span id="targetQRCodeGen"></span>
+			</fieldset>
+
+		</div>
+	</div>
+
+	<div id="browser" class="w3-container w3-border city" style="height: 200%;  display:none">
+		<div class="w3-row-padding" style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<label><b>Online Browser</b></label>
+			<fieldset class="content w3-padding-32 ">
+				<legend>Select as needed</legend>
+				<div class="w3-container w3-center">
+					QR Codes <input class="w3-radio mgtBrowser " type="radio" value="qRCodes" >
+					Bar Codes <input class="w3-radio mgtBrowser "  type="radio" value="barCodes">
+				</div>
+				<br> <hr> <br>
+				<span id="onlineBrower"></span>
+			</fieldset>
+		</div>
+		<br> <br>
+		<span id="targetBrowser"></span>
+	</div>
+</div>
+
+
+
+
+
+
+

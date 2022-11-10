@@ -1,0 +1,23 @@
+[
+	{
+		"accountId": "",
+		"productId": "",
+		"active": false,
+		"levels": {
+			"units": -1,
+			"units_lower": -1,
+			"units_total": -1,
+			"units_upper": -1,
+			"bufferoverflow": -1
+		},
+		"alerting": {
+			"email": "",
+			"sms": "",
+			"level1": -1,
+			"level2": -1,
+			"level3": -1,
+			"alertReminderCap": -1
+		},
+		"alertSchedule": ""
+	}
+]

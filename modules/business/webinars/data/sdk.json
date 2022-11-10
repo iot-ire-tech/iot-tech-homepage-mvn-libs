@@ -1,0 +1,74 @@
+[
+
+	Get Access Token.
+		https://zoom.us/oauth/authorize?response_type=code&client_id=7lstjK9NTyett_oeXtFiEQ&redirect_uri=https://yourapp.com
+
+		????
+		SDK App
+	{
+	"key": "4dGUM9tGSM2r24nO3KlqdiKH2Lqcjm0H8RHN",
+		"secret": "nhxhtHF3pVPFmrksNVzN55jE0W2MrchgiOht"
+	}
+	]
+		https://www.jsonwebtoken.io/
+		eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0ZEdVTTl0R1NNMnIyNG5PM0tscWRpS0gyTHFjam0wSDhSSE4iLCJleHAiOjE1OTI2NzMzOTUsImp0aSI6ImY1Y2FhNTliLTQ5N2QtNGZlNy1hMTA5LWI1NzlhYjQ4OTZhZCIsImlhdCI6MTU5MjY2OTc5NX0.H10Ii9ANhTIBxneGMS5kX6nWqasCzWBtegQ34jLvxlc
+
+
+	{
+	"iss": "4dGUM9tGSM2r24nO3KlqdiKH2Lqcjm0H8RHN",
+		"exp": 1599191969000
+	}
+	https://www.oauth.com/oauth2 - servers/client - registration/client - id - secret/
+
+
+		// JWTApp
+		https://marketplace.zoom.us/develop/apps/tdGSDmEGTOKVrgni4b4BQg/credentials
+	{
+	"key": "LQaEKVkxSO2EuFczf2XI8Q",
+		"secret": "5NhNDqMOJR1o5HXYTU1wNIzYw2bTH3fZXdts"
+	}
+
+
+
+
+	https://www.epochconverter.com/
+		JWT = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJMUWFFS1ZreFNPMkV1RmN6ZjJYSThRIiwiZXhwIjoxNTkyNjczNjU5LCJqdGkiOiI2MmIyZmM3Yi1mMDFmLTQ0MGYtOGI5Yy01ZGU2ZDgxYzRkMjkiLCJpYXQiOjE1OTI2NzAwNTl9.9QsNjfdcFTQoQxgDar2ZymHivszufRo5NPbr24AjoNw
+
+		https://marketplace.zoom.us/docs/guides/auth/jwt
+		https://jwt.io/#libraries - io
+		generate json...
+		https://www.jsonwebtoken.io/
+
+
+		Create Request - CURL
+		https://marketplace.zoom.us/docs/guides/auth/jwt
+	{
+	"page_count": 1,
+		"page_number": 1,
+		"page_size": 30,
+		"total_records": 1,
+		"users": [
+		{
+		"id": "roeMILNlQ0StDZAbOEA3Hw",
+			"first_name": "Tony",
+			"last_name": "T",
+			"email": "tonygennis@gmail.com",
+			"type": 2,
+			"pmi": 6053420431,
+			"timezone": "Europe/Dublin",
+			"verified": 0,
+			"created_at": "2020-06-20T11:59:21Z",
+			"last_login_time": "2020-06-20T11:59:22Z",
+			"pic_url": "https://lh3.googleusercontent.com/a-/AOh14Ggv8jtRa07sB5qESAn2W_hGE6-uJhqSiJ10BWiSHg",
+			"language": "en-US",
+			"phone_number": "",
+			"status": "active"
+		}
+	]
+}
+
+
+Create WebInAr
+	Zoom users with a  have access to creating and managing Webinars.Webinar allows a host to broadcast a Zoom meeting to up to 10, 000 attendees.
+	Use this API to schedule a Webinar for a user (host).
+

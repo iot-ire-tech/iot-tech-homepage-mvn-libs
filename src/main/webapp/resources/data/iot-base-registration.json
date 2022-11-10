@@ -1,0 +1,50 @@
+{
+  "client": [
+    {
+      "id": 633020,
+      "ts": "2018-10-07T17:13:02.877Z",
+      "sector": "Health",
+      "fname": "Anthony",
+      "lname": "Ennis",
+      "email": "tonyennis@yahoo.com",
+      "name": "IoT",
+      "phone": "877461070",
+      "password": "sfsdfsd",
+      "offering": "trail",
+      "terms": true
+    }
+  ],
+  "patron": [
+    {
+      "id": 731666,
+      "clientId": 633020,
+      "fname": "Anthony",
+      "lname": "Ennis",
+      "phone": "877461070",
+      "email": "tonyennis@yahoo.com",
+      "sector": "Health",
+      "customerId": "-1"
+    }
+  ],
+  "Comments": "This will be use to login users" ,
+  "patronAccounts": [
+    {
+      "id": 989058,
+      "patronId": 731666,
+      "accounts": [
+        {
+          "type": "admin",
+          "term": "trail",
+          "username": "tonyennis@yahoo.com",
+          "password": "sfsdfsd"
+        },
+        {
+          "type": "member",
+          "term": "trail",
+          "username": "tonyennis@yahoo.com",
+          "password": "sfsdfsd"
+        }
+      ]
+    }
+  ]
+}

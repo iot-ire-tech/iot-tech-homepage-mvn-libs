@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+
+
+<div id="spinner">
+	<!--	<h2 class="ui header">
+			<img class="ui image" src="../../../../resources/media/icons/inbox-small.png">
+			<div >
+				Learn More
+			</div>
+		</h2>-->
+
+	<div class="ui segment">
+		<br> <br> <br>
+		<br> <br> <br>
+		<div class="ui active dimmer">
+			<div class="ui massive text loader">
+				Loading
+			</div>
+		</div>
+	</div>
+	<br> <br> <br>
+	<div class=" ui placeholder">
+		<div class="image header">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+		<div class="paragraph">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+	</div>
+</div>
+
+<div id="content">
+	<div class="w3-container w3-center w3-mobile w3-white">
+		<div class="w3-row-padding  " >
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p><i class="fa fa-spinner" style="font-size:48px;color:black"></i>MyBusinessPal.Com</p>
+				</div>
+			</div>
+			<div class="w3-half" >
+				<div class="w3-container">
+					<p>Phone support<i class="fa fa-mobile" style="font-size:48px;color:black"></i> +353 1 254 2326</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+	<h3 class="w3-container w3-center w3-mobile ">Insight : When the developer community comes together, its a thing of beauty!</h3>
+
+	<div class="w3-bar w3-black" >
+		<button class="w3-bar-item w3-button tablink w3-gray" onclick="openCity(event, 'Booking')">Booking</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'Squash')">Squash</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ServicePortal')">Service Portfolio</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'PoS')">Point Of Sales</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'StockControl')">Stock Control</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'SalesControl')">Sales Control</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'EventManagement')">Event Management</button>
+		<button class="w3-bar-item w3-button tablink" onclick="openCity(event, 'ActivityManagement')">Activity Management</button>
+	</div>
+
+	<div id="ActivityManagement" class="w3-container city" style="height: 200%; display:block">
+		<h2>Booking Module Preview</h2>
+		<p>Insight - Organisational assets, events, and activities can now be purchased by your customers, via a booking and reservation system</p>
+
+		<div class="w3-container w3-center w3-mobile">
+			<video  style="width: 40%" muted="" loop="" autoplay="">
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Login to the system to view booking module.
+				<a id="moduleBookingsLaunch" target="_blank">Booking Module</a>
+			</p>
+		</div>
+		<div class="w3-panel w3-center  w3-padding-large w3-leftbar w3-light-grey" >
+			<h2>Booking Management</h2>
+			<p>Insight - Query and analysis bookings below</p>
+		</div>
+
+		<div style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<div class="w3-bar w3-black">
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Bookings')">Bookings</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Alerts')">Alerts</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Repeats')">Repeats</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Comms')">Communications</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Reminders')">Reminders</button>
+			</div>
+
+			<div id="Bookings" class="w3-container w3-border cityII"  style="height: 200%; display:block">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Bookings <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="bookingsClosed" >
+						Open Bookings <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="bookingsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="bookingsTarget"></span>
+				</div>
+			</div>
+
+			<div id="Alerts" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div> Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Alerts <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="alertsClosed" >
+						Open Alerts <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="alertsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="alertsTarget"></span>
+				</div>
+			</div>
+			<div id="Repeats" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Repeats <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="repeatsClosed" >
+						Open Repeats <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="repeatsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="repeatsTarget"></span>
+				</div>
+			</div>
+			<div id="Comms" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Emails/SMS <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="commsClosed" >
+						Open Emails/SMS <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="commsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="commsTarget"></span>
+				</div>
+			</div>
+			<div id="Reminders" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Reminders <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="remindersClosed" >
+						Open Reminders <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="remindersSubmitted" >
+					</div>
+					<br> <br>
+					<span id="remindersTarget"></span>
+				</div>
+			</div>
+
+
+			<br> <br> <br>
+			<br> <br> <br>
+			<br> <br> <br>
+		</div>
+	</div>
+	<div id="EventManagement" class="w3-container city" style="height: 200%; display:block">
+		<h2>Booking Module Preview</h2>
+		<p>Insight - Organisational assets, events, and activities can now be purchased by your customers, via a booking and reservation system</p>
+
+		<div class="w3-container w3-center w3-mobile">
+			<video  style="width: 40%" muted="" loop="" autoplay="">
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Login to the system to view booking module.
+				<a id="moduleBookingsLaunch" target="_blank">Booking Module</a>
+			</p>
+		</div>
+		<div class="w3-panel w3-center  w3-padding-large w3-leftbar w3-light-grey" >
+			<h2>Booking Management</h2>
+			<p>Insight - Query and analysis bookings below</p>
+		</div>
+
+		<div style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<div class="w3-bar w3-black">
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Bookings')">Bookings</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Alerts')">Alerts</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Repeats')">Repeats</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Comms')">Communications</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Reminders')">Reminders</button>
+			</div>
+
+			<div id="Bookings" class="w3-container w3-border cityII"  style="height: 200%; display:block">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Bookings <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="bookingsClosed" >
+						Open Bookings <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="bookingsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="bookingsTarget"></span>
+				</div>
+			</div>
+
+			<div id="Alerts" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div> Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Alerts <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="alertsClosed" >
+						Open Alerts <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="alertsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="alertsTarget"></span>
+				</div>
+			</div>
+			<div id="Repeats" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Repeats <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="repeatsClosed" >
+						Open Repeats <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="repeatsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="repeatsTarget"></span>
+				</div>
+			</div>
+			<div id="Comms" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Emails/SMS <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="commsClosed" >
+						Open Emails/SMS <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="commsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="commsTarget"></span>
+				</div>
+			</div>
+			<div id="Reminders" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Reminders <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="remindersClosed" >
+						Open Reminders <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="remindersSubmitted" >
+					</div>
+					<br> <br>
+					<span id="remindersTarget"></span>
+				</div>
+			</div>
+
+
+			<br> <br> <br>
+			<br> <br> <br>
+			<br> <br> <br>
+		</div>
+	</div>
+	<div id="Booking" class="w3-container city" style="height: 200%; display:block">
+		<h2>Booking Module Preview</h2>
+		<p>Insight - Organisational assets, events, and activities can now be purchased by your customers, via a booking and reservation system</p>
+
+		<div class="w3-container w3-center w3-mobile">
+			<video  style="width: 40%" muted="" loop="" autoplay="">
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Login to the system to view booking module.
+				<a id="moduleBookingsLaunch" target="_blank">Booking Module</a>
+			</p>
+		</div>
+		<div class="w3-panel w3-center  w3-padding-large w3-leftbar w3-light-grey" >
+			<h2>Booking Management</h2>
+			<p>Insight - Query and analysis bookings below</p>
+		</div>
+
+		<div style="margin-left: 10%; width: 80%; margin-right: 10%">
+			<div class="w3-bar w3-black">
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Bookings')">Bookings</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Alerts')">Alerts</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Repeats')">Repeats</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Comms')">Communications</button>
+				<button class="w3-bar-item w3-button tablinkII" onclick="openCityII(event, 'Reminders')">Reminders</button>
+			</div>
+
+			<div id="Bookings" class="w3-container w3-border cityII"  style="height: 200%; display:block">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Bookings <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="bookingsClosed" >
+						Open Bookings <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="bookingsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="bookingsTarget"></span>
+				</div>
+			</div>
+
+			<div id="Alerts" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div> Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Alerts <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="alertsClosed" >
+						Open Alerts <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="alertsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="alertsTarget"></span>
+				</div>
+			</div>
+			<div id="Repeats" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Repeats <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="repeatsClosed" >
+						Open Repeats <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="repeatsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="repeatsTarget"></span>
+				</div>
+			</div>
+			<div id="Comms" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Emails/SMS <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="commsClosed" >
+						Open Emails/SMS <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="commsSubmitted" >
+					</div>
+					<br> <br>
+					<span id="commsTarget"></span>
+				</div>
+			</div>
+			<div id="Reminders" class="w3-container w3-border cityII"  style="display:none">
+				<h2 class="ui icon header">
+					<i class="settings icon"></i>
+					<div > Online Browser <div class="sub header">Insight - Validate entries here.</div> </div>
+				</h2>
+				<div class="w3-container w3-center" style="margin-left: 10%; width: 80%; margin-right: 10%">
+					<div class="w3-container w3-center">
+						Closed Reminders <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="remindersClosed" >
+						Open Reminders <input class="w3-radio mgtBrowser" type="radio" name="browserCat" value="remindersSubmitted" >
+					</div>
+					<br> <br>
+					<span id="remindersTarget"></span>
+				</div>
+			</div>
+
+
+			<br> <br> <br>
+			<br> <br> <br>
+			<br> <br> <br>
+		</div>
+	</div>
+
+	<div id="StockControl" class="w3-container city" style="height: 200%; display:block">
+		<h2>Stock Control Module Preview</h2>
+		<p>Insight - Organisational assets, those that consumed by customers, need to have there levels monitored, and with alerting, and inventory monitoring as standard, thus providing a constant service to customers</p>
+
+		<div class="w3-container w3-center w3-mobile">
+			<video  style="width: 40%" muted="" loop="" autoplay="">
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Login to the system to view stock control module.
+				<a id="moduleStockControlLaunch" target="_blank">Stock Control Module</a>
+			</p>
+		</div>
+
+	</div>
+	<div id="SalesControl" class="w3-container city" style="height: 200%; display:block">
+		<h2>Sales Control Module Preview</h2>
+		<p>Insight - Organisational assets, those that consumed by customers, need to have there levels monitored, and with alerting, and inventory monitoring as standard, thus providing a constant service to customers</p>
+
+		<div class="w3-container w3-center w3-mobile">
+			<video  style="width: 40%" muted="" loop="" autoplay="">
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Login to the system to view stock control module.
+				<a id="moduleSalesControlLaunch" target="_blank">Sales Control Module</a>
+			</p>
+		</div>
+
+	</div>
+
+	<div id="Squash" class="w3-container city" style="height: 200%; display:none">
+		<h1>Squash Corner</h1>
+		<p>Squash is an every growing sport, in todays sport centers, squash members want to be able to track league progress,now it is possible</p>
+
+		<div class="w3-row-padding w3-center  w3-padding-large">
+
+			<video  style="width: 40%" muted="" loop="" autoplay="" >
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Click on this link to launch it
+				<a  id="moduleSquashLaunch" target="_blank" >Squash Module</a>
+			</p>
+		</div>
+
+		<div class="w3-panel w3-center  w3-padding-large w3-leftbar w3-light-grey" >
+			<h2>Squash Management</h2>
+			<p>Insight - Adjust Settings</p>
+		</div>
+
+
+	</div>
+
+	<div id="ServicePortal" class="w3-container city" style="height: 200%; display:none">
+		<h1>Service Portfolio - Classic Theme Unity</h1>
+		<p>Allow your customers to view the best your business has to offer with this classic theme</p>
+
+		<div class="w3-row-padding w3-center  w3-padding-large">
+
+			<video  style="width: 40%" muted="" loop="" autoplay="" >
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Click on this link to launch it
+				<a  id="modulePortalLaunch" target="_blank" >Squash Module</a>
+			</p>
+		</div>
+
+		<div class="w3-panel w3-center  w3-padding-large w3-leftbar w3-light-grey" >
+			<h2>Squash Management</h2>
+			<p>Insight - Adjust Settings</p>
+		</div>
+
+
+	</div>
+
+	<div id="PoS" class="w3-container city" style="height: 200%; display:none">
+		<h1>Point Of Sales</h1>
+		<p>Cash register, Stock control, and front desk have just came together.</p>
+
+		<div class="w3-row-padding w3-center  w3-padding-large">
+
+			<video  style="width: 40%" muted="" loop="" autoplay="" >
+				<source src="/resources/media/vids/vid1.mp4" type="video/mp4"> </video>
+
+			<br>
+			<br>
+			<br>
+			<p class="w3-center">
+				Click on this link to launch it
+				<a  id="modulePoSLaunch" target="_blank" >Pos Module</a>
+			</p>
+		</div>
+
+		<div class="w3-panel w3-center  w3-padding-large w3-leftbar w3-light-grey" >
+			<h2>Point Of Sales Management</h2>
+			<p>Insight - Adjust Settings</p>
+		</div>
+
+
+	</div>
+
+
+</div>
+<script>
+
+
+	function openCity(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("city");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablink");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " w3-gray";
+	}
+
+
+	function openCityII(evt, cityName) {
+		var i, x, tablinks;
+		x = document.getElementsByClassName("cityII");
+		for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+//		x = document.getElementsByClassName("city");
+//		for (i = 0; i < x.length; i++) {
+//			x[i].style.display = "none";
+//		}
+		tablinks = document.getElementsByClassName("tablinkII");
+		for (i = 0; i < x.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" w3-gray", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " w3-gray";
+	}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
