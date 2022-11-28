@@ -650,7 +650,6 @@ function bootStrap(jspFile) {
     var pageloadDelay = 1000;
     var root = location.origin + contextPath;
     urlHead = root + "/services/head.html?v=" + ts;
-    urlLoader = root + "/services/loader.html?v=" + ts;
     switch (jspFile) {
 
 
