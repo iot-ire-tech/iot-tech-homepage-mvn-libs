@@ -1172,6 +1172,12 @@ function postRequest(ep, data) {
     return new httpHandler("Generic", responseStrucObj).setAsync(false).setTimeout(30000).setUrl(url).setPayload(data).post().getResponse();
 }
 
+function postRequestToUrl(ep, data) {
+
+    url = ep;
+    return new httpHandler("Generic", responseStrucObj).setAsync(false).setTimeout(30000).setUrl(url).setPayload(data).post().getResponse();
+}
+
 function postRequestAsync(ep, payload) {
     url = location.origin + contextPath + "/" + ep;
     var timeout = 30000
@@ -1361,5 +1367,11 @@ function brandMeBannerSmall(accountId, size) {
 
     }
 }
+
+
+modelContext_customer_signup = {
+    ...new Person(),
+    ...new Address()
+};
 
 //# sourceURL=funcs.js
