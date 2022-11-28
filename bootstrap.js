@@ -650,6 +650,7 @@ function bootStrap(jspFile) {
     var pageloadDelay = 1000;
     var root = location.origin + contextPath;
     urlHead = root + "/services/head.html?v=" + ts;
+    urlHead = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@latest" + "/services/head.html?v=" + ts;
     switch (jspFile) {
 
 
