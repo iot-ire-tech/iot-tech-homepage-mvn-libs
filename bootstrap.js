@@ -651,7 +651,7 @@ function bootStrap(jspFile) {
     var root = location.origin + contextPath;
     urlHead = root + "/services/head.html?v=" + ts;
     urlHead = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@latest" + "/services/head.html?v=" + ts;
-    urlHead = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@latest" + "/head.html?v=" + ts;
+    urlHead = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs" + "/head.html?v=" + ts;
     switch (jspFile) {
 
 
