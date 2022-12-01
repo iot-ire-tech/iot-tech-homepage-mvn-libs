@@ -632,6 +632,7 @@ function utilsModule(ts) {
 
 
 
+var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs" ;
 function bootStrap(jspFile) {
 
 // deploying to GREEN zone or PROD, must change accordingly
@@ -648,7 +649,7 @@ function bootStrap(jspFile) {
 
     var pageloadDelay = 1000;
     // var root = location.origin + contextPath;
-    var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs" + contextPath;
+    root += contextPath;
     var urlHead = root + "/head.html?v=" + ts;
     switch (jspFile) {
 
