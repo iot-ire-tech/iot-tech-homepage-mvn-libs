@@ -470,13 +470,13 @@ function brandingModule(ts) {
 }
 
 function menuBarModule(ts) {
-    $("head").append("<script type=\"application/javascript\" src=" + root +  '/services/ux/menu/clientSubscriptionSignupMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script type=\"application/javascript\" src=" + root +  '/services/ux/menu/dashboardMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script  type=\"application/javascript\"  src=" + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script type=\"application/javascript\" src=" + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script type=\"application/javascript\" src=" + root +  '/services/ux/menu/businessMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script type=\"application/javascript\" src=" + root +  '/services/ux/menu/covidMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script type=\"application/javascript\" src=" + root +  '/services/ux/menu/screen.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\" src=" + root +  '/ux/menu/clientSubscriptionSignupMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\" src=" + root +  '/ux/menu/dashboardMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\"  src=" + root +  '/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\" src=" + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\" src=" + root +  '/ux/menu/businessMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\" src=" + root +  '/ux/menu/covidMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script type=\"application/javascript\" src=" + root +  '/ux/menu/screen.js?v=' + ts + '></script>');
 
 }
 
@@ -668,9 +668,9 @@ function bootStrap(jspFile, cdn) {
                     rt = response.toString().replace(/\/ContextPath/g, contextPath);
                     $("head").html(rt);
                     $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
 
-                    $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
                     $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/accountstatus/init.js?v=' + ts + '></script>');
                     $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/accountstatus/controller.js?v=' + ts + '></script>');
                     $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/accountstatus/service.js?v=' + ts + '></script>');
@@ -854,9 +854,9 @@ function bootStrap(jspFile, cdn) {
                 $("head").html(rt);
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/mediahub/media.js?v=' + ts + '></script>');
-                $("head").append("<script  type=\"application/javascript\" src=" + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
-                $("head").append("<script src=" + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '></script>');
-                $("head").append("<script src=" + root +  '/services/ux/menu/screen.js?v=' + ts + '></script>');
+                $("head").append("<script  type=\"application/javascript\" src=" + root +  '/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
+                $("head").append("<script src=" + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '></script>');
+                $("head").append("<script src=" + root +  '/ux/menu/screen.js?v=' + ts + '></script>');
 
                 entitiesModule(ts)
                 mmModule(ts)
@@ -1113,7 +1113,7 @@ function bootStrap(jspFile, cdn) {
                 $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/accountstatus/service.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
 
                 $("head").append("<script src=" + root +  '/services/modules/business/onboarding/controller.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/modules/business/onboarding/onchange.js?v=' + ts + '></script>');
@@ -1155,7 +1155,7 @@ function bootStrap(jspFile, cdn) {
                 $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/accountstatus/service.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
 
                 $("head").append("<script src=" + root +  '/services/modules/business/dashboard/init.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/modules/business/dashboard/onchange.js?v=' + ts + '></script>');
@@ -1280,8 +1280,8 @@ function bootStrap(jspFile, cdn) {
                     $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/uxExternalAccountManagment.js?v=' + ts + '></script>');
                     $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
 
-                    $("head").append('<script src=' + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
 
 
                     $("head").append("<script src=" + root +  '/services/modules/stripe/connectaccount/extBankAccount/init.js?v=' + ts + '></script>');
@@ -1418,9 +1418,9 @@ function bootStrap(jspFile, cdn) {
 
                 $("head").append("<link rel=stylesheet href=" + root +  "/services/modules/stripe/billing/product/ux/css.css>");
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script  type="application/javascript"   src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script  type="application/javascript"   src=' + root +  '/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/mediahub/media.js?v=' + ts + '><\/script>');
                 // Ux
                 //Function
@@ -1454,7 +1454,7 @@ function bootStrap(jspFile, cdn) {
                 $("head").append('<script src=' + root +  '/services/modules/stripe/billing/product/ux/uxRevenueVolumeBaseOfferingDialog.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/stripe/billing/product/ux/uxPreviewWidget.js?v=' + ts + '><\/script>');
 
-                // $("head").append('<script src=' + root +  '/services/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
+                // $("head").append('<script src=' + root +  '/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
 
                 $("head").append('<script src=' + root +  '/services/modules/stripe/billing/product/metadataFunction.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/stripe/billing/product/utils.js?v=' + ts + '><\/script>');
@@ -1779,8 +1779,8 @@ function bootStrap(jspFile, cdn) {
 // Parent
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetMeta.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
 // Module
                 $("head").append('<script src=' + root +  '/services/modules/business/activity/ux/uxActivityBrowser.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/activity/model.js?v=' + ts + '><\/script>');
@@ -1841,8 +1841,8 @@ function bootStrap(jspFile, cdn) {
 //					$("head").append('<script src="../ux/functionsShop.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetMeta.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
 // Module
                 $("head").append('<script src=' + root +  '/services/modules/business/events/model.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/events/init.js?v=' + ts + '><\/script>');
@@ -1898,8 +1898,8 @@ function bootStrap(jspFile, cdn) {
 // Parent UX Builder
 //					$("head").append('<script src="../ux/functionsShop.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetMeta.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
 
 
@@ -1960,8 +1960,8 @@ function bootStrap(jspFile, cdn) {
 // Parent UX Builder
                 $("head").append('<script src=' + root +  '/services/modules/business/videohub/ux/uxVideoBrowser.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetMeta.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
 
 
@@ -2027,8 +2027,8 @@ function bootStrap(jspFile, cdn) {
 //					$("head").append('<script src="../ux/functionsShop.js?v=' + ts + '><\/script>');
 
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetMeta.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/search/functionBrowserSearch.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
 
 
@@ -2056,8 +2056,8 @@ function bootStrap(jspFile, cdn) {
                 rt = response.toString().replace(/\/ContextPath/g, contextPath);
                 $("head").html(rt);
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
-                $("head").append('<script src=' + root +  '/services/ux/menu/covidMenuWidget.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/menu/covidMenuWidget.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
 
                 frameworksModule(ts)
                 entitiesModule(ts)
@@ -2104,8 +2104,8 @@ function bootStrap(jspFile, cdn) {
                 rt = response.toString().replace(/\/ContextPath/g, contextPath);
                 $("head").html(rt);
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
-                $("head").append('<script  type="application/javascript"    src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                $("head").append('<script  type="application/javascript"    src=' + root +  '/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
+                $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
 
                 entitiesModule(ts)
                 brandingModule(ts)
@@ -2410,9 +2410,9 @@ function bootStrap(jspFile, cdn) {
 //					addData()l
                     entitiesModule(ts)
                     customerModule(ts)
-                    $("head").append('<script  type="application/javascript"  type="application/javascript"  src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                    $("head").append('<script  type="application/javascript"  type="application/javascript"  src=' + root +  '/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
 
                     $("head").append("<script src=" + root +  '/services/modules/stripe/customer/uxCustomerAccountManagment.js?v=' + ts + '></script>');
                     $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
@@ -2518,8 +2518,8 @@ function bootStrap(jspFile, cdn) {
                     $("head").append("<link rel=stylesheet href=//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css>");
                     $("head").append("<link rel=stylesheet href=" + location.origin + root +  "/services/modules/stripe/customer/geo.css>");
                     $("head").append('<script src=//code.jquery.com/ui/1.12.1/jquery-ui.js><\/script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
 
                     $("head").append('<script src=' + root +  '/services/mediahub/media.js?v=' + ts + '><\/script>');
                     entitiesModule(ts)
@@ -2559,8 +2559,8 @@ function bootStrap(jspFile, cdn) {
                     $("head").append("<link rel=stylesheet href=//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css>");
                     $("head").append('<script src=//code.jquery.com/ui/1.12.1/jquery-ui.js><\/script>');
 
-                    $("head").append('<script src=' + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
-                    $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
                     $("head").append('<script src=' + root +  '/services/mediahub/media.js?v=' + ts + '><\/script>');
 
                     entitiesModule(ts)
