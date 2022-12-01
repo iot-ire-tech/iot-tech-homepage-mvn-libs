@@ -29,6 +29,7 @@ uxSpinner += "<br>"
 uxSpinner += "</div>"
 uxSpinner += "</div>"
 
+
 function addTestData() {
 //	$("head").append('<script src="../../../../../testdata.js"><\/script>');
 
@@ -630,9 +631,8 @@ function utilsModule(ts) {
 }
 
 
+var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs";
 
-
-var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs" ;
 function bootStrap(jspFile) {
 
 // deploying to GREEN zone or PROD, must change accordingly
