@@ -632,6 +632,7 @@ function utilsModule(ts) {
 
 
 var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs";
+var contextPath = ""
 
 function bootStrap(jspFile) {
 
@@ -641,9 +642,9 @@ function bootStrap(jspFile) {
 // Local Test
     var ts = new Date().getMilliseconds();
     if (location.origin.toString().includes("local")) {
-        var contextPath = ""
+         contextPath = ""
     } else {
-        var contextPath = "/green"
+         contextPath = "/green"
         contextPath = ""
     }
 
@@ -2335,7 +2336,7 @@ function bootStrap(jspFile) {
                     $("head").append("<link rel=stylesheet href=//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css>");
                     $("head").append("<link rel=stylesheet href=" + location.origin + root +  "/services/modules/stripe/customer/geo.css>");
                     $("head").append('<script src=//code.jquery.com/ui/1.12.1/jquery-ui.js><\/script>');
-                    $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
+                    $("head").append("<script src=" + root +  "/services/modules/stripe/functions.js?v=" + ts + "></script>");
 
                     entitiesModule(ts)
                     brandingModule(ts)
