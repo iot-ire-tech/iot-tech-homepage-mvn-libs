@@ -440,24 +440,24 @@ function revenueModule(ts) {
     billingMembersModelModule(ts)
 
 
-    $("head").append('<script src=' + root +  '/services/modules/api/business/events/screen.js?v=' + ts + '><\/script>');
-    $("head").append('<script src=' + root +  '/services/modules/api/business/service.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/business/events/screen.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/business/service.js?v=' + ts + '><\/script>');
 
     businessModule(ts)
 }
 
 function businessModule(ts) {
 
-    $("head").append('<script src=' + root +  '/services/modules/api/revenue/events/screen.js?v=' + ts + '><\/script>');
-    $("head").append('<script src=' + root +  '/services/modules/api/revenue/service.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/revenue/events/screen.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/revenue/service.js?v=' + ts + '><\/script>');
 
     legalModule(ts)
 }
 
 function legalModule(ts) {
 
-    $("head").append('<script src=' + root +  '/services/modules/api/legal/events/screen.js?v=' + ts + '><\/script>');
-    $("head").append('<script src=' + root +  '/services/modules/api/legal/service.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/legal/events/screen.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/legal/service.js?v=' + ts + '><\/script>');
 
 }
 
@@ -600,13 +600,13 @@ function contactUsModule(ts) {
 function billingMembersModelModule(ts) {
 
     // $("head").append("<script src=" + root +  '/services/modules/api/04-billingmodel/init.js?v=' + ts + '></script>');
-    $("head").append('<script src=' + root +  '/services/modules/api/04-billing-members-model/service.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\"  src=' + root +  '/services/modules/api/04-billing-members-model/service.js?v=' + ts + '><\/script>');
     billingModelModule(ts)
 }
 
 function billingModelModule(ts) {
 
-    $("head").append('<script src=' + root +  '/services/modules/api/05-billing-model/service.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/modules/api/05-billing-model/service.js?v=' + ts + '><\/script>');
 
 }
 
@@ -626,7 +626,7 @@ function primaryAccountMembersModule(ts) {
 
 function utilsModule(ts) {
 
-    $("head").append('<script src=' + root +  '/services/utils/browser/Browser.js?v=' + ts + '><\/script>');
+    $("head").append('<script  type=\"application/javascript\" src=' + root +  '/services/utils/browser/Browser.js?v=' + ts + '><\/script>');
 
 }
 
@@ -2337,7 +2337,7 @@ function bootStrap(jspFile, cdn) {
                     // Model and Servicers are in Service head already
 //					addData()
                     $("head").append("<link rel=stylesheet href=//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css>");
-                    $("head").append("<link rel=stylesheet href=" + location.origin + root +  "/services/modules/stripe/customer/geo.css>");
+                    $("head").append("<link rel=stylesheet href=" +   "/services/modules/stripe/customer/geo.css>");
                     $("head").append('<script src=//code.jquery.com/ui/1.12.1/jquery-ui.js><\/script>');
                     $("head").append("<script type=\"application/javascript\" src=" + root +  "/services/modules/stripe/functions.js?v=" + ts + "></script>");
 
@@ -2516,7 +2516,7 @@ function bootStrap(jspFile, cdn) {
                     rt = response.toString().replace(/\/ContextPath/g, contextPath);
                     $("head").html(rt);
                     $("head").append("<link rel=stylesheet href=//code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css>");
-                    $("head").append("<link rel=stylesheet href=" + location.origin + root +  "/services/modules/stripe/customer/geo.css>");
+                    $("head").append("<link rel=stylesheet href=" + root +  "/services/modules/stripe/customer/geo.css>");
                     $("head").append('<script src=//code.jquery.com/ui/1.12.1/jquery-ui.js><\/script>');
                     $("head").append('<script src=' + root +  '/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
                     $("head").append('<script src=' + root +  '/ux/menu/screen.js?v=' + ts + '><\/script>');
@@ -3628,7 +3628,7 @@ function bootStrap(jspFile, cdn) {
 }
 
 function postRequest(ep, data) {
-    url = location.origin + root +  "/" + ep;
+    url = root +  "/" + ep;
     return new httpHandler("Generic", responseStrucObj).setAsync(false).setTimeout(30000).setUrl(url).setPayload(data).post().getResponse();
 }
 
