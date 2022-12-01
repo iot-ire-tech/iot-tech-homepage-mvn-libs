@@ -16,7 +16,6 @@
 //var startupSubscription = []
 
 // CORE INIT, then applicatientitieson init - env.
-var platformId = "acct_1CBNZCFOjjfpNUIx"
 
 var uxSpinner = "<div class=\"ui segment\">"
 uxSpinner = ""
@@ -649,9 +648,10 @@ function bootStrap(jspFile) {
 
     var pageloadDelay = 1000;
     var root = location.origin + contextPath;
+    root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs" + contextPath;
     urlHead = root + "/services/head.html?v=" + ts;
     urlHead = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@latest" + "/services/head.html?v=" + ts;
-    urlHead = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs" + "/head.html?v=" + ts;
+    urlHead = root + "/head.html?v=" + ts;
     switch (jspFile) {
 
 
