@@ -631,16 +631,20 @@ function utilsModule(ts) {
 }
 
 
-var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs";
+var root = "https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@latest";
 var contextPath = ""
+var ts = new Date().getMilliseconds();
+var pageloadDelay = 1000;
 
-function bootStrap(jspFile) {
+function bootStrap(jspFile, cdn) {
 
+    if (cdn.toString().length > 0) {
+        root = cdn;
+    }
 // deploying to GREEN zone or PROD, must change accordingly
 
 
 // Local Test
-    var ts = new Date().getMilliseconds();
     if (location.origin.toString().includes("local")) {
          contextPath = ""
     } else {
@@ -648,7 +652,6 @@ function bootStrap(jspFile) {
         contextPath = ""
     }
 
-    var pageloadDelay = 1000;
     // var root = location.origin + contextPath;
     root += contextPath;
     var urlHead = root + "/head.html?v=" + ts;
@@ -3535,6 +3538,7 @@ function bootStrap(jspFile) {
                     $("head").append('<script src="../onchange.js?v=' + ts + '><\/script>');
                     $("head").append('<script src="../integrity.js?v=' + ts + '><\/script>');
                     $("head").append('<script src="../init.js?v=' + ts + '><\/script>');
+
                     var intervalId = setTimeout(function () {
                         clearTimeout(intervalId);
                         $("#content").attr("style", "display:show");
