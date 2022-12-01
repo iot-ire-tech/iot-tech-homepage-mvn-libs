@@ -472,7 +472,7 @@ function brandingModule(ts) {
 function menuBarModule(ts) {
     $("head").append("<script src=" + root +  '/services/ux/menu/clientSubscriptionSignupMenuWidget.js?v=' + ts + '></script>');
     $("head").append("<script src=" + root +  '/services/ux/menu/dashboardMenuWidget.js?v=' + ts + '></script>');
-    $("head").append("<script src=" + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
+    $("head").append("<script  type=\"application/javascript\"  src=" + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
     $("head").append("<script src=" + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '></script>');
     $("head").append("<script src=" + root +  '/services/ux/menu/businessMenuWidget.js?v=' + ts + '></script>');
     $("head").append("<script src=" + root +  '/services/ux/menu/covidMenuWidget.js?v=' + ts + '></script>');
@@ -850,7 +850,7 @@ function bootStrap(jspFile) {
                 $("head").html(rt);
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/mediahub/media.js?v=' + ts + '></script>');
-                $("head").append("<script src=" + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
+                $("head").append("<script  type=\"application/javascript\" src=" + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '></script>');
                 $("head").append("<script src=" + root +  '/services/ux/menu/screen.js?v=' + ts + '></script>');
 
@@ -1415,7 +1415,7 @@ function bootStrap(jspFile) {
                 $("head").append("<link rel=stylesheet href=" + root +  "/services/modules/stripe/billing/product/ux/css.css>");
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
                 $("head").append('<script src=' + root +  '/services/ux/order/functionsOrder.js?v=' + ts + '><\/script>');
-                $("head").append('<script src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
+                $("head").append('<script  type="application/javascript"   src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/mediahub/media.js?v=' + ts + '><\/script>');
                 // Ux
@@ -2100,7 +2100,7 @@ function bootStrap(jspFile) {
                 rt = response.toString().replace(/\/ContextPath/g, contextPath);
                 $("head").html(rt);
                 $("head").append("<script src=" + root +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
-                $("head").append('<script src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
+                $("head").append('<script  type="application/javascript"    src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
                 $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
 
                 entitiesModule(ts)
@@ -2406,7 +2406,7 @@ function bootStrap(jspFile) {
 //					addData()l
                     entitiesModule(ts)
                     customerModule(ts)
-                    $("head").append('<script src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
+                    $("head").append('<script  type="application/javascript"  type="application/javascript"  src=' + root +  '/services/ux/menu/provisioningMenuWidget.js?v=' + ts + '><\/script>');
                     $("head").append('<script src=' + root +  '/services/ux/menu/onboardingMenuWidget.js?v=' + ts + '><\/script>');
                     $("head").append('<script src=' + root +  '/services/ux/menu/screen.js?v=' + ts + '><\/script>');
 
