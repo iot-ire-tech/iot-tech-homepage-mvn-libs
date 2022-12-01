@@ -1,7 +1,4 @@
 nb-configuration.xml
 .git/*
-.idea
+.idea/*
 target/*
-src/main/webapp/resources/media/clients/*
-*.mp4
-src/main/resources/media/clients/acct/video/*
