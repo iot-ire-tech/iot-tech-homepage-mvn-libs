@@ -957,15 +957,15 @@ function bootStrap(jspFile, cdn) {
                 primaryAccountMembersModule(ts)
 
 // CDN
-                $("head").append("<script  type=\"application/javascript\" src=" + remote_host +  '/services/modules/stripe/connectaccount/accountstatus/service.js?v=' + ts + '></script>');
-                $("head").append("<script  type=\"application/javascript\" src=" + remote_host +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
-                $("head").append('<script  type=\"application/javascript\" src=' + remote_host +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
+                $("head").append("<script defer type=\"application/javascript\" src=" + remote_host +  '/services/modules/stripe/connectaccount/accountstatus/service.js?v=' + ts + '></script>');
+                $("head").append("<script defer type=\"application/javascript\" src=" + remote_host +  '/services/modules/stripe/functions.js?v=' + ts + '></script>');
+                $("head").append('<script defer type=\"application/javascript\" src=' + remote_host +  '/services/modules/business/uxWidgetSlideShow.js?v=' + ts + '><\/script>');
 
 // Local To App
-                $("head").append("<script  type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/model.js?v=" + ts + "></script>");
-                $("head").append("<script  type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/controller.js?v=" + ts + '></script>');
-                $("head").append("<script  type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/onchange.js?v=" + ts + '></script>');
-                $("head").append("<script  type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/init.js?v=" + ts + '></script>');
+                $("head").append("<script defer type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/model.js?v=" + ts + "></script>");
+                $("head").append("<script defer type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/controller.js?v=" + ts + '></script>');
+                $("head").append("<script defer type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/onchange.js?v=" + ts + '></script>');
+                $("head").append("<script defer type=application/javascript src=" + local_host +  "/services/modules/stripe/customer/login/init.js?v=" + ts + '></script>');
 
 
             });
