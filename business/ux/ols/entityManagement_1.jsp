@@ -85,11 +85,11 @@
 		<!--		<script >
 
 					var contextPath = "/iot-base"
-					var root = location.origin + contextPath;
+					var remote_host = location.origin + contextPath;
 					var servicePath = "/services/business/entity";
 
 
-					urlBody = root + servicePath + "/ux/body.html";
+					urlBody = remote_host + servicePath + "/ux/body.html";
 
 
 					var loader = "<script src=" + urlRt + "><\/script>";

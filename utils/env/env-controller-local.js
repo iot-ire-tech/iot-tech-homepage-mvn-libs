@@ -7,7 +7,7 @@ console.log = function () {};
 
 deployment = "local"
 channel = "/iot-base"
-// I removed context path, in prep for root deployment
+// I removed context path, in prep for remote_host deployment
 channel = ""
 
 // The channel init the context path
