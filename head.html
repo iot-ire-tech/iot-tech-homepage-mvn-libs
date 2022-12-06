@@ -1,199 +1,100 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--Other-->
+<link rel=stylesheet href="https://semantic-ui.com/dist/semantic.css">
+<link rel=stylesheet href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Menu-->
+<link rel=stylesheet href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel=stylesheet href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<!--JQuery-->
+<link rel=stylesheet href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css">
+<!--Fonts-->
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin">
+<link rel=stylesheet href="https://cdnjs.cloudflare.com/ajax/libs@release/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--App-->
+<link rel=stylesheet href="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/css/loader.css">
+<link rel=stylesheet href="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/css/page.css">
+
+<!--Graphics-->
+<script type="application/javascript" src="https://semantic-ui.com/dist/semantic.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mdehoog/Semantic-UI-Calendar@76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
+
+<script type="application/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="application/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="application/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+<script type="application/javascript" src="https://fonts.googleapis.com/icon?family=Material+Icons"></script>
+<script type="application/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0"></script>
 
 
-<link id="favicon" rel="icon" href="" type="image/png" sizes="16x16">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Code-->
+<!--Defer or ASync?-->
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/nw/crudIt.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/Common.js"></script>
 
-<!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
-<!--<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">-->
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/authentication/Account.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/authentication/Authenticate.js"></script>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/00-customer/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/00-customer/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/00-customer/ux/widget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/01-authentication/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/01-authentication/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/01-authentication/ux/widget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/04-billing-members-model/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/05-billing-model/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/08-primary-account-members/init.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/08-primary-account-members/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/branding/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/branding/init.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/branding/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/business/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/business/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/entities/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/entities/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/entities/utils.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/entities/ux/widget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/entities/ux/widgetListing.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/legal/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/legal/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/revenue/events/screen.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/revenue/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/api/service-core.js?v=722"></script>
 
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/business/uxWidgetSlideShow.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/stripe/connectaccount/accountstatus/service.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/stripe/customer/login/ux/body_customers.html?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/services/modules/stripe/functions.js?v=722"></script>
 
-<!--<meta http-equiv="Refresh" content="0; URL=https://www.mybusinesspal.com/">-->
-<link rel="canonical" href="https://www.mybusinesspal.com/">
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/businessMenuWidget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/clientSubscriptionSignupMenuWidget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/covidMenuWidget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/dashboardMenuWidget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/onboardingMenuWidget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/provisioningMenuWidget.js?v=722"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/ux/menu/screen.js?v=722"></script>
 
-<!--<html prefix="og: https://ogp.me/ns#">-->
-<meta property="og:title" content="MyBusinessPal.Com"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="https://www.mybusinesspal.com/"/>
-<meta property="og:image" content="https://www.mybusinsspal.com/logo.jpg"/>
+<!--Head-->
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/nw/httpHandler.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/browser/Browser.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/db/dbAllocation.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/db/dbHandler.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/env/env-controller.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/logging/Log.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/numbers/Numbers.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/prototypes/Prototypes.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/strings/Strings.js"></script>
+<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/utils/time/Time.js"></script>
 
-<!--Cache Control-->
+<!--load all js please so App can load html!-->
+<!--<script type="application/javascript" src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@release/bootstrap.js"></script>-->
 
+<script type="application/javascript" src="https://mybusinesspal-python.nw.r.appspot.com/favicon.ico"></script>
 
-<!--For English sites use-->
-<!--<meta http-equiv="content-Type" content="text/html; charset=ISO-8859-1" />
-<meta http-equiv="cache-control" content="max-age=0; no-cache; no-store; must-revalidate">
-<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-<meta http-equiv="pragma" content="no-cache" />-->
-
-
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "url": "https://www.mybusinesspal.com/",
-        "potentialAction": [
-            {
-                "@type": "SearchAction",
-                "target": "https://query.mybusinesspal.com/search?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-            },
-            {
-                "@type": "SearchAction",
-                "target": "android-app://com.mybusinesspal/https/query.mybusinesspal.com/search/?q={search_term_string}",
-                "query-input": "required name=search_term_string"
-            }
-        ]
-    }
-
-</script>
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "url": "https://www.mybusinesspal.com",
-        "logo": "https://www.mybusinesspal.com/logo.jpg"
-    }
-</script>
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What do you offer?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "We give our clients an online presence, a website of there own, where they can setup an online store, host activities and events, and much more. <a href=http://www.mybusinesspal.com/> Click here </a> to visit our homepage. </p>"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does it work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Look at the overview outlined on our homepage, and follow the steps as you onboard to the platform. <a href=http://www.mybusinesspal.com/> Click here </a> to visit our homepage.</p>"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How long does it take to have my own an online presence?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Click on the <a href=https://www.mybusinesspal.com/services/modules/stripe/connectaccount/head/release/signup.jsp> Click here </a> to become a member, you will be sent an email with your own url within minutes!</p>"
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What client base do we see normally?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The platform supports individuals and companies alike. This means our business scope is as broad as it is rich. If you are a stay at home reseller of goods, or a holiday center feature rich with activities, and events, you will be right at home here."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "When will I be charged?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "You are not charged for becoming a member! You are not charge for setting up your platform instance. You are charged only when items are booked or sold, and via your monthly subscription plan"
-                }
-            }
-        ]
-    }
-</script>
-<!--"url": "s://www.google.com/maps?q=Base+Enterprise+Centre+CLG+Damastown+Road+Damastown+Mulhuddart+Dublin+15&client=ubuntu&um=1&ie=UTF-8&sa=X&ved=2ahUKEwikxID1itfrAhXbaRUIHZbjCY0Q_AUoAXoECBsQAw",-->
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "@id": "http://www.mybusinesspal.com",
-        "name": "MyBusinessPal.Com",
-        "description": "Your one-stop shop for an online presence in minutes!",
-        "image": "logo.jpg",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": " Base Enterprise Centre CLG Damastown Road, Damastown Mulhuddart",
-            "addressLocality": "Dublin",
-            "addressRegion": "",
-            "postalCode": "15",
-            "addressCountry": "IE"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 53.4076652,
-            "longitude": -6.400852
-        },
-        "url": "http://www.mybusinesspal.com",
-        "telephone": "+35312542326"
-    }
-</script>
-<!--"openingHoursSpecification": [-->
-<!--{-->
-<!--"@type": "OpeningHoursSpecification",-->
-<!--"dayOfWeek": [-->
-<!--"Monday",-->
-<!--"Tuesday",-->
-<!--"Wednesday",-->
-<!--"Thursday",-->
-<!--"Friday"-->
-<!--],-->
-<!--"opens": "09:00",-->
-<!--"closes": "17:00"-->
-<!--}-->
-<!--]-->
-
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-->
-<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css"/>
-<script type="text/javascript" src="//cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-
-
-<script src="https://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js"></script>
-<link rel="stylesheet" href="https://semantic-ui.com/dist/semantic.css">
-<script src="https://semantic-ui.com/dist/semantic.js"></script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
-<script src='https://www.google.com/recaptcha/api.js'></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
-
-<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js'></script>-->
-<!--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css"/>-->
-<!--<script type="text/javascript" src="//cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>-->
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/css/loader.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/css/page.css">
-
-
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/nw/crudIt.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/Common.js"></script>
-
-
-
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/authentication/Account.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/authentication/Authenticate.js"></script>
-
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/numbers/Numbers.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/time/Time.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/prototypes/Prototypes.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/browser/Browser.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/strings/Strings.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/db/dbAllocation.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/db/dbHandler.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/Common.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/logging/Log.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/nw/httpHandler.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/env/env-controller.js"></script>
-
-
-<!--<script src="https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/branding/Branding.js"></script>-->
+<!--Application Layer, Sync?-->
+<script type="application/javascript" src="https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/model.js?v=722"></script>
+<script type="application/javascript" src="https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/controller.js?v=722"></script>
+<script type="application/javascript" src="https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/onchange.js?v=722"></script>
+<script type="application/javascript" src="https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/init.js?v=722"></script>

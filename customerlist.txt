@@ -1,0 +1,412 @@
+
+18:53:49.091 Navigated to https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/release/users.jsp?accountId=acct_1CBNZCFOjjfpNUIx&accountIdP=acct_1CBNZCFOjjfpNUIx&accountIdC=acct_1GAINZGfqh4DeGy5&originId=dashboard
+18:53:49.112
+GEThttps://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/release/users.jsp?accountId=acct_1CBNZCFOjjfpNUIx&accountIdP=acct_1CBNZCFOjjfpNUIx&accountIdC=acct_1GAINZGfqh4DeGy5&originId=dashboard
+[HTTP/2 200 OK 316ms]
+
+18:53:49.414
+GEThttps://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
+[HTTP/2 200 OK 112ms]
+
+18:53:49.415
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/bootstrap.js
+[HTTP/2 200 OK 317ms]
+
+18:53:49.741
+XHRGEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/head.html?v=722
+[HTTP/2 200 OK 301ms]
+
+18:53:49.757
+XHRGEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/stripe/customer/login/ux/body_customers.html?v=722
+[HTTP/2 200 OK 260ms]
+
+18:53:50.386
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/service-core.js?v=722
+[HTTP/2 200 OK 356ms]
+
+18:53:50.389
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/entities/ux/widget.js?v=722
+[HTTP/2 200 OK 271ms]
+
+18:53:50.390
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/entities/ux/widgetListing.js?v=722
+[HTTP/2 200 OK 266ms]
+
+18:53:50.390
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/entities/utils.js?v=722
+[HTTP/2 200 OK 265ms]
+
+18:53:50.391
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/entities/events/screen.js?v=722
+[HTTP/2 200 OK 257ms]
+
+18:53:50.391
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/entities/service.js?v=722
+[HTTP/2 200 OK 352ms]
+
+18:53:50.392
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/04-billing-members-model/service.js?v=722
+[HTTP/2 200 OK 260ms]
+
+18:53:50.393
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/05-billing-model/service.js?v=722
+[HTTP/2 200 OK 282ms]
+
+18:53:50.393
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/business/events/screen.js?v=722
+[HTTP/2 200 OK 300ms]
+
+18:53:50.394
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/business/service.js?v=722
+[HTTP/2 200 OK 277ms]
+
+18:53:50.394
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/revenue/events/screen.js?v=722
+[HTTP/2 200 OK 273ms]
+
+18:53:50.394
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/revenue/service.js?v=722
+[HTTP/2 200 OK 284ms]
+
+18:53:50.395
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/legal/events/screen.js?v=722
+[HTTP/2 200 OK 258ms]
+
+18:53:50.395
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/legal/service.js?v=722
+[HTTP/2 200 OK 274ms]
+
+18:53:50.396
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/clientSubscriptionSignupMenuWidget.js?v=722
+[HTTP/2 200 OK 267ms]
+
+18:53:50.396
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/dashboardMenuWidget.js?v=722
+[HTTP/2 200 OK 262ms]
+
+18:53:50.397
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/provisioningMenuWidget.js?v=722
+[HTTP/2 200 OK 265ms]
+
+18:53:50.397
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/onboardingMenuWidget.js?v=722
+[HTTP/2 200 OK 265ms]
+
+18:53:50.397
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/businessMenuWidget.js?v=722
+[HTTP/2 200 OK 261ms]
+
+18:53:50.398
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/covidMenuWidget.js?v=722
+[HTTP/2 200 OK 263ms]
+
+18:53:50.398
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/ux/menu/screen.js?v=722
+[HTTP/2 200 OK 264ms]
+
+18:53:50.399
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/branding/init.js?v=722
+[HTTP/2 200 OK 286ms]
+
+18:53:50.399
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/branding/service.js?v=722
+[HTTP/2 200 OK 264ms]
+
+18:53:50.399
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/branding/events/screen.js?v=722
+[HTTP/2 200 OK 266ms]
+
+18:53:50.400
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/00-customer/ux/widget.js?v=722
+[HTTP/2 200 OK 269ms]
+
+18:53:50.400
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/00-customer/service.js?v=722
+[HTTP/2 200 OK 283ms]
+
+18:53:50.401
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/00-customer/events/screen.js?v=722
+[HTTP/2 200 OK 266ms]
+
+18:53:50.401
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/01-authentication/ux/widget.js?v=722
+[HTTP/2 200 OK 273ms]
+
+18:53:50.402
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/01-authentication/service.js?v=722
+[HTTP/2 200 OK 271ms]
+
+18:53:50.402
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/01-authentication/events/screen.js?v=722
+[HTTP/2 200 OK 261ms]
+
+18:53:50.403
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/08-primary-account-members/init.js?v=722
+[HTTP/2 200 OK 567ms]
+
+18:53:50.403
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/api/08-primary-account-members/service.js?v=722
+[HTTP/2 200 OK 270ms]
+
+18:53:50.404
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/stripe/connectaccount/accountstatus/service.js?v=722
+[HTTP/2 200 OK 271ms]
+
+18:53:50.404
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/stripe/functions.js?v=722
+[HTTP/2 200 OK 280ms]
+
+18:53:50.405
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs@dev7/services/modules/business/uxWidgetSlideShow.js?v=722
+[HTTP/2 200 OK 273ms]
+
+18:53:50.405
+XHRGEThttps://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/model.js?v=722
+[HTTP/2 200 OK 100ms]
+
+18:53:50.406
+GEThttps://www.w3schools.com/w3css/4/w3.css
+[HTTP/2 200 OK 310ms]
+
+18:53:50.406
+GEThttps://cdn.datatables.net/1.10.22/css/jquery.dataTables.min.css
+[HTTP/2 200 OK 111ms]
+
+18:53:50.407
+GEThttps://semantic-ui.com/dist/semantic.css
+[HTTP/2 200 OK 456ms]
+
+18:53:50.407
+GEThttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css
+[HTTP/2 200 OK 136ms]
+
+18:53:50.408
+GEThttps://fonts.googleapis.com/icon?family=Material+Icons
+[HTTP/2 200 OK 138ms]
+
+18:53:50.408
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/css/loader.css
+[HTTP/2 200 OK 53ms]
+
+18:53:50.409
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/css/page.css
+[HTTP/2 200 OK 53ms]
+
+18:53:50.409
+GEThttps://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js
+[HTTP/2 200 OK 192ms]
+
+18:53:50.409
+GEThttps://cdn.rawgit.com/mdehoog/Semantic-UI-Calendar/76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js
+[HTTP/2 301 Moved Permanently 277ms]
+
+18:53:50.410
+GEThttps://semantic-ui.com/dist/semantic.js
+[HTTP/2 200 OK 401ms]
+
+18:53:50.410
+GEThttps://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js
+[HTTP/2 200 OK 113ms]
+
+18:53:50.411
+GEThttps://www.google.com/jsapi
+[HTTP/2 301 Moved Permanently 148ms]
+
+18:53:50.411
+GEThttps://www.google.com/recaptcha/api.js
+[HTTP/2 200 OK 184ms]
+
+18:53:50.412
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/nw/crudIt.js
+[HTTP/2 200 OK 58ms]
+
+18:53:50.412
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/authentication/Account.js
+[HTTP/2 200 OK 50ms]
+
+18:53:50.412
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/authentication/Authenticate.js
+[HTTP/2 200 OK 50ms]
+
+18:53:50.413
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/numbers/Numbers.js
+[HTTP/2 200 OK 49ms]
+
+18:53:50.413
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/time/Time.js
+[HTTP/2 200 OK 51ms]
+
+18:53:50.414
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/prototypes/Prototypes.js
+[HTTP/2 200 OK 52ms]
+
+18:53:50.414
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/browser/Browser.js
+[HTTP/2 200 OK 53ms]
+
+18:53:50.414
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/strings/Strings.js
+[HTTP/2 200 OK 48ms]
+
+18:53:50.415
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/db/dbAllocation.js
+[HTTP/2 200 OK 48ms]
+
+18:53:50.415
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/db/dbHandler.js
+[HTTP/2 200 OK 47ms]
+
+18:53:50.416
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/logging/Log.js
+[HTTP/2 200 OK 48ms]
+
+18:53:50.416
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/nw/httpHandler.js
+[HTTP/2 200 OK 47ms]
+
+18:53:50.417
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/env/env-controller.js
+[HTTP/2 200 OK 46ms]
+
+18:53:50.417
+GEThttps://code.jquery.com/ui/1.12.1/jquery-ui.js
+[HTTP/2 200 OK 252ms]
+
+18:53:50.417
+GEThttps://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css
+[HTTP/2 200 OK 45ms]
+
+18:53:50.418
+GEThttps://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css
+[HTTP/2 200 OK 46ms]
+
+18:53:50.418
+GEThttps://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js
+[HTTP/2 200 OK 48ms]
+
+18:53:50.567
+Uncaught ReferenceError: UserAccount is not defined
+    <anonymous> customer_login_model.js:10
+    jQuery 11
+    bootStrap bootstrap.js:965
+    jQuery 7
+    bootStrap bootstrap.js:942
+    <anonymous> https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/release/users.jsp?accountId=acct_1CBNZCFOjjfpNUIx&accountIdP=acct_1CBNZCFOjjfpNUIx&accountIdC=acct_1GAINZGfqh4DeGy5&originId=dashboard:10
+users.jsp:10:2
+18:53:50.952
+XHRGEThttps://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/controller.js?v=722
+[HTTP/2 200 OK 38ms]
+
+18:53:50.963
+GEThttps://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0
+[HTTP/2 200 OK 60ms]
+
+18:53:51.209
+GEThttps://cdn.jsdelivr.net/gh/mdehoog/Semantic-UI-Calendar@76959c6f7d33a527b49be76789e984a0a407350b/dist/calendar.min.js
+[HTTP/2 200 OK 19ms]
+
+18:53:51.272
+GEThttps://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic&subset=latin
+[HTTP/2 200 OK 26ms]
+
+18:53:51.438
+XHRGEThttps://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/onchange.js?v=722
+[HTTP/2 200 OK 31ms]
+
+18:53:52.361
+GEThttps://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHjx4wXg.woff2
+[HTTP/2 200 OK 91ms]
+
+18:53:52.362
+GEThttps://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVSwiPGQ.woff2
+[HTTP/2 200 OK 63ms]
+
+18:53:52.365
+XHRGEThttps://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/init.js?v=722
+[HTTP/2 200 OK 35ms]
+
+18:53:52.420
+Uncaught ReferenceError: slideShowFunc is not defined
+    <anonymous> customer_login_init.js:25
+    jQuery 11
+    bootStrap bootstrap.js:968
+    jQuery 7
+    bootStrap bootstrap.js:942
+    <anonymous> https://mybusinesspal-python.nw.r.appspot.com/services/modules/stripe/customer/login/release/users.jsp?accountId=acct_1CBNZCFOjjfpNUIx&accountIdP=acct_1CBNZCFOjjfpNUIx&accountIdC=acct_1GAINZGfqh4DeGy5&originId=dashboard:10
+users.jsp:25:18
+18:53:52.433
+Uncaught ReferenceError: getTs is not defined
+    <anonymous> https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/utils/logging/Log.js:21
+Log.js:21:4
+18:53:52.437
+Uncaught ReferenceError: core is not defined
+    <anonymous> Ember
+service.js:10:5
+18:53:52.441
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_branding_service.js:9
+service.js:9:5
+18:53:52.442
+GEThttps://www.gstatic.com/recaptcha/releases/Km9gKuG06He-isPsP6saG8cn/recaptcha__en.js
+[HTTP/2 200 OK 35ms]
+
+18:53:52.444
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_legal_service.js:9
+service.js:9:5
+18:53:52.445
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_business_service.js:9
+service.js:9:5
+18:53:52.445
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_authentication_service.js:12
+service.js:12:5
+18:53:52.446
+Uncaught ReferenceError: core is not defined
+    <anonymous> Ember
+service.js:10:5
+18:53:52.446
+Uncaught ReferenceError: core is not defined
+    <anonymous> Ember
+service.js:10:5
+18:53:52.447
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_revenue_service.js:9
+service.js:9:5
+18:53:52.482
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_customer_service.js:29
+service.js:29:5
+18:53:52.483
+Uncaught ReferenceError: core is not defined
+    <anonymous> api_entities_service.js:10
+service.js:10:5
+18:53:53.347
+GEThttps://mybusinesspal-python.nw.r.appspot.com/favicon.ico
+[HTTP/2 200 OK 34ms]
+
+18:53:54.596
+GEThttps://www.gstatic.com/charts/loader.js
+[HTTP/2 200 OK 0ms]
+
+18:53:54.597
+GEThttps://www.gstatic.com/charts/loader.js
+[HTTP/2 200 OK 0ms]
+
+18:53:54.911
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/Common.js
+[HTTP/2 200 OK 0ms]
+
+18:53:54.914
+GEThttps://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/Common.js
+[HTTP/2 200 OK 0ms]
+
+18:53:55.755
+Uncaught SyntaxError: redeclaration of let Common
+    <anonymous> https://cdn.jsdelivr.net/gh/mybusinesspal/iot-tech-homepage-mvn-libs/Common.js:1
+Common.js:1:1
+
+​
+
+

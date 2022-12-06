@@ -947,7 +947,7 @@ function bootStrap(jspFile, cdn) {
                 $("head").append('<script src=//code.jquery.com/ui/1.12.1/jquery-ui.js><\/script>');
                 $("head").append("<link rel=stylesheet href=//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css>");
                 $("head").append("<link rel=stylesheet href=//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css>");
-                $("head").append('<script src=//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js><\/script>');
+                $("head").append('<script src=//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js></script>');
 //				$("head").append('<script src=//cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js><\/script>');
 
                 entitiesModule(ts)
