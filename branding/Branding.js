@@ -508,4 +508,4 @@ function transitionVid(clientId, branding) {
 	}
 }
 
-//# sourceURL=services_module_branding_service.js
+//# sourceURL=branding_service.js

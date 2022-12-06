@@ -32,4 +32,4 @@ class Account {
 		return true;
 	}
 }
-//# sourceURL=auth_service_account.js
+//# sourceURL=account.js
