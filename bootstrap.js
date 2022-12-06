@@ -936,7 +936,6 @@ function bootStrap(jspFile, cdn) {
 
         case "endUserLoginReleased":
             urlBody = remote_host + "/services/modules/stripe/customer/login/ux/body_customers.html?v=" + ts;
-
             $("#content").attr("style", "display:none");
 
             $.get(urlHead, function (response) {
